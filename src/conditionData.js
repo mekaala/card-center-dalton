@@ -8,4 +8,21 @@ export default
         causes: 'There are many possible causes of cardiomyopathy, including heart attacks, congenital heart defects, severe high blood pressure, viral infections, and heart structure abnormalities. In addition, cardiomyopathy can be caused by nutritional deficiencies and some medical conditions like celiac disease, lupus, and end-stage kidney disease. Cardiomyopathy is characterized into three different, specific types: dilated, hypertrophic, and restrictive. Dilated cardiomyopathy is caused by an enlarged and poorly functioning left ventricle, which is the heart’s main pumping chamber. In hypertrophic cardiomyopathy, the heart muscle has become abnormally thick, making it difficult for the heart to pump blood. A heart that may pump normally but does not relax between heartbeats, making it unable to fill up with adequate blood, characterizes restrictive cardiomyopathy.',
         symptoms: 'There are many accompanying symptoms of cardiomyopathy. Shortness of breath is a common symptom that can become worse when laying down flat, and may cause you to wake up at night with a sudden shortness of breath. You may experience fatigue, faintness, dizziness, or light-headedness. You may undergo angina (chest pain), and feel your heart prominently beating or sense a sharp pressure or pain in the middle of your chest. The legs, abdomen, or ankles may swell. It is possible that you will urinate less during the daytime and more at nighttime. You may suffer coughing, high blood pressure, and a loss of appetite. You may find alertness and concentration challenging, and your body’s condition overall will feel weakened.',
     },
+    {
+        name: 'CAROTID ARTERY DISEASE',
+        snippet: '',
+    },
+    {
+        name: 'CONGESTIVE HEART FAILURE',
+        snippet: '',
+    },
+    {
+        name: '',
+        snippet: '',
+    },
+    {
+        name: '',
+        snippet: '',
+    },
+    
 ]
