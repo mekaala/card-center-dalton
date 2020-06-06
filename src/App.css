@@ -1,16 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background: black;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .App-header {
@@ -24,15 +17,237 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* NAVIGATION */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.712);
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .logo {
+  margin: auto 10px;
+}
+.bar a {
+  text-decoration: none;
+  color: white;
+  margin: auto 10px;
+}
+.bar a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+.bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.navbar .facebook {
+  margin: auto 10px;
+}
+.facebook img {
+  width: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* SPLASHPAGE */
+
+button {
+  background: #E8374D;
+  border: 1px solid rgba(0, 0, 0, 0.507);
+  box-shadow: 1px solid black;
+  font-size: 150%;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
+  padding: 10px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+button:hover {
+  background: black;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.image-page {
+  background-image: url('./images/placeholder.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px black;
+}
+
+.image-text h2 {
+  font-size: xxx-large;
+  font-weight: 300;
+  color: #E8374D;
+  margin: 0;
+}
+.image-text h1 {
+  font-size: 500%;
+  font-weight: bolder;
+  margin-top: 0;
+}
+.about h3 {
+  margin: 10% 10%;
+  line-height: 2em;
+  font-weight: lighter;
+  font-size: 24px;
+}
+.link-page {
+  margin: auto;
+  width: 90%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-shadow: 1px 1px black;
+}
+.hours {
+  background: black;
+  align-items: center;
+  text-align: left;
+  padding: 5%;
+}
+.hours h4 {
+  color: #E8374D;
+  margin: 0;
+  font-size: 125%;
+  font-weight: bolder;
+  line-height: 1em;
+}
+.education {
+  background-image: url('./images/education.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pulse {
+  background-image: url('./images//pulse.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  background-color: #335582;
+  padding-bottom: 1px;
+}
+
+
+/* ACTIVITIES */
+.activities {
+  margin-bottom: 5%;
+}
+.activities p {
+  font-size: 90%;
+}
+
+.activity-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 1%;
+}
+.activities img {
+  width: 100%;
+}
+.cardio, .strength, .forward, .diet {
+  box-sizing: border-box;
+  background: #353535;
+  display: block;
+  align-items: center;
+  width: 24%;
+  min-width: 250px;
+  margin: 5px;
+  padding-bottom: 2%;
+}
+.text-box {
+  margin: auto 8%;
+}
+.text-box h1 {
+  color: #E8374D;
+}
+.text-box .tag {
+  text-align: center;
+}
+.text-box p {
+  text-align: left;
+}
+hr {
+  border-color: rgba(65, 65, 65, 0.24);
+  height: 1%;
+}
+.text-box button {
+  margin: 10px;
+}
+
+/* YOUR KEY TO HEALTH */
+.health-key {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+}
+.health-key h1, .health-key h2 {
+  color: black;
+}
+.health-key h2 {
+  text-align: left;
+}
+li h3 {
+  color: white;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: rgb(255, 86, 86);
+  position: relative;
+  top: 60px;
+  left: -22px;
+}
+.health-key p {
+  color: gray;
+  text-align: left;
+}
+.left {
+  margin: 1% 2%;
+  width: 46%;
+}
+.right {
+  margin: 1%;
+  width: 48%;
+}
+
+/* SHAPE TAG */
+.shape-tag {
+  background: white;
+  padding: 5%;
+}
+.shape-tag h1 {
+  color: black;
+}
+.shape-tag p {
+  color: gray;
+}
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+}
+.contact-info {
+  display: inline-block;
+  box-sizing: border-box;
+  background: #727272;
+  width: 80%;
+  margin: 1%;
+  padding: 1%;
+
+}
+
+/* FOOTER */
+.footer {
+  background: red;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }

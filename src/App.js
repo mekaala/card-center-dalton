@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import SplashPage from './components/SplashPage';
 import Providers from './components/Providers';
@@ -10,15 +9,13 @@ import Conditions from './components/Conditions';
 import SingleCondtion from './components/SingleCondition';
 import Diagnostics from './components/Diagnostics';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-`       <div className="Title">
-          <Link to="/"><h1>Cardiology Center of Dalton</h1></Link>
-        </div>
         <NavBar/>
         <Switch>
           <Route exact path="/" component={ SplashPage }/>
@@ -29,6 +26,7 @@ function App() {
           <Route exact path="/diagnostics" component={ Diagnostics }/>
         </Switch>
         <Contact/>
+        <Footer/>
       </Router>
     </div>
   );
