@@ -9,14 +9,16 @@ export default class Conditions extends Component {
             <div className="conditions">
                     <div className="condition-container">
                     {ConditionData.map((condition, i) => {
-                        const url = "/conditions/" + condition.name;
                         return (
                             <div key={ i }>
-                                <Link to ={ url }>{ condition.name }</Link>
+                                <Link
+                                to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                state: condition}}>
+                                    { condition.name }
+                                </Link>
                                 <p>{ condition.snippet }</p>
                             </div>
                         )
-                        //  <SingleCondition condition={condition} key={i} />
                     })}
                     </div>
             </div>

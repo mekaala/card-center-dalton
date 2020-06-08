@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import diagnosticData from '../diagnosticData'
+import { Link } from 'react-router-dom'
 
 export default class Diagnostics extends Component {
     render() {
@@ -11,18 +13,19 @@ export default class Diagnostics extends Component {
                 Diagnostic testing may rule out certain heart diseases or indicate the exact cause of your symptoms.
                 </p>
                 <h2>OUR ON-SITE DIAGNOSTIC SERVICES</h2>
-                <ul>
-                    <li>Exercise Stress Test</li>
-                    <li>Nuclear Stress Test</li>
-                    <li>Echocardiogram</li>
-                    <li>EKG</li>
-                    <li>Vascular Ultrasound</li>
-                    <li>Holter Monitoring</li>
-                    <li>Event Monitoring (30-day)</li>
-                    <li>Peripheral Arterial Disease (PAD) Screening</li>
-                    <li>External Counter Pulsation Therapy</li>
-                    <li>Laboratory / Bloodwork</li>
-                </ul>
+                <div className="diagnostic-list">
+                {diagnosticData.map((diagnostic, i) => {
+                        return (
+                            <div key={ i }>
+                                <Link 
+                                to={{pathname: `diagnostics/${ diagnostic.diagnosticUrl }`,
+                                state: diagnostic}}>
+                                    <h3>{ diagnostic.name }</h3>
+                                </Link>
+                            </div>
+                        )
+                    })}
+                </div>
                 <p>
                 The board-certified doctors at Cardiology Center of Dalton are pleased to offer the convenience of these services to treat a variety of cardiology conditions in our northwest Georgia office.
                 Please request an appointment online today or call us at (706) 272-0272.

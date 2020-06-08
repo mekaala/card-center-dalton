@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SingleProvider from './SingleProvider'
-import ProviderData from '../providerData'
+import providerData from '../providerData'
+import { Link } from 'react-router-dom';
 
 export default class Providers extends Component {
     render() {
@@ -8,8 +9,17 @@ export default class Providers extends Component {
             <div className="providers">
                 <h1>Providers</h1>
                     <div className="provider-container">
-                    {ProviderData.map((provider, i) => {
-                        return <SingleProvider provider={provider} key={i} />
+                    {providerData.map((provider, i) => {
+                        return (
+                            <div key={ i }>
+                                <Link 
+                                to={{pathname: `providers/${ provider.providerUrl }`,
+                                state: provider}}>
+                                    <img src={ provider.photo } alt={ provider.name }/>
+                                    <h3>{ provider.name }</h3>
+                                </Link>
+                            </div>
+                        )
                     })}
                     </div>
             </div>

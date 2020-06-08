@@ -2,16 +2,17 @@ import React, { Component } from 'react'
 
 export default class SingleCondition extends Component {
     render() {
+        const condition = this.props.location.state;
         return (
             <div className="single-condition">
                 <div className="condition-name">
-                    <h2>{ this.props.condition.name }</h2>
+                    <h2>{ condition.name }</h2>
                 </div>
                 <div className="condition-description">
-                    <p>{ this.props.condition.intro }</p>
-                    <p>{ this.props.condition.anatomy }</p>
-                    <p>{ this.props.condition.causes }</p>
-                    <p>{ this.props.condition.symptoms }</p>
+                    <p>{ condition.intro }</p>
+                    <p>{ condition.anatomy }</p>
+                    <p>{ condition.causes }</p>
+                    <p>{ condition.symptoms }</p>
                 </div>
             </div>
         )

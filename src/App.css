@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 .App {
   text-align: center;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -20,7 +20,7 @@
 
 /* NAVIGATION */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.712);
+  background-color: rgba(0, 0, 0, 0.925);
   display: flex;
   justify-content: space-around;
 }
@@ -48,6 +48,11 @@
 }
 
 /* SPLASHPAGE */
+
+.splashpage {
+  background: black;
+  color: white;
+}
 
 button {
   background: #E8374D;

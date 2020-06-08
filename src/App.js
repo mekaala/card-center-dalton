@@ -6,11 +6,11 @@ import SplashPage from './components/SplashPage';
 import Providers from './components/Providers';
 import SingleProvider from './components/SingleProvider';
 import Conditions from './components/Conditions';
-import SingleCondtion from './components/SingleCondition';
+import SingleCondition from './components/SingleCondition';
 import Diagnostics from './components/Diagnostics';
+import SingleDiagnostic from './components/SingleDiagnostic';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
 
 function App() {
   return (
@@ -20,10 +20,11 @@ function App() {
         <Switch>
           <Route exact path="/" component={ SplashPage }/>
           <Route exact path="/providers" component={ Providers }/>
-          <Route path="providers/:providername" component={ SingleProvider }/>
+          <Route path="/providers/:providerUrl" component={ SingleProvider }/>
           <Route exact path="/conditions" component={ Conditions }/>
-          <Route path="conditions/:conditionname" component={ SingleCondtion }/>
+          <Route path="/conditions/:conditionUrl" component={ SingleCondition }/>
           <Route exact path="/diagnostics" component={ Diagnostics }/>
+          <Route path="/diagnostics/:diagnosticUrl" component={ SingleDiagnostic }/>
         </Switch>
         <Contact/>
         <Footer/>
