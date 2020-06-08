@@ -8,7 +8,10 @@ export default class SingleCondition extends Component {
                     <h2>{ this.props.condition.name }</h2>
                 </div>
                 <div className="condition-description">
-                    <p>{ this.props.condition.snippet }</p>
+                    <p>{ this.props.condition.intro }</p>
+                    <p>{ this.props.condition.anatomy }</p>
+                    <p>{ this.props.condition.causes }</p>
+                    <p>{ this.props.condition.symptoms }</p>
                 </div>
             </div>
         )

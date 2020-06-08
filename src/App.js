@@ -20,9 +20,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={ SplashPage }/>
           <Route exact path="/providers" component={ Providers }/>
-          <Route path="providers/:providerId" component={ SingleProvider }/>
+          <Route path="providers/:providername" component={ SingleProvider }/>
           <Route exact path="/conditions" component={ Conditions }/>
-          <Route path="conditions/:conditionId" component={ SingleCondtion }/>
+          <Route path="conditions/:conditionname" component={ SingleCondtion }/>
           <Route exact path="/diagnostics" component={ Diagnostics }/>
         </Switch>
         <Contact/>

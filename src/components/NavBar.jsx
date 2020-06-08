@@ -15,7 +15,7 @@ export default class NavBar extends Component {
                     <Link to="/services">Services</Link>
                     <Link to="/education">Education</Link>
                 </div>
-                <Link className="facebook" to="https://www.facebook.com/cardiologycenterofdalton"><img src={ Facebook } alt="facebook"/></Link>
+                <a className="facebook" href="https://www.facebook.com/cardiologycenterofdalton"><img src={ Facebook } alt="facebook"/></a>
             </div>
         )
     }

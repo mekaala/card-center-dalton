@@ -10,19 +10,38 @@ export default
     },
     {
         name: 'CAROTID ARTERY DISEASE',
-        snippet: '',
+        snippet: 'Carotid artery disease occurs when blocked carotid arteries cannot efficiently transport blood. Carotid arteries transport blood from your heart to your brain and head, and can suffer from plaque buildup over time, causing carotid artery disease. This may result in a mini-stroke, stroke, and even death.',
     },
     {
         name: 'CONGESTIVE HEART FAILURE',
-        snippet: '',
+        snippet: 'Your cardiovascular system is made up of the heart and the blood vessels that transport blood all throughout your body. The heart, which is a large fist-sized muscle, is the core of your cardiovascular system. Located leftward in your chest, the heart works as a pump for the blood,',
     },
     {
-        name: '',
-        snippet: '',
+        name: 'CORONARY ARTERY DISEASE',
+        snippet: 'Blood vessels that send oxygenated blood outward from the heart are called arteries. Of all the blood vessels in your body, the aorta is the largest. The left ventricle is separated from the aorta by the aortic valve. Coronary arteries branch off from the aorta to keep the heart supplied with nutrients',
     },
     {
-        name: '',
-        snippet: '',
+        name: 'DYSLIPIDEMIA',
+        snippet: 'CVD is the most common health problem worldwide. This disease is often manifested as coronary heart disease (CHD). According to the international reports, mortality of CHD in the developed countries is expected to reach almost 29 percent in women...',
     },
-    
+    {
+        name: 'HYPERTENSION',
+        snippet: 'All adults should have blood pressure measured routinely at least every 5 years until the age of 80 years. Seated blood pressure when measured after 5 minutes’ resting with appropriate cuff size and arm supported is usually sufficient, but standing blood...',
+    },
+    {
+        name: 'MITRAL VALVE PROLAPSE',
+        snippet: 'Your heart manages dual pumping systems with one on the left side and one on the right side. The left side’s system comprises the left ventricle and left atrium. When you breathe in, your lungs infuse your blood with new oxygen. Your left atrium receives this newly oxygenated blood and moves it to the left ventricle, which sends it out',
+    },
+    {
+        name: 'MYOCARDIAL INFARCTION',
+        snippet: 'Your cardiovascular system is made up of the heart and the blood vessels that transport blood all throughout your body. The heart, which is a large fist-sized muscle, is the core of your cardiovascular system. Located leftward in your chest, the heart works as a pump for the blood, which delivers oxygen and nutrients to your body',
+    },
+    {
+        name: 'PERIPHERAL ARTERIAL DISEASE',
+        snippet: 'Peripheral artery disease (PAD) is a condition that causes poor blood circulation to the arms, legs, kidneys, intestines, and feet. PAD is also known as peripheral vascular disease and arteriosclerosis of the extremities. It can lead to tissue and nerve damage or injury because of reduced or blocked blood...',
+    },
+    {
+        name: 'VALVULAR HEART DISEASE',
+        snippet: 'Your cardiovascular system is made up of the heart and the blood vessels that transport blood all throughout your body. The heart, which is a large fist-sized muscle, is the core of your cardiovascular system. Located leftward in your chest, the heart works as a pump for the blood, which delivers oxygen...',
+    },
 ]
