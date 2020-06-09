@@ -7,10 +7,6 @@ export default
         photo: 'https://www.healthyheartsmd.com/images/drahmad.jpg'
     },
     {
-        name: 'Denise Staton, Manager',
-        providerUrl: 'denise-staton',
-    },
-    {
         name: 'Rachel Krumrie, NP',
         providerUrl: 'rachel-krumrie',
     },
@@ -21,6 +17,10 @@ export default
     {
         name: 'Victoria Alexus Smith, NP',
         providerUrl: 'victoria-alexus-smith',
+    },
+    {
+        name: 'Denise Staton, Manager',
+        providerUrl: 'denise-staton',
     },
     {
         name: 'Neil Canada, Registered Nuclear Medicine Technologist',
@@ -49,10 +49,6 @@ export default
     {
         name: 'Dallas Rutledge, Echo',
         providerUrl: 'dallas-rutledge',
-    },
-    {
-        name: 'Victoria Alexus Smith, NP',
-        providerUrl: 'victoria-alexus-smith',
     },
     {
         name: 'Brenda Hernandez, Insurance Clerk',

@@ -4,6 +4,7 @@ import HealthKey from './HealthKey';
 import StressTestSplash from './StressTestSplash';
 import FoodShow from './FoodShow';
 import ShapeTag from './ShapeTag';
+import { Link } from 'react-router-dom';
 // import home from '../images/placeholder.jpg'
 
 export default class SplashPage extends Component {
@@ -14,7 +15,7 @@ export default class SplashPage extends Component {
                     <div className="image-text">
                         <h2>GENTLE SCREENING</h2>
                         <h1>RELAXING</h1>
-                        <button>GET STARTED NOW</button>
+                        <Link to="/conditions"><button>GET STARTED NOW</button></Link>
                     </div>
                 </div>
                 <div className="about">

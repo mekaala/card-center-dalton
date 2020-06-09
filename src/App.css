@@ -38,8 +38,8 @@
 }
 .bar {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 45%;
+  grid-template-columns: repeat(5, 1fr);
+  width: 50%;
 }
 .navbar .facebook {
   margin: auto 10px;
@@ -251,7 +251,7 @@ li h3 {
 
 /* FOOTER */
 .footer {
-  background: red;
+  background: #E8374D;
 }
 .list {
   display: grid;

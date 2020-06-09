@@ -9,6 +9,7 @@ export default class NavBar extends Component {
             <div className="navbar">
                 <Link className="logo" to="/"><img src={ logo } alt="logo"/></Link>
                 <div className="bar">
+                    <Link to="/">Home</Link>
                     <Link to="/providers">Providers</Link>
                     <Link to="/conditions">Conditions</Link>
                     <Link to="/diagnostics">Diagnostics</Link>
