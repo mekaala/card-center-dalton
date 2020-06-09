@@ -14,7 +14,7 @@ export default class Diagnostics extends Component {
                 </p>
                 <h2>OUR ON-SITE DIAGNOSTIC SERVICES</h2>
                 <div className="diagnostic-list">
-                {diagnosticData.map((diagnostic, i) => {
+                    {diagnosticData.map((diagnostic, i) => {
                         return (
                             <div key={ i }>
                                 <Link 

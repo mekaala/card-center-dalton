@@ -38,7 +38,8 @@
 }
 .bar {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 45%;
 }
 .navbar .facebook {
   margin: auto 10px;

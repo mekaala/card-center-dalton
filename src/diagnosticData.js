@@ -41,16 +41,6 @@ export default
         procedure3: '',
     },
     {
-        name: 'Electrocardiogram',
-        diagnosticUrl: 'electrocardiogram',
-        offName: 'ELECTROCARDIOGRAM',
-        about: 'An electrocardiogram measures the electrical activity of the heart and is useful when determining whether or not the heart is beating normally. It is often used for people with suspected heart disease, chest pain, or heart palpitations. An electrocardiogram provides information about the size and location of heart damage, the heart chambers, and the effect of heart regulating medication or a pacemaker.',
-        warning: '',
-        procedure1: 'Before your procedure, a technician will apply several discs of electrodes to your skin. The electrodes will send information to a recording machine. At several points during the procedure, a technician will ask you to hold your breath or remain motionless. An echocardiogram is a painless, easy procedure. After the recording machine prints your results, the doctor will review them with you.',
-        procedure2: '',
-        procedure3: '',
-    },
-    {
         name: 'Vascular Ultrasound',
         diagnosticUrl: 'vascular-ultrasound',
         offName: 'VASCULAR ULTRASOUND',
