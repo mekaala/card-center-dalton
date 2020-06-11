@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import SingleProvider from './SingleProvider'
 import providerData from '../providerData'
 import { Link } from 'react-router-dom';
 import nurseData from '../nurseData';
@@ -8,14 +7,14 @@ import cmaData from '../cmaData';
 export default class Providers extends Component {
     render() {
         return (
-            <div className="providers">
+            <div className="staff">
                 <h1>Meet the Team</h1>
                 <div className="provider-container">
                 {providerData.map((provider, i) => {
                     return (
                         <div key={ i }>
                             <Link 
-                            to={{pathname: `staff/${ provider.providerUrl }`,
+                            to={{pathname: `staff/${ provider.url }`,
                             state: provider}}>
                                 <img src={ provider.photo } alt={ provider.name }/>
                                 <h3>{ provider.name }</h3>
@@ -29,7 +28,7 @@ export default class Providers extends Component {
                     return (
                         <div key={ i }>
                             <Link 
-                            to={{pathname: `staff/${ nurse.providerUrl }`,
+                            to={{pathname: `staff/${ nurse.url }`,
                             state: nurse}}>
                                 <img src={ nurse.photo } alt={ nurse.name }/>
                                 <h3>{ nurse.name }</h3>
@@ -43,7 +42,7 @@ export default class Providers extends Component {
                     return (
                         <div key={ i }>
                             <Link 
-                            to={{pathname: `staff/${ cma.providerUrl }`,
+                            to={{pathname: `staff/${ cma.url }`,
                             state: cma}}>
                                 <img src={ cma.photo } alt={ cma.name }/>
                                 <h3>{ cma.name }</h3>
@@ -56,4 +55,3 @@ export default class Providers extends Component {
         )
     }
 }
-

@@ -17,6 +17,9 @@
   color: white;
 }
 
+img {
+  width: 400px;
+}
 
 /* NAVIGATION */
 .navbar {
@@ -256,4 +259,13 @@ li h3 {
 .list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+}
+
+/* PROVIDER/EMPLOYEE DIRECTORY */
+
+.np-container {
+  display: flex;
+}
+.np-container div {
+  margin: 5px;
 }
