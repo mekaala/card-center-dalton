@@ -17,8 +17,12 @@ export default class Providers extends Component {
                             to={{pathname: `staff/${ provider.url }`,
                             state: provider}}>
                                 <img src={ provider.photo } alt={ provider.name }/>
-                                <h3>{ provider.name }</h3>
                             </Link>
+                            <h3>
+                                <Link to={{pathname: `staff/${ provider.url }`, state: provider}}>
+                                    { provider.name }
+                                </Link>
+                            </h3>
                         </div>
                     )
                 })}
@@ -31,8 +35,12 @@ export default class Providers extends Component {
                             to={{pathname: `staff/${ nurse.url }`,
                             state: nurse}}>
                                 <img src={ nurse.photo } alt={ nurse.name }/>
-                                <h3>{ nurse.name }</h3>
                             </Link>
+                            <h3>
+                                <Link to={{pathname: `staff/${ nurse.url }`, state: nurse}}>
+                                    { nurse.name }
+                                </Link>
+                            </h3>
                         </div>
                     )
                 })}

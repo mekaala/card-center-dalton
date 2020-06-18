@@ -36,15 +36,13 @@ export default class SingleProvider extends Component {
                     <h2>{ provider.name }</h2>
                 </div>
                 <div className="staff-description">
-                    <p>{ provider.description }</p>
+                    <div className="doctor-description">
+                        <p>{ provider.description }</p>
+                    </div>
                     { this.hideDoctor()
                     ?
                         <div className='doctor-info'>
                             <div className='doctor-about'>
-                                <h2>Education</h2>
-                                <p>{ provider.md }</p>
-                                <p>{ provider.residency }</p>
-                                <p>{ provider.fellowship }</p>
                                 <h2>Board Certifications</h2>
                                 {board.map((board, j) => {
                                     return (
@@ -71,6 +69,10 @@ export default class SingleProvider extends Component {
                                         </div>
                                     )
                                 })}
+                                <h2>Education</h2>
+                                <p>{ provider.md }</p>
+                                <p>{ provider.residency }</p>
+                                <p>{ provider.fellowship }</p>
                             </div>
                             <div className='doctor-image'>
                                 <img src={  provider.photo } alt={ provider.name }/>
@@ -106,6 +108,7 @@ export default class SingleProvider extends Component {
                         : null
                     }
                 </div>
+                
             </div>
         )
     }
