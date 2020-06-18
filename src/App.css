@@ -33,16 +33,14 @@ img {
 .bar a {
   text-decoration: none;
   color: white;
-  margin: auto 10px;
+  margin: auto 20px;
 }
 .bar a:hover {
   color: red;
   transition-duration: 0.5s;
 }
 .bar {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: 50%;
+  margin: auto 10px;
 }
 .navbar .facebook {
   margin: auto 10px;
@@ -243,10 +241,9 @@ li h3 {
   text-align: center;
 }
 .contact-info {
-  display: inline-block;
   box-sizing: border-box;
-  background: #727272;
-  width: 80%;
+  background: rgba(0, 0, 0, 0.925);
+  color: white;
   margin: 1%;
   padding: 1%;
 
@@ -263,14 +260,28 @@ li h3 {
 
 /* PROVIDER/EMPLOYEE DIRECTORY */
 
+.provider-container {
+  margin: auto;
+}
+
 .np-container {
+  margin: auto;
   display: flex;
 }
 .np-container div {
   margin: 5px;
 }
+.staff img {
+  width: 30%;
+}
+.np-container div img {
+  width: 93%;
+}
 .single-staff {
   margin: 10px;
+}
+.doctor-description {
+  text-align: left;
 }
 .doctor-info, .nurse-info {
   text-align: left;
@@ -283,4 +294,54 @@ li h3 {
 .doctor-image, .nurse-image {
   float: right;
   margin: auto;
+}
+.staff a, .single-staff a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.staff a:hover, .single-staff a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+.single-staff a {
+  display: flex;
+}
+
+
+/* DIAGNOSTICS */
+.diagnostics-info {
+  text-align: left;
+  margin: auto 20px;
+}
+.diagnostics a, .single-diagnostic a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.diagnostics a:hover, .single-diagnostic a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+
+.single-diagnostic {
+  display: flex;
+}
+.diagnostic-main {
+  width: 60%;
+  margin: 0 30px;
+}
+.diagnostic-body {
+  text-align: left;
+}
+.diagnostic-side {
+  margin: 10px;
+}
+.diagnostic-side h2 {
+  text-align: center;
+}
+.diagnostic-map {
+  text-align: left;
+  border-left: solid 1px #282c34b2;
+  padding-left: 20px;
 }
