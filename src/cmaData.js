@@ -12,6 +12,7 @@ export default
     {
         name: 'Emily Beard, CMA',
         url: 'emily-beard',
+        photo: require('./Staff/emily-beard.jpg')
     },
     {
         name: 'Salvador Hernandez, CMA',
@@ -20,6 +21,7 @@ export default
     {
         name: 'Jessica Hobbs, CMA, Nuclear',
         url: 'jessica-hobbs',
+        photo: require('./Staff/jessica-hobbs.jpg')
     },
     {
         name: 'Britany Hogg, CMA, Medical Records',
@@ -28,6 +30,7 @@ export default
     {
         name: 'Nicole Accord, Echo',
         url: 'nicole-accord',
+        photo: require('./Staff/nicole-accord.jpg')
     },
     {
         name: 'Dallas Rutledge, Echo',
@@ -36,10 +39,12 @@ export default
     {
         name: 'Brenda Hernandez, Insurance Clerk',
         url: 'brenda-hernandez',
+        photo: require('./Staff/brenda-hernandez.jpg')
     },
     {
         name: 'Alicia Hernandez, Front Desk',
         url: 'alicia-hernandez',
+        photo: require('./Staff/alicia-hernandez.jpg')
     },
     {
         name: 'Vickie Painter, Front Desk',

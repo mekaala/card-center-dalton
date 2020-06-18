@@ -269,3 +269,18 @@ li h3 {
 .np-container div {
   margin: 5px;
 }
+.single-staff {
+  margin: 10px;
+}
+.doctor-info, .nurse-info {
+  text-align: left;
+  display: flex;
+  margin: auto 10px
+}
+.doctor-about, .nurse-about {
+  width: 80%;
+}
+.doctor-image, .nurse-image {
+  float: right;
+  margin: auto;
+}

@@ -41,12 +41,8 @@ export default class Providers extends Component {
                 {cmaData.map((cma, i) => {
                     return (
                         <div key={ i }>
-                            <Link 
-                            to={{pathname: `staff/${ cma.url }`,
-                            state: cma}}>
-                                <img src={ cma.photo } alt={ cma.name }/>
-                                <h3>{ cma.name }</h3>
-                            </Link>
+                            <img src={ cma.photo } alt={ cma.name }/>
+                            <h3>{ cma.name }</h3>
                         </div>
                     )
                 })}
