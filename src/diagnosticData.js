@@ -50,7 +50,9 @@ export default
         name: 'Holter Monitoring',
         diagnosticUrl: 'holter-monitoring',
         offName: 'HOLTER MONITORING',
-        about: '',
+        about: 'A Holter monitor uses a battery-operated portable device to measure and record your heart’s activity continuously for 24 to 48 hours. The device has wires with electrodes that attach to your skin.',
+        procedure: 'Electrodes are attached to the body as the technician places the Holter Monitor on. The monitor can stay in a pocket or pouch, or slung across your shoulders. Wearing a monitor helps you and the doctor decide whether you should take medication for your heart, or to receive a pacemaker.',
+        warning: 'Do not bathe, shower, or swim while wearing the monitor. Do not have X-rays while wearing the monitor. Keep away from high voltage areas.'
     },
     {
         name: 'Peripheral Arterial Disease (PAD) Screening',
