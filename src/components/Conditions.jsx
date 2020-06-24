@@ -11,11 +11,11 @@ export default class Conditions extends Component {
                     {ConditionData.map((condition, i) => {
                         return (
                             <div key={ i }>
-                                <Link
+                                <h1><Link
                                 to={{pathname: `/conditions/${ condition.conditionUrl }`,
                                 state: condition}}>
                                     { condition.name }
-                                </Link>
+                                </Link></h1>
                                 <p>{ condition.snippet }</p>
                             </div>
                         )
