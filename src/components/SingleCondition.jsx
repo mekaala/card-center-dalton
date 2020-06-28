@@ -13,7 +13,6 @@ export default class SingleCondition extends Component {
                     <p>{ condition.anatomy }</p>
                     <p>{ condition.causes }</p>
                     <p>{ condition.symptoms }</p>
-                    <img src={ condition.photo } alt={ condition.name }/>
                 </div>
             </div>
         )
