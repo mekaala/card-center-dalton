@@ -62,7 +62,7 @@ export default
         name: 'Holter Monitoring',
         diagnosticUrl: 'holter-monitor',
         offName: 'HOLTER MONITORING',
-        about: 'A Holter monitor uses a battery-operated portable device to measure and record your heart’s activity continuously for 24 to 48 hours. The device has wires with electrodes that attach to your skin.',
+        about: 'Holter monitors are performed for patients with frequent or near daily symptoms of palpitations. Patients wear the monitor for 24 to 48 hours as the ECG data is continuously recorded. Just like the Event monitor, a small, lightweight, battery operated recorder that records heart data through electrodes on the chest.',
         procedure: 'Electrodes are attached to the body as the technician places the Holter Monitor on. The monitor can stay in a pocket or pouch, or slung across your shoulders. Wearing a monitor helps you and the doctor decide whether you should take medication for your heart, or to receive a pacemaker.',
         warning: 'Do not bathe, shower, or swim while wearing the monitor. Do not have X-rays while wearing the monitor. Keep away from high voltage areas.'
     },
