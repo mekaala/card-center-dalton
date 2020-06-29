@@ -10,9 +10,17 @@ export default
         citation: 'https://www.health.harvard.edu/heart-health/exercise-stress-test'
     },
     {
-        name: 'Nuclear Stress Test',
+        name: 'Nuclear Cardiac Stress Test',
         diagnosticUrl: 'nuclear-stress-test',
-        offName: 'NUCLEAR STRESS TEST (MUGA SCAN)',
+        offName: 'NUCLEAR CARDIAC STRESS TEST',
+        about: 'Nuclear Stress Tests evaluate heart health. The test shows how much blod flows into the heart, and how well it is pumped out by the heart. A Nuclear Stress Test may be ordered to check if the heart muscle is receiving enough blood, to search for certain heart conditions, or to monitor the heart after a heart attack or surgery.',
+        procedure: 'An ECG is performed to record heart rate and rhythm by measuring the electrical activity of the heart. Then you will lie down on a table where an IV will be inserted into your arm to send a trace into the heart. The Gamma Camera will follow the signal of the tracer, and capture the blood flow to and out of your heart. One set of photos is performed while you are resting, and another set is done after exercising.',
+        warning: 'You may need to stop or change some of your medications before the test, as they may interfere. Do not eat or drink at least three hours before the test. Do not consume alcoholic beverages at least 24 hours before the test.'
+    },
+    {
+        name: 'Multiple-Gated Acquisition Scan',
+        diagnosticUrl: 'muga-scan',
+        offName: 'MULTIPLE-GATE ACQUISITION SCAN',
         about: 'The Multiple-Gated Acquisition Scan (MUGA Scan) records cardiac performance with a radioactive tracer (radionucleotide). Each heartbeat is captured by a gamma camera, measuring heart pump activity. This test may be employed If other tests such as the ECG or EKG detected any heart problems.',
         procedure: 'Electrodes are placed on the chest and limbs that connect to an Electrocardiograph, tracking your heartbeat. The radionucleotide is injected through an IV line that is placed into a vein in the arm. You will lie on a table below the gamma camera to receive a “resting” scan. Just like the Exercise Stress Test, you will exercise on a treadmill or a bike to reach the peak activity level. After exercising, you will lie on the table again as the camera records your heart.',
         warning: 'Avoid consuming food and beverages containing alcohol or caffeine (coffee, tea, soft drinks) at least four hours prior to your test. Limit consumption to water only. Your doctor will discuss any medications that must be avoided before the test, as they may interfere with the results.',
@@ -22,9 +30,9 @@ export default
         name: 'Echocardiogram',
         diagnosticUrl: 'echocardiogram',
         offName: 'ECHOCARDIOGRAM',
-        about: 'Also known as an echo, this test uses ultrasound to produce real time images of the heart. Doctors use echoes to view the heart’s structure and functions. They can detect backwards blood flow through the valves (regurgitation), narrow heart valves (stenosis), blood clots within the heart chambers, abnormal holes between chambers, or tumors or infectious growths around the valves. They can also screen for problems with the outer lining (the pericardium) and the large blood vessels that enter and leave the heart.',
-        procedure: 'Electrodes are placed on your chest as you lie on a table. The electrodes are connected to an electrocardiogram (ECG or EKG) that monitors your heartbeat. To view the monitor properly, the room is darkened. A probe will pass across your chest, producing sound waves that travel to the heart. The waves bounce off the heart and return to the probe and will generate a picture of the heart on a monitor. Gel will cover your chest to help pass sound waves through the skin. You may be asked to move or hold your breath to get better pictures.',
-        warning: 'Little to no preparation is required. You may consume food and drink, and medications as usual.',
+        about: 'An Echocardiogram creates pictures of your heart as it beats. During echo, the doctor or nurse uses a transducer or a probe to send sound waves into the heart. Sound waves create images that show heart chamber size, and how well your heart valves work. There are two types of Echocardiograms. The Transthoracic Echo (TTE) requires the doctor, nurse, or technician to place the transducer on the outside of the heart. The Transesophageal Echo (TEE) requires the doctor, nurse, or technician to insert a tube with the transducer down the throat and into the esophagus. An Echo may be needed to: scan the heart and blood vessels around the heart for any problems, check on a known condition, find the cause of symptoms such as shortness of breath, leg swelling, or irregular heartbeats, monitor the heart after a heart attack or surgery, or evaluate the effectiveness of heart medications.',
+        procedure: 'The doctor, nurse, or technician will put electrodes on your chest to monitor your heartbeat. For the TTE, You will lie on your back or left side. The doctor, nurse, or technician will put some gel on your chest, and press the transducer against your chest and move it around. You may be asked to hold your breath or change positions during the test. Images of your heart will appear on a monitor. For the TEE, an IV will be put in your arm or hand. The doctor will give you medicine through the IV to relax you. Your throat will be numbed by a mouth spray or gargle. A thin tube with a transducer at its bottom will descend into the throat, and be pressed against the esophagus wall to generate images of your heart.',
+        warning: 'For a TTE, there is no preparation needed. For a TEE, refrain from eating or drinking at least eight hours before the appointment.',
         citation: 'https://www.heart.org/en/health-topics/heart-attack/diagnosing-a-heart-attack/echocardiogram-echo'
     },
     {
@@ -38,17 +46,21 @@ export default
         name: 'Pacemaker Clinic/Placement',
         diagnosticUrl: 'pacemaker',
         offName: 'PACEMAKER PLACEMENT',
-        about: '',
+        about: 'A pacemaker is a device that sits under the skin near the heart that treats an abnormal heart rate. It regulates the electric system of the heart, allowing it to pump blood at a normal rate. Pacemakers send electrical signals to the heart, causing a slow or fast heartbeat to return to the normal rate. There are two parts to a pacemaker: the pulse generator - a thin, metal case with a battery and computer that creates and sends electrical signals, and leads - wires that connect the pulse generator to the heart.',
+        procedure: '',
     },
     {
         name: 'Event Monitoring (30-Day)',
-        diagnosticUrl: 'event-monitoring',
+        diagnosticUrl: 'event-monitor',
         offName: 'EVENT MONITORING',
-        about: '',
+        about: 'Event Monitors use a small, lightweight battery operated recorder that records heart data for patients with less frequent symptoms of palpitations, syncope/presyncope.',
+        procedure: 'Event Monitors are worn continuously for up to 30 days and are activated upon detecting symptoms via electrodes on the chest. They can document when symptomatic and incapacitating events occur as they are constantly recording data.',
+        warning: 'Do not bathe, shower, or swim while wearing the monitor. Do not have X-rays while wearing the monitor. Keep away from high voltage areas.'
+
     },
     {
         name: 'Holter Monitoring',
-        diagnosticUrl: 'holter-monitoring',
+        diagnosticUrl: 'holter-monitor',
         offName: 'HOLTER MONITORING',
         about: 'A Holter monitor uses a battery-operated portable device to measure and record your heart’s activity continuously for 24 to 48 hours. The device has wires with electrodes that attach to your skin.',
         procedure: 'Electrodes are attached to the body as the technician places the Holter Monitor on. The monitor can stay in a pocket or pouch, or slung across your shoulders. Wearing a monitor helps you and the doctor decide whether you should take medication for your heart, or to receive a pacemaker.',

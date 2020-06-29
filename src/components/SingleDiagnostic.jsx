@@ -55,7 +55,7 @@ export default class SingleDiagnostic extends Component {
                             return (
                                 <div key={ i }>
                                     <h3>
-                                        <Link to={{pathname: `diagnostics/${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
+                                        <Link to={{pathname: `${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
                                             { diagnostic.name }
                                         </Link>
                                     </h3>
