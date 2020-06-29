@@ -47,7 +47,7 @@ export default
         diagnosticUrl: 'pacemaker',
         offName: 'PACEMAKER PLACEMENT',
         about: 'A pacemaker is a device that sits under the skin near the heart that treats an abnormal heart rate. It regulates the electric system of the heart, allowing it to pump blood at a normal rate. Pacemakers send electrical signals to the heart, causing a slow or fast heartbeat to return to the normal rate. There are two parts to a pacemaker: the pulse generator - a thin, metal case with a battery and computer that creates and sends electrical signals, and leads - wires that connect the pulse generator to the heart.',
-        procedure: '',
+        // procedure: '',
     },
     {
         name: 'Event Monitoring (30-Day)',
