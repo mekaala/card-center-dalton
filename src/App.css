@@ -310,6 +310,15 @@ li h3 {
 
 
 /* DIAGNOSTICS */
+.full-list {
+  display: flex;
+}
+.onsite-side {
+  width: 50%;
+}
+.offsite-side {
+  float: right;
+}
 .diagnostics-info {
   text-align: left;
   margin: auto 20px;
@@ -338,7 +347,8 @@ li h3 {
   margin: 10px;
 }
 .diagnostic-side h2 {
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 .diagnostic-map {
   text-align: left;

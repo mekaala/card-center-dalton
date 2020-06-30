@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import diagnosticData from '../diagnosticData'
 import { Link } from 'react-router-dom'
+import hospitalDiagnosticData from '../hospitalDiagnosticData'
 
 export default class Diagnostics extends Component {
     render() {
@@ -13,21 +14,43 @@ export default class Diagnostics extends Component {
                     The state-of-the-art clinic at the Cardiology Center of Dalton offers a variety of diagnostic services in one convenient location in Dalton, Georgia.
                     Diagnostic testing may rule out certain heart diseases or indicate the exact cause of your symptoms.
                     </p>
-                    <h2>OUR ON-SITE DIAGNOSTIC SERVICES</h2>
-                    <div className="diagnostic-list">
-                        {diagnosticData.map((diagnostic, i) => {
-                            return (
-                                <div key={ i }>
-                                    <h3>
-                                        <Link 
-                                        to={{pathname: `diagnostics/${ diagnostic.diagnosticUrl }`,
-                                        state: diagnostic}}>
-                                            { diagnostic.name }
-                                        </Link>
-                                    </h3>
-                                </div>
-                            )
-                        })}
+                    <div className="full-list">
+                        <div className="onsite-side">
+                            <h2>ON-SITE DIAGNOSTIC SERVICES</h2>
+                            <div className="onsite-list">
+                                {diagnosticData.map((diagnostic, i) => {
+                                    return (
+                                        <div key={ i }>
+                                            <h3>
+                                                <Link 
+                                                to={{pathname: `diagnostics/${ diagnostic.diagnosticUrl }`,
+                                                state: diagnostic}}>
+                                                    { diagnostic.name }
+                                                </Link>
+                                            </h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                        <div className="offsite-side">
+                        <h2>HOSPITAL DIAGNOSTIC SERVICES</h2>
+                        <div className="offsite-list">
+                            {hospitalDiagnosticData.map((diagnostic, i) => {
+                                return (
+                                    <div key={ i }>
+                                        <h3>
+                                            <Link 
+                                            to={{pathname: `diagnostics/${ diagnostic.diagnosticUrl }`,
+                                            state: diagnostic}}>
+                                                { diagnostic.name }
+                                            </Link>
+                                        </h3>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        </div>
                     </div>
                     <p>
                     The board-certified doctors at Cardiology Center of Dalton are pleased to offer the convenience of these services to treat a variety of cardiology conditions in our northwest Georgia office.

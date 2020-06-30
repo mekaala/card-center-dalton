@@ -10,7 +10,7 @@ export default
     //     photo: require('./Staff/father-day.JPG')
     // },
     {
-        name: 'CARDIOMYPATHY',
+        name: 'CARDIOMOYPATHY',
         conditionUrl: 'cardiomypathy',
         snippet: 'Cardiomypathy – what does it mean? The prefix “cardio” comes from the Ancient Greek word “kardia,” meaning heart. “Myopathy” is a combination of the Greek “myo” for muscle and “pathos” for suffering, and refers to a muscular disease. Though many people associate muscles only with the limbs,',
         intro: 'Cardiomypathy – what does it mean? The prefix “cardio” comes from the Ancient Greek word “kardia,” meaning heart. “Myopathy” is a combination of the Greek “myo” for muscle and “pathos” for suffering, and refers to a muscular disease. Though many people associate muscles only with the limbs, thinking of biceps and calves, the most important muscle in the body is the heart. Put together, cardiomyopathy is the medical term for an abnormal condition of the heart muscle.',

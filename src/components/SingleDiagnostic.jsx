@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import diagnosticData from '../diagnosticData';
 import { Link } from 'react-router-dom';
+import hospitalDiagnosticData from '../hospitalDiagnosticData';
 
 export default class SingleDiagnostic extends Component {
     hideProcedure() {
@@ -49,13 +50,29 @@ export default class SingleDiagnostic extends Component {
                     </div>
                 </div>
                 <div className="diagnostic-side">
-                    <h2>Diagnostics</h2>
+                    <h2>ON-SITE DIAGNOSTICS</h2>
                     <div className="diagnostic-map">
                         {diagnosticData.map((diagnostic, i) => {
                             return (
                                 <div key={ i }>
                                     <h3>
                                         <Link to={{pathname: `${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
+                                            { diagnostic.name }
+                                        </Link>
+                                    </h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <h2>HOSPITAL DIAGNOSTICS</h2>
+                    <div className="diagnostic-map">
+                        {hospitalDiagnosticData.map((diagnostic, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h3>
+                                        <Link 
+                                        to={{pathname: `${ diagnostic.diagnosticUrl }`,
+                                        state: diagnostic}}>
                                             { diagnostic.name }
                                         </Link>
                                     </h3>
