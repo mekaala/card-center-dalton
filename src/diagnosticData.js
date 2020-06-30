@@ -18,7 +18,7 @@ export default
         warning: 'You may need to stop or change some of your medications before the test, as they may interfere. Do not eat or drink at least three hours before the test. Do not consume alcoholic beverages at least 24 hours before the test.'
     },
     {
-        name: 'Multiple-Gated Acquisition Scan',
+        name: 'Multiple-Gated Acquisition (MUGA) Scan',
         diagnosticUrl: 'muga-scan',
         offName: 'MULTIPLE-GATE ACQUISITION SCAN',
         about: 'The Multiple-Gated Acquisition Scan (MUGA Scan) records cardiac performance with a radioactive tracer (radionucleotide). Each heartbeat is captured by a gamma camera, measuring heart pump activity. This test may be employed If other tests such as the ECG or EKG detected any heart problems.',
@@ -43,22 +43,6 @@ export default
         procedure: 'Before your procedure, a technician will apply several discs of electrodes to your skin. The electrodes will send information to a recording machine. At several points during the procedure, a technician will ask you to hold your breath or remain motionless. An echocardiogram is a painless, easy procedure. After the recording machine prints your results, the doctor will review them with you.',
     },
     {
-        name: 'Pacemaker Clinic/Placement',
-        diagnosticUrl: 'pacemaker',
-        offName: 'PACEMAKER PLACEMENT',
-        about: 'A pacemaker is a device that sits under the skin near the heart that treats an abnormal heart rate. It regulates the electric system of the heart, allowing it to pump blood at a normal rate. Pacemakers send electrical signals to the heart, causing a slow or fast heartbeat to return to the normal rate. There are two parts to a pacemaker: the pulse generator - a thin, metal case with a battery and computer that creates and sends electrical signals, and leads - wires that connect the pulse generator to the heart.',
-        // procedure: '',
-    },
-    {
-        name: 'Event Monitoring (30-Day)',
-        diagnosticUrl: 'event-monitor',
-        offName: 'EVENT MONITORING',
-        about: 'Event Monitors use a small, lightweight battery operated recorder that records heart data for patients with less frequent symptoms of palpitations, syncope/presyncope.',
-        procedure: 'Event Monitors are worn continuously for up to 30 days and are activated upon detecting symptoms via electrodes on the chest. They can document when symptomatic and incapacitating events occur as they are constantly recording data.',
-        warning: 'Do not bathe, shower, or swim while wearing the monitor. Do not have X-rays while wearing the monitor. Keep away from high voltage areas.'
-
-    },
-    {
         name: 'Holter Monitoring',
         diagnosticUrl: 'holter-monitor',
         offName: 'HOLTER MONITORING',
@@ -67,10 +51,27 @@ export default
         warning: 'Do not bathe, shower, or swim while wearing the monitor. Do not have X-rays while wearing the monitor. Keep away from high voltage areas.'
     },
     {
+        name: 'Event Monitoring (30-Day)',
+        diagnosticUrl: 'event-monitor',
+        offName: 'EVENT MONITORING',
+        about: 'Event Monitors use a small, lightweight battery operated recorder that records heart data for patients with less frequent symptoms of palpitations, syncope/presyncope.',
+        procedure: 'Event Monitors are worn continuously for up to 30 days and are activated upon detecting symptoms via electrodes on the chest. They can document when symptomatic and incapacitating events occur as they are constantly recording data.',
+        warning: 'Do not bathe, shower, or swim while wearing the monitor. Do not have X-rays while wearing the monitor. Keep away from high voltage areas.'
+    },
+    {
+        name: 'Pacemaker Implantation',
+        diagnosticUrl: 'pacemaker',
+        offName: 'PACEMAKER IMPLANTATION',
+        about: 'A pacemaker is a device that sits under the skin near the heart that treats an abnormal heart rate. It regulates the electric system of the heart, allowing it to pump blood at a normal rate. Pacemakers send electrical signals to the heart, causing a slow or fast heartbeat to return to the normal rate. There are two parts to a pacemaker: the pulse generator - a thin, metal case with a battery and computer that creates and sends electrical signals, and leads - wires that connect the pulse generator to the heart.',
+        procedure: 'The doctor will give you a sedative to relax as well as an anesthetic to numb the incision site. You will be awake during the procedure. An incision will be made near your shoulder. A wire will be guided to a major vein in your collarbone, and make its way into the heart. An electrode from the wire will be attached to the right ventricle, and the other end will be attached to a pulse generator, which will be implanted under the skin near the collarbone. The incision will be closed with stitches after the implantation.',
+        warning: 'Do not consume any food or drink on the day of the surgery. The doctor will indicate which medicines to stop taking as they may interfere with the procedure. There may be medications that the doctor will prescribe for you before the test. Take them. To prevent serious infections, shower and shampoo well. You may be required to use a special body soap.'
+    },
+    {
         name: 'Peripheral Arterial Disease (PAD) Screening',
         diagnosticUrl: 'pad-screening',
         offName: 'PERIPHERAL ARTERIAL DISEASE SCREENING',
-        about: '',
+        about: 'Peripheral Artery Disease (PAD) involves the large and medium-sized arteries to become narrow or clogged with plaque. This causes pain in the feet and legs, as well as tissue death. Screening provides a non-invasive diagnosis of determining if you have PAD. Individuals who experience pain or numbness in their legs or feet while walking, have shiny skin on their feet, or sores that do not heal should be tested.',
+        procedure: 'The screening is simple and non-invasive. Remove socks and shoes. Blood pressure cuffs are placed on the upper arms and ankles. The systolic blood pressure in the limbs is measured by an ultrasound device. The ankle-brachial index (ABI) will be measured, which compares the blood pressure in your arms to the blood pressure in your legs. An ideal ABI is 1.0, meaning that the pressure in the arms and legs is equal. Any value lower or higher than 1 indicates an abnormal range and a risk for PAD development.',
     },
     {
         name: 'Laboratory / Blood Work',

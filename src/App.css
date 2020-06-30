@@ -345,3 +345,34 @@ li h3 {
   border-left: solid 1px #282c34b2;
   padding-left: 20px;
 }
+
+.single-condition {
+  display: flex;
+}
+.condition-left {
+  width: 70%;
+  margin: 0 30px;
+}
+.condition-left p {
+  text-align: left;
+}
+.condition-right {
+  margin: 10px;
+}
+.condition-right h2 {
+  text-align: center;
+}
+.condition-map {
+  text-align: left;
+  border-left: solid 1px #282c34b2;
+  padding-left: 20px;
+}
+.conditions a, .single-condition a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.conditions a:hover, .single-condition a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
