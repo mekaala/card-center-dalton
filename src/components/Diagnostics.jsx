@@ -7,7 +7,7 @@ export default class Diagnostics extends Component {
     render() {
         return (
             <div className="diagnostics">
-                <h1>ON-SITE DIAGNOSTICS</h1>
+                <h1>DIAGNOSTIC SERVICES</h1>
                 <div className="diagnostics-info">
                     <p>
                     At times, our providers may order tests or procedures to determine the cause of your illness.

@@ -332,7 +332,9 @@ li h3 {
   color: red;
   transition-duration: 0.5s;
 }
-
+.single-diagnostic h2 a {
+  font-weight: 600;
+}
 .single-diagnostic {
   display: flex;
 }

@@ -50,7 +50,7 @@ export default class SingleDiagnostic extends Component {
                     </div>
                 </div>
                 <div className="diagnostic-side">
-                    <h2>ON-SITE DIAGNOSTICS</h2>
+                <h2><Link to='/diagnostics'>ON-SITE DIAGNOSTICS</Link></h2>
                     <div className="diagnostic-map">
                         {diagnosticData.map((diagnostic, i) => {
                             return (
@@ -64,7 +64,7 @@ export default class SingleDiagnostic extends Component {
                             )
                         })}
                     </div>
-                    <h2>HOSPITAL DIAGNOSTICS</h2>
+                    <h2><Link to='/diagnostics'>HOSPITAL DIAGNOSTICS</Link></h2>
                     <div className="diagnostic-map">
                         {hospitalDiagnosticData.map((diagnostic, i) => {
                             return (
