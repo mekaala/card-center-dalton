@@ -31,6 +31,7 @@ export default class Diagnostics extends Component {
                                         </div>
                                     )
                                 })}
+                                <h3>Laboratory/Blood Work</h3>
                             </div>
                         </div>
                         <div className="offsite-side">

@@ -65,10 +65,4 @@ export default
         about: 'Peripheral Artery Disease (PAD) involves the large and medium-sized arteries to become narrow or clogged with plaque. This causes pain in the feet and legs, as well as tissue death. Screening provides a non-invasive diagnosis of determining if you have PAD. Individuals who experience pain or numbness in their legs or feet while walking, have shiny skin on their feet, or sores that do not heal should be tested.',
         procedure: 'The screening is simple and non-invasive. Remove socks and shoes. Blood pressure cuffs are placed on the upper arms and ankles. The systolic blood pressure in the limbs is measured by an ultrasound device. The ankle-brachial index (ABI) will be measured, which compares the blood pressure in your arms to the blood pressure in your legs. An ideal ABI is 1.0, meaning that the pressure in the arms and legs is equal. Any value lower or higher than 1 indicates an abnormal range and a risk for PAD development.',
     },
-    {
-        name: 'Laboratory / Blood Work',
-        diagnosticUrl: '',
-        offName: '',
-        about: '',
-    },
 ]

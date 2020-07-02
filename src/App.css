@@ -277,6 +277,14 @@ li h3 {
 .np-container div img {
   width: 93%;
 }
+.cma-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cma-container div img {
+  width: 93%;
+}
 .single-staff {
   margin: 10px;
 }
@@ -341,6 +349,9 @@ li h3 {
 .diagnostic-main {
   width: 60%;
   margin: 0 30px;
+}
+.onsite-list h3 {
+  font-weight: 400;
 }
 .diagnostic-body {
   text-align: left;
