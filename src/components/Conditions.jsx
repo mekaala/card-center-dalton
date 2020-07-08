@@ -7,6 +7,7 @@ export default class Conditions extends Component {
     render() {
         return (
             <div className="conditions">
+                <h1>CARDIOVASCULAR CONDITIONS</h1>
                     <div className="condition-container">
                     {ConditionData.map((condition, i) => {
                         return (

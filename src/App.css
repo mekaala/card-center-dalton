@@ -369,6 +369,7 @@ li h3 {
   padding-left: 20px;
 }
 
+/* CONDITIONS */
 .single-condition {
   display: flex;
 }
@@ -384,6 +385,9 @@ li h3 {
 }
 .condition-right h2 {
   text-align: center;
+}
+.condition-description h3 {
+  text-align: left;
 }
 .condition-map {
   text-align: left;

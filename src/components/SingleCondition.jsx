@@ -9,13 +9,18 @@ export default class SingleCondition extends Component {
             <div className="single-condition">
                 <div className="condition-left">
                     <div className="condition-name">
-                        <h2>{ condition.name }</h2>
+                        <h1>{ condition.name }</h1>
                     </div>
                     <div className="condition-description">
                         <p>{ condition.intro }</p>
-                        <p>{ condition.anatomy }</p>
+                        <h3>Causes</h3>
                         <p>{ condition.causes }</p>
+                        <h3>Symptoms</h3>
                         <p>{ condition.symptoms }</p>
+                        <h3>Diagnosis</h3>
+                        <p>{ condition.diagnosis }</p>
+                        <h3>Treatment</h3>
+                        <p>{ condition.treatment }</p>
                     </div>
                 </div>
                 <div className="condition-right">
