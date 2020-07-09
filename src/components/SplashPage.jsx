@@ -26,18 +26,15 @@ export default class SplashPage extends Component {
                             <h4>9:00 AM - 5:00 PM</h4>
                         </div>
                         <div className="education">
-                            <a><h1>EDUCATION</h1></a>
+                            <Link to="/conditions"><h1>CONDITIONS TREATED</h1></Link>
                         </div>
                         <div className="pulse">
-                            <a><h1>THE PULSE</h1></a>
+                            <Link to="/diagnostics"><h1>SERVICES OFFERED</h1></Link>
                         </div>
                     </div>
                     <h3>In our independently owned, state-of-the-art facility, our board-certified cardiologist and staff treat our patients like royalty. We take pride in the hands-on, compassionate care we offer to each and every patient, and we even offer bilingual interpretation.</h3>
                 </div>
-                <Activities/>
                 <HealthKey/>
-                <StressTestSplash/>
-                <FoodShow/>
                 <ShapeTag/>
             </div>
         )

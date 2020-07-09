@@ -17,6 +17,7 @@ export default class Conditions extends Component {
                                 state: condition}}>
                                     { condition.name }
                                 </Link></h2>
+                                <p>{ condition.info }</p>
                             </div>
                         )
                     })}

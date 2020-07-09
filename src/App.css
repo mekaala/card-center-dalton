@@ -135,6 +135,14 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+.education a, .pulse a {
+  text-decoration: none;
+  color: white;
+}
+.education a:hover, .pulse a:hover {
+  font-size: 1.2em;
+  transition-duration: 0.3s;
+}
 .about {
   background-color: #335582;
   padding-bottom: 1px;
@@ -373,6 +381,13 @@ li h3 {
 .single-condition {
   display: flex;
 }
+.condition-container {
+  text-align: left;
+  margin: 0 20px;
+}
+.condition-container p {
+  margin: 0 40px
+}
 .condition-left {
   width: 70%;
   margin: 0 30px;
@@ -402,4 +417,49 @@ li h3 {
 .conditions a:hover, .single-condition a:hover {
   color: red;
   transition-duration: 0.5s;
+}
+
+/* SERVICES */
+.office-list {
+  width: 50%;
+  text-align: left;
+  margin: 0 20px;
+}
+.hospital-list {
+  float: right;
+  text-align: left;
+}
+
+.services a, .single-service a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.services a:hover, .single-service a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+.single-service {
+  display: flex;
+}
+.service-main {
+  width: 60%;
+  margin: 0 30px;
+}
+.service-description {
+  text-align: left;
+}
+.service-side {
+  margin: 10px;
+}
+.office-list-sing, .hospital-list-sing {
+  text-align: left;
+  margin: 0 20px;
+}
+.office-list-sing h2, .hospital-list-sing h2 {
+  text-align: center;
+}
+.service-map {
+  border-left: solid 1px #282c34b2;
+  padding-left: 20px;
 }

@@ -12,6 +12,7 @@ export default
     {
         name: 'STRESS CARDIOMYOPATHY',
         conditionUrl: 'stress-cardiomypathy',
+        info: 'A stress induced heart condition that triggers breathing problems, chest pain, or even fainting.',
         intro: 'Stress cardiomyopathy, as the name suggests, is a stress induced heart condition that triggers breathing problems, chest pain, or even fainting. Heart performance decreases making pumping more difficult, usually around the apex of the heart (the lower end). As a result, that area of the heart increases in size. Stress cardiomyopathy can cause heart failure (when the heart does not pump blood well), abnormal heart rhythm, and heart valve issues.',
         causes: 'Stress cardiomyopathy results from physical and emotional stresses, and is more commonly found in older women. Such stresses include sudden medical illnesses, the loss of loved ones, or arguments.',
         symptoms: 'The main indicators of stress cardiomyopathy are sudden chest pain, difficulty breathing, or fainting. These symptoms may be brought on by physical and emotional traumas mentioned above.',
@@ -21,6 +22,7 @@ export default
     {
         name: 'HYPERTROPHIC CARDIOMYOPATHY',
         conditionUrl: 'hypertrophic-cardiomypathy',
+        info: 'Condition where the heart muscle increases in size, making it more difficult to pump blood.',
         intro: 'Hypertrophic cardiomyopathy involves the heart muscle to increase in size, making it more difficult to pump blood. It can result in difficulty breathing, chest pain, and fainting. The disease can lead to heart failure, heart rhythm disorders, heart block (where electrical signals are blocked from moving through the heart), stroke, heart valve infection, or death.',
         causes: 'The cause of hypertrophic cardiomyopathy is entirely genetic, and does not result from any outside conditions. It can develop during not only adulthood, but teenage years and childhood as well.',
         symptoms: 'Patients with hypertrophic cardiomyopathy can experience trouble with breathing (that may occur during exercise, or worsens while lying down but improves when sitting or standing). Chest pain that worsens with activity may occur, as well as a fast heart rate. Patients may experience fainting or feel like fainting, as well as swelling in the feet, ankles, or legs.',
@@ -30,6 +32,7 @@ export default
     {
         name: 'DILATED CARIOMYOPATHY',
         conditionUrl: 'dilated-cardiomyopathy',
+        info: 'A condition involving a weakened heart muscle that fails to pump blood at a normal rate.',
         intro: 'Dilated cardiomyopathy involves a weakened heart muscle that does not pump blood well. Patients with dilated cardiomyopathy experience a larger space inside the left ventricle, making it potentially more difficult to pump blood. Those with dilated cardiomyopathy are at risk for developing heart failure, meaning that the heart still works, but it has difficulty with providing the body with the right amount of blood and oxygen with each pump.',
         causes: 'Dilated cardiomyopathy can arise without an underlying cause. It can be genetic, and maybe it can result from a viral illness.',
         symptoms: 'Patients with dilated cardiomyopathy can experience difficulty breathing during exercise or while lying down or asleep. They can also have trouble with exercising or any other physical activity, and suffer swollen feet, ankles, or legs.',
@@ -39,6 +42,7 @@ export default
     {
         name: 'ISCHEMIC CARIOMYOPATHY',
         conditionUrl: 'ischemic-cardiomyopathy',
+        info: 'A form of dilated cardiomypathy where an enlarged left ventricle causes blood to be pumped at a lower rate.',
         intro: 'Ischemic cardiomyopathy is a form of dilated cardiomyopathy where an enlarged, dilated, and weakened left ventricle causes blood to be pumped at a lower rate. It is, in fact, caused by ischemia, where the heart receives lower amounts of blood as a result of coronary artery disease and myocardial infarction (heart attack).',
         causes: 'Ischemia is caused by coronary artery disease and myocardial infarction (heart attack), both of which weaken the heart and prompt plaque buildup. Smoking, diabetes, high cholesterol, and obesity are underlying factors in causing ischemic cardiomyopathy.',
         symptoms: 'Patients with ischemic cardiomyopathy may experience shortness of breath, feet and leg swelling, increase in weight, and angina (chest pain and/or chest pressure). Patients may suffer fatigue while exercising, dizziness, and fainting.',
@@ -48,6 +52,7 @@ export default
     {
         name: 'MYOCARDIAL INFARCTION',
         conditionUrl: 'myocardial-infarction',
+        info: 'Most commonly known as the heart attack that results from a blockage within one of the coronary arteries.',
         intro: 'Most commonly known as a heart attack, myocardial infarction occurs when one of the coronary arteries (arteries connected to the heart) is blocked. As a result, the section of the heart that receives blood from a coronary artery is damaged. A longer period of a blocked artery means a more severe heart attack.',
         causes: 'Myocardial infarction commonly results from coronary artery disease, where plaque buildup within the arteries interferes with blood flow, potentially forming blood clots. They can block the artery, keeping blood away from the heart.',
         symptoms: 'Chest pain, chest pressure, chest discomfort, irregular heart beat, and shortness of breath are common symptoms of heart attacks. Patients can also experience pain or discomfort in the upper body areas such as the arms, neck, jaw, stomach, and back. Other indicators are nausea, vomiting, burping, or heartburn. Patients can feel dizzy or lightheaded as well as cold or sweaty during a heart attack. Do not take yourself to the hospital or any other medical provider.',
@@ -57,6 +62,7 @@ export default
     {
         name: 'CORONARY ARTERY DISEASE',
         conditionUrl: 'coronary-artery-disease',
+        info: 'Disease where a blockage of the coronary arteries puts patients at risk for heart attack and other fatal diseases.',
         intro: 'Coronary artery disease puts patients at risk for heart attacks and other heart diseases. Coronary arteries are located on the heart, and supply blood to the muscle to keep it functional. Blockages of those arteries severely limit heart function.',
         causes: 'The arteries that lead into the heart are blocked by plaque which causes them to narrow. This narrowing limits blood flow, and plaque can even block the passage entirely, leading to ruptured arteries and other major damage to the heart.',
         symptoms: 'Coronary artery disease is caused by chest pain, chest pressure, chest discomfort, irregular heart beat, and shortness of breath are common symptoms of heart attacks. Patients can also experience pain or discomfort in the upper body areas such as the arms, neck, jaw, stomach, and back. Other indicators are nausea, vomiting, burping, or heartburn. Patients at risk of a heart attack can feel dizzy or lightheaded as well as cold or sweaty during a heart attack. Do not take yourself to the hospital or any other medical provider. Patients with carotid artery disease can have chest pain while walking, traveling up stairs, or participating in an activity even if they are not suffering from a heart attack.',
@@ -66,6 +72,7 @@ export default
     {
         name: 'CAROTID ARTERY DISEASE',
         conditionUrl: 'carotid-artery-disease',
+        info: 'Disease that renders patients more susceptible to strokes due to blockages arising in arteries connecting to the brain.',
         intro: 'Carotid artery disease causes patients to become more susceptible to strokes. The carotid arteries are vessels that carry blood to the brain. When those arteries are blocked, major damage to the brain can occur.',
         causes: 'Carotid artery disease refers to the buildup of plaque inside the carotid arteries, causing them to narrow. This limits blood flow to the brain, resulting in an increased risk of suffering from a stroke.',
         symptoms: 'The major symptom of carotid artery disease is a stroke. Strokes occur when blood flow to the brain is limited or blocked, resulting in brain damage. The blood clots formed in the carotid arteries can move to the brain and block smaller arteries. There are lasting effects from a stroke such as an inability to speak or understand speech, paralysis on one side of the body, an inability to dress, eat, or care for oneself without assistance. Another symptom of carotid artery disease is transient ischemic attack (TIA). They serve as very brief strokes that do not cause brain damage, as plaque can block a brain vessel for a short time and then reopen. However, patients who suffer from TIAs should take serious action against carotid artery disease, as they can result in a major stroke.',
@@ -75,6 +82,7 @@ export default
     {
         name: 'PERIPHERAL ARTERIAL DISEASE',
         conditionUrl: 'peripheral-arterial-disease',
+        info: 'Disease that involves worsening leg pain with exercise or activity due to plaque buildup in the leg arteries.',
         intro: 'Peripheral arterial disease causes leg pain that becomes more severe with activity or exercise. The disease affects the arteries in the legs, where blood flow can be more difficult, which puts more strain on the body.',
         causes: 'Arteries are usually affected by plaque buildup, which can narrow or block the artery and impact blood flow. As a result, with PAD, legs do not receive enough blood, causing pain in that area. Patients who smoke, and/or have diabetes, high cholesterol, or high blood pressure are at higher risk for PAD.',
         symptoms: 'The major indication of PAD is leg pain, specifically in the back of the lower leg. Leg pain worsens while walking or exercising, and improves when relaxing. Sometimes, that pain can even extend to the thighs, feet, and buttocks. Patients suffering from PAD may experience trouble with walking up stairs as well as erection (men) and arousal (women) difficulties.',
@@ -84,6 +92,7 @@ export default
     {
         name: 'MITRAL VALVE PROLAPSE',
         conditionUrl: 'mitral-valve-prolapse',
+        info: 'Condition where the mitral valve, a heart valve that connects the left atrium to the left ventricle, fails to close properly.',
         intro: 'Mitral valve prolapse is a condition where the mitral valve, one of the valves in the heart that connects the left atrium to the left ventricle, does not close properly. Normally, the mitral valve allows blood to flow from the left atrium to the left ventricle. However, during prolapse, blood can flow back into the left atrium from the left ventricle. This is also known as mitral regurgitation.',
         causes: 'Mitral valve prolapse can arise without warning, or it can result from other medical conditions.',
         symptoms: 'There are no noticeable symptoms of mitral valve prolapse, and can only be detected during an exam by hearing a click or a heart murmur (a “woosh” or “swish” sound in a heartbeat) upon listening to the heart with a stethoscope. Chest pain, fast heart rate, fainting, or dizziness may be experienced by those suffering from mitral valve prolapse, but may not be caused by the disease. Mitral valve prolapse can result in some severe issues. Mitral regurgitation can induce breathing difficulty and fatigue. Infective endocarditis involves an infected heart valve, and can result in fever, chills, and fatigue. Fast or hard heartbeats can arise from mitral valve prolapse, and rarely the heart may stop beating.',
@@ -93,6 +102,7 @@ export default
     {
         name: 'HEART FAILURE',
         conditionUrl: 'heart-failure',
+        info: 'When the heart fails to pump blood at the normal rate, and blood cannot reach areas within the body.',
         intro: 'Heart failure occurs when the heart fails to pump blood well, and cannot supply blood throughout the body. The heart still functions, but not as well as it should.',
         causes: 'Heart failure can be caused by severe conditions experienced in the past, such as abnormal heart rate or even heart attacks.',
         symptoms: 'Patients with heart failure experience fatigue or dizziness, difficulty breathing, high heart rate (even while resting), swollen feet, ankles, legs, or even belly.',
@@ -102,6 +112,7 @@ export default
     {
         name: 'VALVULAR HEART DISEASE',
         conditionUrl: 'valvular-heart-disease',
+        info: 'When the heart valves that regulate blood flow fail to open and close properly, leading to possible heart failure.',
         intro: 'Valvular heart disease, commonly known as heart valve disease, occurs when the valves that regulate the direction of blood flow in the heart fail to open and close properly. This may lead the heart to work harder and enlarge, and eventually lead to possible heart failure and even death.',
         causes: 'Valvular heart disease may affect all four of the heart’s valves. Normally, the heart valves control blood flow direction through the heart by opening and closing. Normal oening and closing of the valves creates a normal, healthy heartbeat. With heart valve disease, the valves fail to properly open and close, and may leak or cause blood to flow backward into the heart chambers. This causes the heart to try to compensate by working harder to pump blood out of the heart. This can cause a heart murmur and result in an enlarged heart or heart failure over time.',
         symptoms: 'You may experience indigestion, loss of appetite, nausea, and vomiting. You may have shortness of breath after activities or even just lying down. Your heartbeat may become irregular. Your ankles, legs, abdomen, and arms may become swollen and feel cool. You may experience fatigue, faintness, and weakness. You may sense heart palpitations or a rapid, irregular pulse. You may produce smaller-than-usual amounts of urine and need to urinate more often at night. You may have difficulty remaining alert, concentrating, remembering, and sleeping. You may sweat profusely and cough, particularly at nighttime.',
