@@ -378,7 +378,7 @@ li h3 {
 }
 
 /* CONDITIONS */
-.conditions {
+.conditions-flex {
   display: flex;
 }
 .conditions-side {
@@ -391,9 +391,12 @@ li h3 {
 .single-condition {
   display: flex;
 }
-.condition-container, .symptom-container {
+.condition-container, .symptom-container, .arrhythmia-container, .block-container, .myopathy-container {
   text-align: left;
   margin: 0 20px;
+}
+.arrhythmia-container h1, .block-container h1, .condition-container h1, .myopathy-container h1, .symptom-container h1 {
+  text-align: center;
 }
 .condition-left, .symptom-left {
   width: 70%;
