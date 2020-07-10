@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import conditionData from '../conditionData';
 import { Link } from 'react-router-dom';
 import symptomData from '../symptomData';
+import cardiomyopathyData from '../cardiomyopathyData';
+import arrhythmiaData from '../arrhythmiaData';
+import heartBlockData from '../heartBlockData';
 
 export default class SingleCondition extends Component {
     hideCondition() {
@@ -28,7 +31,7 @@ export default class SingleCondition extends Component {
                 ?
                 <div className="condition-left">
                     <div className="condition-name">
-                        <h1>{ condition.name }</h1>
+                        <h1>{ condition.offName }</h1>
                     </div>
                     <div className="condition-description">
                         <p>{ condition.intro }</p>
@@ -83,7 +86,55 @@ export default class SingleCondition extends Component {
                                 })}
                         </div>
                     </div>
-                    <div className="symptom-list">
+                    <div className="condition-list">
+                        <h2>Cardiomyopathy</h2>
+                        <div className="condition-map">
+                            {cardiomyopathyData.map((condition, i) => {
+                                    return (
+                                        <div key={ i }>
+                                            <h3><Link
+                                            to={{pathname: `${ condition.conditionUrl }`,
+                                            state: condition}}>
+                                                { condition.name }
+                                            </Link></h3>
+                                        </div>
+                                    )
+                                })}
+                        </div>
+                    </div>
+                    <div className="condition-list">
+                        <h2>Arrhythmias</h2>
+                        <div className="condition-map">
+                            {arrhythmiaData.map((condition, i) => {
+                                    return (
+                                        <div key={ i }>
+                                            <h3><Link
+                                            to={{pathname: `${ condition.conditionUrl }`,
+                                            state: condition}}>
+                                                { condition.name }
+                                            </Link></h3>
+                                        </div>
+                                    )
+                                })}
+                        </div>
+                    </div>
+                    <div className="condition-list">
+                        <h2>Heart Block</h2>
+                        <div className="condition-map">
+                            {heartBlockData.map((condition, i) => {
+                                    return (
+                                        <div key={ i }>
+                                            <h3><Link
+                                            to={{pathname: `${ condition.conditionUrl }`,
+                                            state: condition}}>
+                                                { condition.name }
+                                            </Link></h3>
+                                        </div>
+                                    )
+                                })}
+                        </div>
+                    </div>
+                    <div className="condition-list">
                         <h2>Symptoms</h2>
                         <div className="condition-map">
                             {symptomData.map((condition, i) => {
