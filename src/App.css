@@ -140,7 +140,7 @@ button:hover {
   color: white;
 }
 .education a:hover, .pulse a:hover {
-  font-size: 1.2em;
+  font-size: 1.5em;
   transition-duration: 0.3s;
 }
 .about {
@@ -378,18 +378,28 @@ li h3 {
 }
 
 /* CONDITIONS */
+.conditions {
+  display: flex;
+}
+.conditions-side {
+  width: 50%;
+}
+.symptoms-side {
+  width: 50%;
+}
+
 .single-condition {
   display: flex;
 }
-.condition-container {
+.condition-container, .symptom-container {
   text-align: left;
   margin: 0 20px;
 }
-.condition-left {
+.condition-left, .symptom-left {
   width: 70%;
   margin: 0 30px;
 }
-.condition-left p {
+.condition-left p, .symptom-left p {
   text-align: left;
 }
 .condition-right {

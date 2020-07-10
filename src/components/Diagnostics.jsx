@@ -55,7 +55,7 @@ export default class Diagnostics extends Component {
                     </div>
                     <p>
                     The board-certified doctors at Cardiology Center of Dalton are pleased to offer the convenience of these services to treat a variety of cardiology conditions in our northwest Georgia office.
-                    Please request an appointment online today or call us at (706) 272-0272.
+                    Please request an appointment today by calling us at (706) 272-0272.
                     </p>
                 </div>
             </div>
