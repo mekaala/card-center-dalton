@@ -378,16 +378,27 @@ li h3 {
 }
 
 /* CONDITIONS */
-.conditions-flex {
-  display: flex;
-}
-.conditions-side {
+/* .conditions-side {
   width: 50%;
 }
 .symptoms-side {
   width: 50%;
+} */
+.conditions button, .single-condition button {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  box-shadow: none;
+  font-size: 100%;
+  font-weight: normal;
+  text-shadow: none;
 }
-
+.conditions button:hover, .single-condition button:hover {
+  background-color: #E8374D;
+  color: white;
+  transition-duration: 0.5s;
+}
 .single-condition {
   display: flex;
 }
@@ -407,6 +418,7 @@ li h3 {
 }
 .condition-right {
   margin: 10px;
+  width: 27%;
 }
 .condition-right h2 {
   text-align: center;
@@ -414,10 +426,15 @@ li h3 {
 .condition-description h3 {
   text-align: left;
 }
-.condition-map {
+.side-container div {
   text-align: left;
-  border-left: solid 1px #282c34b2;
+  /* border-left: solid 1px #282c34b2; */
   padding-left: 20px;
+}
+.side-container div div {
+  text-align: left;
+  border-left: none;
+  padding-left: 0px;
 }
 .conditions a, .single-condition a {
   text-decoration: none;
