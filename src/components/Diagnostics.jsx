@@ -35,22 +35,22 @@ export default class Diagnostics extends Component {
                             </div>
                         </div>
                         <div className="offsite-side">
-                        <h2>HOSPITAL DIAGNOSTIC SERVICES</h2>
-                        <div className="offsite-list">
-                            {hospitalDiagnosticData.map((diagnostic, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h3>
-                                            <Link 
-                                            to={{pathname: `diagnostics/${ diagnostic.diagnosticUrl }`,
-                                            state: diagnostic}}>
-                                                { diagnostic.name }
-                                            </Link>
-                                        </h3>
-                                    </div>
-                                )
-                            })}
-                        </div>
+                            <h2>HOSPITAL DIAGNOSTIC SERVICES</h2>
+                            <div className="offsite-list">
+                                {hospitalDiagnosticData.map((diagnostic, i) => {
+                                    return (
+                                        <div key={ i }>
+                                            <h3>
+                                                <Link 
+                                                to={{pathname: `diagnostics/${ diagnostic.diagnosticUrl }`,
+                                                state: diagnostic}}>
+                                                    { diagnostic.name }
+                                                </Link>
+                                            </h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
                     <p>
