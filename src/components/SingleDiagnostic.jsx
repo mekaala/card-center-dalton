@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import hospitalDiagnosticData from '../hospitalDiagnosticData';
 
 export default class SingleDiagnostic extends Component {
+    state = {
+        showOnSite: false,
+        showOffSite: false,
+    }
+    
     hideProcedure() {
         const procedure = document.getElementsByClassName("diagnostic-procedure");
         if (this.props.location.state.procedure != null) {
@@ -20,6 +25,19 @@ export default class SingleDiagnostic extends Component {
             return warning.style.display ='none';
         }
     }
+
+    toggleOnSite = () => {
+        const newShowOnSite = !this.state.showOnSite;
+        this.setState({
+            showOnSite: newShowOnSite,
+        });
+    };
+    toggleOffSite = () => {
+        const newShowOffSite = !this.state.showOffSite;
+        this.setState({
+            showOffSite: newShowOffSite,
+        });
+    };
 
     render() {
         const diagnostic = this.props.location.state;
@@ -50,36 +68,52 @@ export default class SingleDiagnostic extends Component {
                     </div>
                 </div>
                 <div className="diagnostic-side">
-                <h2><Link to='/diagnostics'>ON-SITE DIAGNOSTICS</Link></h2>
-                    <div className="diagnostic-map">
-                        {diagnosticData.map((diagnostic, i) => {
-                            return (
-                                <div key={ i }>
-                                    <h3>
-                                        <Link to={{pathname: `${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
-                                            { diagnostic.name }
-                                        </Link>
-                                    </h3>
-                                </div>
-                            )
-                        })}
-                    </div>
-                    <h2><Link to='/diagnostics'>HOSPITAL DIAGNOSTICS</Link></h2>
-                    <div className="diagnostic-map">
-                        {hospitalDiagnosticData.map((diagnostic, i) => {
-                            return (
-                                <div key={ i }>
-                                    <h3>
-                                        <Link 
-                                        to={{pathname: `${ diagnostic.diagnosticUrl }`,
-                                        state: diagnostic}}>
-                                            { diagnostic.name }
-                                        </Link>
-                                    </h3>
-                                </div>
-                            )
-                        })}
-                    </div>
+                    <h2><button onClick={ this.toggleOnSite }>
+                                    { this.state.showOnSite
+                                        ? 'COLLAPSE'
+                                        : 'ON-SITE DIAGNOSTICS'
+                                    }
+                    </button></h2>
+                    { this.state.showOnSite
+                        ?
+                            <div className="diagnostic-map">
+                                {diagnosticData.map((diagnostic, i) => {
+                                    return (
+                                        <div key={ i }>
+                                            <h3>
+                                                <Link to={{pathname: `${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
+                                                    { diagnostic.name }
+                                                </Link>
+                                            </h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        : null
+                    }
+                    <h2><button onClick={ this.toggleOffSite }>
+                        { this.state.showOffSite
+                            ? 'COLLAPSE'
+                            : 'HOSPITAL DIAGNOSTICS'
+                        }
+                    </button></h2>
+                    { this.state.showOffSite
+                        ?
+                            <div className="diagnostic-map">
+                                {hospitalDiagnosticData.map((diagnostic, i) => {
+                                    return (
+                                        <div key={ i }>
+                                            <h3>
+                                                <Link to={{pathname: `${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
+                                                    { diagnostic.name }
+                                                </Link>
+                                            </h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        : null
+                    }
                 </div>
             </div>
         )
