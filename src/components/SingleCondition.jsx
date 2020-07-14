@@ -46,10 +46,26 @@ export default class SingleCondition extends Component {
     };
     hideCondition() {
         const condition = document.getElementsByClassName("condition-left");
-        if (this.props.location.state.causes != null) {
+        if (this.props.location.state.intro != null) {
             return condition;
-        } else if (this.props.location.state.causes = null) {
+        } else if (this.props.location.state.intro = null) {
             return condition.style.display ='none';
+        }
+    }
+    hideArrhythmia() {
+        const arrhythmia = document.getElementsByClassName("arrhythmia-left");
+        if (this.props.location.state.arrhythmia != null) {
+            return arrhythmia;
+        } else if (this.props.location.state.arrhythmia = null) {
+            return arrhythmia.style.display ='none';
+        }
+    }
+    hideHeartBlock() {
+        const heartBlock = document.getElementsByClassName("heartblock-left");
+        if (this.props.location.state.heartBlock != null) {
+            return heartBlock;
+        } else if (this.props.location.state.heartBlock = null) {
+            return heartBlock.style.display ='none';
         }
     }
     hideSymptom() {
@@ -72,6 +88,48 @@ export default class SingleCondition extends Component {
                     </div>
                     <div className="condition-description">
                         <p>{ condition.intro }</p>
+                        <h3>Causes</h3>
+                        <p>{ condition.causes }</p>
+                        <h3>Symptoms</h3>
+                        <p>{ condition.symptoms }</p>
+                        <h3>Diagnosis</h3>
+                        <p>{ condition.diagnosis }</p>
+                        <h3>Treatment</h3>
+                        <p>{ condition.treatment }</p>
+                    </div>
+                </div>
+                : null
+                }
+                { this.hideArrhythmia()
+                ?
+                <div className="arrhythmia-left">
+                    <div className="condition-name">
+                        <h1>{ condition.offName }</h1>
+                    </div>
+                    <div className="condition-description">
+                        <p>{ condition.arrhythmia }</p>
+                        <h3>About { condition.name }</h3>
+                        <p>{ condition.about }</p>
+                        <h3>Causes</h3>
+                        <p>{ condition.causes }</p>
+                        <h3>Symptoms</h3>
+                        <p>{ condition.symptoms }</p>
+                        <h3>Diagnosis</h3>
+                        <p>{ condition.diagnosis }</p>
+                        <h3>Treatment</h3>
+                        <p>{ condition.treatment }</p>
+                    </div>
+                </div>
+                : null
+                }
+                { this.hideHeartBlock()
+                ?
+                <div className="heartblock-left">
+                    <div className="condition-name">
+                        <h1>{ condition.offName }</h1>
+                    </div>
+                    <div className="condition-description">
+                        <p>{ condition.heartBlock }</p>
                         <h3>Causes</h3>
                         <p>{ condition.causes }</p>
                         <h3>Symptoms</h3>

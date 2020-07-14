@@ -409,11 +409,11 @@ li h3 {
 .arrhythmia-container h1, .block-container h1, .condition-container h1, .myopathy-container h1, .symptom-container h1 {
   text-align: center;
 }
-.condition-left, .symptom-left {
+.condition-left, .arrhythmia-left, .heartblock-left, .symptom-left {
   width: 70%;
   margin: 0 30px;
 }
-.condition-left p, .symptom-left p {
+.condition-left p, .arrhythmia-left p, .heartblock-left p, .symptom-left p {
   text-align: left;
 }
 .condition-right {
