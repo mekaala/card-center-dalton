@@ -42,11 +42,6 @@ export default
         photo: require('./Staff/brenda-hernandez.jpg')
     },
     {
-        name: 'Alicia Hernandez, Front Desk',
-        url: 'alicia-hernandez',
-        photo: require('./Staff/alicia-hernandez.jpg')
-    },
-    {
         name: 'Vickie Painter, Front Desk',
         url: 'vickie-painter',
         photo: require('./Staff/vickie-painter.jpg')

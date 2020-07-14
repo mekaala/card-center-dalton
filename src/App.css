@@ -368,13 +368,25 @@ li h3 {
   margin: 10px;
 }
 .diagnostic-side h2 {
-  text-align: left;
   margin-left: 20px;
 }
 .diagnostic-map {
   text-align: left;
-  border-left: solid 1px #282c34b2;
-  padding-left: 20px;
+}
+.single-diagnostic button {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  box-shadow: none;
+  font-size: 100%;
+  font-weight: normal;
+  text-shadow: none;
+}
+.single-diagnostic button:hover {
+  background-color: #E8374D;
+  color: white;
+  transition-duration: 0.5s;
 }
 
 /* CONDITIONS */
@@ -489,4 +501,71 @@ li h3 {
 .service-map {
   border-left: solid 1px #282c34b2;
   padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  /* NAVBAR */
+  .logo img {
+    display: none;
+  }
+  .navbar {
+    padding: 10px;
+  }
+  .bar {
+    margin: auto;
+  }
+  .bar a {
+    margin: auto 10px;
+    font-size: 90%;
+  }
+
+  /* STAFF */
+  .doctor-info, .nurse-info {
+    text-align: left;
+    display: block;
+    margin: auto 10px;
+}
+.doctor-about, .nurse-about {
+  width: auto;
+}
+.doctor-image, .nurse-image {
+  float: none;
+  margin: 10px;
+}
+.doctor-image img, .nurse-image img {
+  width: 300px;
+}
+
+  /* DIAGNOSTICS */
+  .full-list {
+    display: block;
+  }
+  .onsite-side {
+    width: 100%;
+  }
+  .full-list {
+    display: block;
+  }
+  .single-diagnostic {
+    display: block;
+  }
+  .diagnostic-main {
+    width: auto;
+    margin: auto 20px;
+  }
+  .diagnostic-side h2 {
+    margin-left: 0px;
+  }
+
+  /* CONDITIONS */
+  .single-condition {
+    display: block;
+  }
+  .condition-left {
+    width: auto;
+    margin: auto 20px;
+  }
+  .condition-right {
+    width: auto;
+  }
 }

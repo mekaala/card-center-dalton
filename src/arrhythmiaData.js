@@ -53,7 +53,7 @@ export default
         name: 'Ventricular Fibrillation',
         conditionUrl: 'ventricular-fibrillation',
         offName: 'VENTRICULAR FIBRILLATION',
-        info: 'A severe form of arhythmia where the ventricles fail to pump blood out of the heart. This can result in cardiac arrest, which may prompt death within minutes.',
+        info: 'A severe form of arhythmia where the ventricles fail to pump blood out of the heart. This results in cardiac arrest, which may prompt death within minutes.',
         arrhythmia: 'Arrhythmias are heart rhythm problems that result from faulty electricul impulses that coordinate your heart beats. They may cause your heart to beat too fast, too slow, or irregularly.',
         about: 'Ventricular fibrillation is a severe condition that can result in death if not treated within minutes. As an arrhythmia, ventricular fibrillation generates abnormal electrical signals that control the heartbeat, causing the ventricles (the bottom chambers of the heart) to pump no blood. This results in sudden cardiac arrest, and can cause death if not treated immediately.',
         causes: 'Myocardial infarction (heart attack) is the most common cause of ventricular fibrillation. The heart muscle dies when one of the arteries that connects to the heart is blocked by plaque, and ventricular fibrillation occurs within a few days of a heart attack. However, patients who suffer from lung problems, severe injuries, or illegal drug intake can experience ventricular fibrillation.',
