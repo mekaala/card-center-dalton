@@ -14,6 +14,7 @@ export default class SingleCondition extends Component {
         showHeartBlock: false,
         showSymptom: false,
     }
+    
     toggleDisease = () => {
         const newShowDisease = !this.state.showDisease;
         this.setState({
