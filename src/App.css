@@ -36,7 +36,7 @@ img {
   margin: auto 20px;
 }
 .bar a:hover {
-  color: red;
+  color: #E8374D;
   transition-duration: 0.5s;
 }
 .bar {
@@ -317,7 +317,7 @@ li h3 {
   font-weight: 400;
 }
 .staff a:hover, .single-staff a:hover {
-  color: red;
+  color: #E8374D;
   transition-duration: 0.5s;
 }
 .single-staff a {
@@ -345,7 +345,7 @@ li h3 {
   font-weight: 400;
 }
 .diagnostics a:hover, .single-diagnostic a:hover {
-  color: red;
+  color: #E8374D;
   transition-duration: 0.5s;
 }
 .single-diagnostic h2 a {
@@ -396,6 +396,24 @@ li h3 {
 .symptoms-side {
   width: 50%;
 } */
+.conditions a, .single-condition a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.conditions a:hover, .single-condition a:hover {
+  color: #E8374D;
+  transition-duration: 0.5s;
+}
+.read-more {
+  padding: 10px;
+  border-radius: 12px;
+  color: black;
+}
+.read-more:hover {
+  background: black;
+  color: white;
+}
 .conditions button, .single-condition button {
   background-color: white;
   border: none;
@@ -448,15 +466,7 @@ li h3 {
   border-left: none;
   padding-left: 0px;
 }
-.conditions a, .single-condition a {
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
-}
-.conditions a:hover, .single-condition a:hover {
-  color: red;
-  transition-duration: 0.5s;
-}
+
 
 /* SERVICES */
 .office-list {
@@ -475,7 +485,7 @@ li h3 {
   font-weight: 400;
 }
 .services a:hover, .single-service a:hover {
-  color: red;
+  color: #E8374D;
   transition-duration: 0.5s;
 }
 .single-service {

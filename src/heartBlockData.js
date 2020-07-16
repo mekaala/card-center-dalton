@@ -9,7 +9,7 @@ export default
         causes: 'Heart block can result from a disease, surgery, or medication that damaged the heart, and can even be congenital. That damage to the heart affects the electrical system, and alters it such that it prompts heartbeats to be inconsistent.',
         symptoms: 'First Degree AV Block is the most mild type of heart block. Patients with this condition are asymptomatic.',
         diagnosis: 'The best test to determine if you are suffering from heart block is an electrocardiogram. This test measures the electrical activity of the heart, allowing your doctor to screen for any inconsistencies in heartbeat.',
-        treatment: 'If you have first degree heart block, then treatment is not necessary as it is very mild. If you want to prevent heart block, then it is best to make lifestyle changes such as starting a healthy diet consisting of fruits, vegetables, and low-fat dair products (but less meat and fatty foods), engaging in physical activity such as walk almost every day, and losing weight.'
+        treatment: 'If you have first degree heart block, then treatment is not necessary as it is very mild.'
     },
     {
         name: 'Second Degree AV Block',
@@ -20,7 +20,7 @@ export default
         causes: 'Heart block can result from a disease, surgery, or medication that damaged the heart, and can even be congenital. That damage to the heart affects the electrical system, and alters it such that it prompts heartbeats to be inconsistent.',
         symptoms: 'Second Degree AV Block is more serious than its first degree counterpart. Patients suffering from this condition can experience fainting, dizziness, fatigue, difficulty breathing, and chest pain.',
         diagnosis: 'The best test to determine if you are suffering from heart block is an electrocardiogram. This test measures the electrical activity of the heart, allowing your doctor to screen for any inconsistencies in heartbeat.',
-        treatment: 'If you have second degree heart block, then a pacemaker might be implanted if it is Type II. A pacemaker regulates and sends proper electrical signals to the heart to help it beat at a normal rate. If you want to prevent heart block, then it is best to make lifestyle changes such as starting a healthy diet consisting of fruits, vegetables, and low-fat dair products (but less meat and fatty foods), engaging in physical activity such as walk almost every day, and losing weight.'
+        treatment: 'If you have second degree heart block, then a pacemaker might be implanted if it is Type II. A pacemaker regulates and sends proper electrical signals to the heart to help it beat at a normal rate.'
     },
     {
         name: 'Third Degree AV Block',
@@ -31,6 +31,6 @@ export default
         causes: 'Heart block can result from a disease, surgery, or medication that damaged the heart, and can even be congenital. That damage to the heart affects the electrical system, and alters it such that it prompts heartbeats to be inconsistent.',
         symptoms: 'Third Degree AV Block is the most dangerous type of heart block. Patients can suffer the more severe versions as the second degree symptoms (fainting, dizziness, fatigue, difficulty breathing, and chest pain), and can also result in death.',
         diagnosis: 'The best test to determine if you are suffering from heart block is an electrocardiogram. This test measures the electrical activity of the heart, allowing your doctor to screen for any inconsistencies in heartbeat.',
-        treatment: 'If you have third degree heart block, then a pacemaker might be implanted. A pacemaker regulates and sends proper electrical signals to the heart to help it beat at a normal rate. Please take treatment seriously with third degree heart block, as it can be life threatening. If you want to prevent heart block, then it is best to make lifestyle changes such as starting a healthy diet consisting of fruits, vegetables, and low-fat dair products (but less meat and fatty foods), engaging in physical activity such as walk almost every day, and losing weight.'
+        treatment: 'If you have third degree heart block, then a pacemaker might be implanted. A pacemaker regulates and sends proper electrical signals to the heart to help it beat at a normal rate. Please take treatment seriously with third degree heart block, as it can be life threatening.'
     },
 ]

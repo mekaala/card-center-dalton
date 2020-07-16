@@ -166,6 +166,11 @@ export default class SingleCondition extends Component {
                 : null
                 }
                 <div className="condition-right">
+                <h1><Link
+                    to={{pathname: `/conditions`,
+                    state: condition}}>
+                    CONDITIONS
+                </Link></h1>
                     <div className="side-container">
                         <h2><button onClick={ this.toggleDisease }>
                                 { this.state.showDisease

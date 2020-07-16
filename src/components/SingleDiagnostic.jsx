@@ -68,6 +68,11 @@ export default class SingleDiagnostic extends Component {
                     </div>
                 </div>
                 <div className="diagnostic-side">
+                    <h1><Link
+                        to={{pathname: `/diagnostics`,
+                        state: diagnostic}}>
+                        DIAGNOSTICS
+                    </Link></h1>
                     <h2><button onClick={ this.toggleOnSite }>
                                     { this.state.showOnSite
                                         ? 'COLLAPSE'

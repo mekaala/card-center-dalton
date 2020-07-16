@@ -67,6 +67,11 @@ export default class Conditions extends Component {
                                             { condition.name }
                                         </Link></h2>
                                         <p>{ condition.info }</p>
+                                        <h3><Link className="read-more"
+                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                        state: condition}}>
+                                            Read More
+                                        </Link></h3>
                                     </div>
                                 )
                             })}
@@ -74,7 +79,7 @@ export default class Conditions extends Component {
                         : null
                     }
                 </div>
-                <div className="myopathy-container">
+                {/* <div className="myopathy-container">
                     <h1><button onClick={ this.toggleCardiomyopathy }>
                         { this.state.showCardiomyopathy
                             ? 'COLLAPSE'
@@ -99,7 +104,7 @@ export default class Conditions extends Component {
                         </div>
                         :null
                     }
-                </div>
+                </div> */}
                 <div className="arrhythmia-container">
                     <h1><button onClick={ this.toggleArrhythmia }>
                         { this.state.showArrhythmia
@@ -119,6 +124,11 @@ export default class Conditions extends Component {
                                         { condition.name }
                                     </Link></h2>
                                     <p>{ condition.info }</p>
+                                    <h3><Link className="read-more"
+                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                        state: condition}}>
+                                            Read More
+                                    </Link></h3>
                                 </div>
                             )
                         })}
@@ -145,6 +155,11 @@ export default class Conditions extends Component {
                                             { condition.name }
                                         </Link></h2>
                                         <p>{ condition.info }</p>
+                                        <h3><Link className="read-more"
+                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                        state: condition}}>
+                                            Read More
+                                        </Link></h3>
                                     </div>
                                 )
                             })}
@@ -171,6 +186,11 @@ export default class Conditions extends Component {
                                             { condition.name }
                                         </Link></h2>
                                         <p>{ condition.info }</p>
+                                        <h3><Link className="read-more"
+                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                        state: condition}}>
+                                            Read More
+                                        </Link></h3>
                                     </div>
                                 )
                             })}

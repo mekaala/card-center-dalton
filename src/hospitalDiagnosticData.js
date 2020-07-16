@@ -33,7 +33,7 @@ export default
         warning: 'Do not consume any food or drink on the day of the surgery. The doctor will indicate which medicines to stop taking as they may interfere with the procedure. There may be medications that the doctor will prescribe for you before the test. Take them. To prevent serious infections, shower and shampoo well. You may be required to use a special body soap.'
     },
     {
-        name: 'Implantable Loop Recorder',
+        name: 'Implantable Loop Recorder (ILR)',
         diagnosticUrl: 'implantable-loop-recorder',
         offName: 'IMPLANTABLE LOOP RECORDER',
         about: 'The ILR monitors the electrical activity of the heart over an extended period rather than the 24-48 hours by the Holter Monitor and the 30-day Event Monitor. It evaluates recurrent palpitations, syncope, or other conditions that are not discovered with other monitors.',
