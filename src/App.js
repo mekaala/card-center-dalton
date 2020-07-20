@@ -9,8 +9,8 @@ import Conditions from './components/Conditions';
 import SingleCondition from './components/SingleCondition';
 import Diagnostics from './components/Diagnostics';
 import SingleDiagnostic from './components/SingleDiagnostic';
-import Services from './components/Services';
-import SingleService from './components/SingleService';
+import Health from './components/Health';
+import SingleHealth from './components/SingleHealth'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -29,8 +29,8 @@ function App() {
             <Route path="/conditions/:conditionUrl" component={ SingleCondition }/>
             <Route exact path="/diagnostics" component={ Diagnostics }/>
             <Route path="/diagnostics/:diagnosticUrl" component={ SingleDiagnostic }/>
-            <Route exact path="/services" component={ Services }/>
-            <Route path="/services/:serviceUrl" component={ SingleService }/>
+            <Route exact path="/health" component={ Health }/>
+            <Route path="/health/:healthUrl" component={ SingleHealth }/>
           </Switch>
           <Contact/>
           <Footer/>

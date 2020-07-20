@@ -365,7 +365,7 @@ li h3 {
   text-align: left;
 }
 .diagnostic-side {
-  margin: 10px;
+  margin: 0 10px;
 }
 .diagnostic-side h2 {
   margin-left: 20px;
@@ -390,12 +390,7 @@ li h3 {
 }
 
 /* CONDITIONS */
-/* .conditions-side {
-  width: 50%;
-}
-.symptoms-side {
-  width: 50%;
-} */
+
 .conditions a, .single-condition a {
   text-decoration: none;
   color: black;
@@ -447,7 +442,7 @@ li h3 {
   text-align: left;
 }
 .condition-right {
-  margin: 10px;
+  margin: 0 10px;
   width: 27%;
 }
 .condition-right h2 {
@@ -458,7 +453,6 @@ li h3 {
 }
 .side-container div {
   text-align: left;
-  /* border-left: solid 1px #282c34b2; */
   padding-left: 20px;
 }
 .side-container div div {
@@ -467,50 +461,63 @@ li h3 {
   padding-left: 0px;
 }
 
-
-/* SERVICES */
-.office-list {
+/* HEALTH */
+.health-container {
+  display: flex;
+}
+.diet-list, .exercise-list {
   width: 50%;
-  text-align: left;
-  margin: 0 20px;
 }
-.hospital-list {
-  float: right;
+.diet-list div {
   text-align: left;
+}
+.exercise-list div {
+  text-align: left;
+}
+.single-health {
+  display: flex;
+}
+.health-diet, .health-exercise {
+  text-align: left;
+  margin: 0 10px;
+}
+.health-side {
+  margin: 0 10px;
+  width: 100%;
+}
+.foods {
+  display: flex;
+}
+.good-food {
+  width: 50%;
+}
+.bad-food {
+  width: 50%;
 }
 
-.services a, .single-service a {
+.single-health button {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  box-shadow: none;
+  font-size: 100%;
+  font-weight: normal;
+  text-shadow: none;
+}
+.single-health button:hover {
+  background-color: #E8374D;
+  color: white;
+  transition-duration: 0.5s;
+}
+.health a, .single-health a {
   text-decoration: none;
   color: black;
   font-weight: 400;
 }
-.services a:hover, .single-service a:hover {
+.health a:hover, .single-health a:hover {
   color: #E8374D;
   transition-duration: 0.5s;
-}
-.single-service {
-  display: flex;
-}
-.service-main {
-  width: 60%;
-  margin: 0 30px;
-}
-.service-description {
-  text-align: left;
-}
-.service-side {
-  margin: 10px;
-}
-.office-list-sing, .hospital-list-sing {
-  text-align: left;
-  margin: 0 20px;
-}
-.office-list-sing h2, .hospital-list-sing h2 {
-  text-align: center;
-}
-.service-map {
-  border-left: solid 1px #282c34b2;
-  padding-left: 20px;
 }
 
 @media screen and (max-width: 710px) {
