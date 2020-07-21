@@ -42,6 +42,7 @@ export default class SingleHealth extends Component {
         const health = this.props.location.state;
         const goodFoods = health.goodFoods;
         const badFoods = health.badFoods;
+        const workout = health.workout;
         return (
             <div className="single-health">
                 <div className="health-info">
@@ -74,6 +75,7 @@ export default class SingleHealth extends Component {
                             </div>
                             <h3>Healthy Tips</h3>
                             <p>{ health.tips }</p>
+                            <p>Diet information provided by <a href={ health.source } target='_blank'>{ health.sourceName }</a>.</p>
                         </div>
                     : null
                     }
@@ -82,9 +84,20 @@ export default class SingleHealth extends Component {
                         <div className="health-exercise">
                             <p>{ health.about }</p>
                             <h3>Exercise!</h3>
-                            <p>{ health.workout }</p>
-                            <h3>Healthy Tips</h3>
+                            <div className="workout">
+                                <div className="workout-steps">
+                                    {workout.map((workout, i) => {
+                                        return (
+                                            <div key={ i }>
+                                                <p>{ workout }</p>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                            <h3>Tips</h3>
                             <p>{ health.tips }</p>
+                            <p>Workout information provided by the <a href={ health.source } target='_blank'>{ health.sourceName }</a>.</p>
                         </div>
                     : null
                     }

@@ -20,11 +20,11 @@ export default class Health extends Component {
                                         { health.name }
                                     </Link></h2>
                                     <p>{ health.info }</p>
-                                    <h3><Link className="read-more"
+                                    {/* <h3><Link className="read-more"
                                     to={{pathname: `/health/${ health.healthUrl }`,
                                     state: health}}>
                                         Read More
-                                    </Link></h3>
+                                    </Link></h3> */}
                                 </div>
                             )
                         })}
@@ -40,11 +40,11 @@ export default class Health extends Component {
                                         { health.name }
                                     </Link></h2>
                                     <p>{ health.info }</p>
-                                    <h3><Link className="read-more"
+                                    {/* <h3><Link className="read-more"
                                     to={{pathname: `/health/${ health.healthUrl }`,
                                     state: health}}>
                                         Read More
-                                    </Link></h3>
+                                    </Link></h3> */}
                                 </div>
                             )
                         })}
