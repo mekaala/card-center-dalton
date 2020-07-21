@@ -464,6 +464,7 @@ li h3 {
 /* HEALTH */
 .health-container {
   display: flex;
+  margin: 0 10px;
 }
 .diet-list, .exercise-list {
   width: 50%;

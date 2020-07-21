@@ -83,7 +83,7 @@ export default class SingleHealth extends Component {
                     ?
                         <div className="health-exercise">
                             <p>{ health.about }</p>
-                            <h3>Exercise!</h3>
+                            <h3>Exercise Examples</h3>
                             <div className="workout">
                                 <div className="workout-steps">
                                     {workout.map((workout, i) => {
