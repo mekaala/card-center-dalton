@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class HealthKey extends Component {
     render() {
@@ -8,7 +9,7 @@ export default class HealthKey extends Component {
                     <h1>YOUR KEY TO HEALTH</h1>
                     <p>Exercise intensity refers to how hard your body is working during physical activity. Your health and fitness goals, as well as your current level of fitness, will determine your ideal exercise intensity. Typically, exercise intensity is described as low, moderate, or vigorous.</p>
                     <p>The human body has an in-built system to measure its exercise intensity – the heart. Your heart rate will increase in proportion to the intensity of your exercise.</p>
-                    <button>WHAT ARE YOU WAITING FOR?</button>
+                    <Link to="/health"><button>WHAT ARE YOU WAITING FOR?</button></Link>
                 </div>
                 <div className="right">
                     <ul>

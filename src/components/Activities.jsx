@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import cardio from '../images/cardio.jpg'
-import strength from '../images/strength.jpg'
-import forward from '../images/forward.jpg'
-import diet from '../images/diet.jpg'
+// import cardio from '../images/cardio.jpg'
+// import strength from '../images/strength.jpg'
+// import forward from '../images/forward.jpg'
+// import diet from '../images/diet.jpg'
 
 
 export default class Activities extends Component {
@@ -11,7 +11,7 @@ export default class Activities extends Component {
             <div className="activities">
                 <div className="activity-list">
                     <div className="cardio">
-                        <img src={ cardio } alt="cardio"/>
+                        {/* <img src={ cardio } alt="cardio"/> */}
                         <div className="text-box">
                             <h2>CARDIO</h2>
                             <hr/>
@@ -24,7 +24,7 @@ export default class Activities extends Component {
                         </div>
                     </div>
                     <div className="strength">
-                        <img src={ strength } alt="strength"/>
+                        {/* <img src={ strength } alt="strength"/> */}
                         <div className="text-box">
                             <h2>STRENGTH</h2>
                             <hr/>
@@ -37,7 +37,7 @@ export default class Activities extends Component {
                         </div>
                     </div>
                     <div className="forward">
-                        <img src={ forward } alt="forward"/>
+                        {/* <img src={ forward } alt="forward"/> */}
                         <div className="text-box">
                             <h2>FORWARD</h2>
                             <hr/>
@@ -50,7 +50,7 @@ export default class Activities extends Component {
                         </div>
                     </div>
                     <div className="diet">
-                        <img src={ diet } alt="diet"/>
+                        {/* <img src={ diet } alt="diet"/> */}
                         <div className="text-box">
                             <h2>DIET</h2>
                             <hr/>

@@ -148,6 +148,113 @@ button:hover {
   padding-bottom: 1px;
 }
 
+/* DIETING */
+.dieting p {
+  text-align: left;
+  margin: 20px 50px;
+}
+.diet-nav {
+  display: flex;
+  justify-content: center;
+}
+.diet-box {
+  box-sizing: border-box;
+  background: #353535;
+  display: block;
+  align-items: center;
+  width: 24%;
+  min-width: 250px;
+  margin: 5px;
+  padding-bottom: 2%;
+  overflow: hidden;
+}
+.diet-box hr {
+  height: auto;
+  width: 90%;
+}
+.diet-box a {
+  text-decoration: none;
+  color: white;
+}
+.diet-box a:hover {
+  color: #E8374D;
+  transition-duration: 0.5s;
+}
+.diet-image {
+  overflow: hidden;
+}
+.diet-box img {
+  width: 100%;
+  transform: rotate(0deg) scale(1);
+  transition: all 0.5s ease-out 0s;
+}
+.diet-box img:hover {
+  transform: rotate(10deg) scale(1.5);
+  transition: all 0.5s ease-out 0s;
+}
+.diet-box p {
+  text-align: left;
+  margin: 5px;
+}
+
+/* SHAPE TAG */
+.shape-tag {
+  background: white;
+  padding: 5%;
+}
+.shape-tag h1 {
+  color: black;
+}
+.shape-tag p {
+  color: gray;
+}
+.exercise-nav {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+}
+.exercise-box {
+  box-sizing: border-box;
+  background: #353535;
+  display: block;
+  align-items: center;
+  min-width: 250px;
+  margin: 5px;
+  padding-bottom: 2%;
+  overflow: hidden;
+}
+.exercise-box hr {
+  height: auto;
+  width: 90%;
+}
+.exercise-box a {
+  text-decoration: none;
+  color: white;
+}
+.exercise-box a:hover {
+  color: #E8374D;
+  transition-duration: 0.5s;
+}
+.exercise-image {
+  overflow: hidden;
+}
+.exercise-box img {
+  width: 100%;
+  transform: rotate(0deg) scale(1);
+  transition: all 0.5s ease-out 0s;
+}
+.exercise-box img:hover {
+  transform: rotate(10deg) scale(1.5);
+  transition: all 0.5s ease-out 0s;
+}
+.exercise-box p {
+  text-align: left;
+  margin: 5px;
+}
+#ten-minute-workout {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
 /* ACTIVITIES */
 .activities {
@@ -229,18 +336,6 @@ li h3 {
 .right {
   margin: 1%;
   width: 48%;
-}
-
-/* SHAPE TAG */
-.shape-tag {
-  background: white;
-  padding: 5%;
-}
-.shape-tag h1 {
-  color: black;
-}
-.shape-tag p {
-  color: gray;
 }
 
 /* CONTACT */
@@ -355,8 +450,8 @@ li h3 {
   display: flex;
 }
 .diagnostic-main {
-  width: 60%;
-  margin: 0 30px;
+  width: 68%;
+  margin: 0 5px 0 30px;
 }
 .onsite-list h3 {
   font-weight: 400;
@@ -366,6 +461,7 @@ li h3 {
 }
 .diagnostic-side {
   margin: 0 10px;
+  width: 32%;
 }
 .diagnostic-side h2 {
   margin-left: 20px;
@@ -468,6 +564,7 @@ li h3 {
 }
 .diet-list, .exercise-list {
   width: 50%;
+  margin: 0 10px;
 }
 .diet-list div {
   text-align: left;
@@ -478,22 +575,30 @@ li h3 {
 .single-health {
   display: flex;
 }
+.health-info {
+  width: 100%;
+}
 .health-diet, .health-exercise {
   text-align: left;
   margin: 0 10px;
 }
 .health-side {
   margin: 0 10px;
-  width: 100%;
+  width: 20%;
 }
 .foods {
   display: flex;
 }
 .good-food {
   width: 50%;
+  margin-right: 20px;
 }
 .bad-food {
   width: 50%;
+  margin-left: 20px;
+}
+.diet-map h3, .exercise-map h3 {
+  text-align: left;
 }
 
 .single-health button {
@@ -530,14 +635,23 @@ li h3 {
     display: none;
   }
   .navbar {
-    padding: 10px;
+    padding: 10px 5px;
+    width: 100%;
   }
   .bar {
-    margin: auto;
+    margin: auto 10px auto -10px;
   }
   .bar a {
-    margin: auto 10px;
+    margin: auto 8px;
     font-size: 90%;
+  }
+  /* DIETING */
+  .diet-nav {
+    display: block;
+    margin: 10px;
+  }
+  .diet-box {
+    margin: 10px auto;
   }
 
   /* STAFF */
@@ -545,17 +659,17 @@ li h3 {
     text-align: left;
     display: block;
     margin: auto 10px;
-}
-.doctor-about, .nurse-about {
-  width: auto;
-}
-.doctor-image, .nurse-image {
-  float: none;
-  margin: 10px;
-}
-.doctor-image img, .nurse-image img {
-  width: 300px;
-}
+  }
+  .doctor-about, .nurse-about {
+    width: auto;
+  }
+  .doctor-image, .nurse-image {
+    float: none;
+    margin: 10px;
+  }
+  .doctor-image img, .nurse-image img {
+    width: 300px;
+  }
 
   /* DIAGNOSTICS */
   .full-list {
@@ -591,5 +705,22 @@ li h3 {
   }
   .condition-right {
     width: auto;
+  }
+  /* HEALTH */
+  .health-container {
+    display: block;
+  }
+  .diet-list, .exercise-list {
+    width: auto;
+  }
+  .single-health {
+    display: block;
+  }
+  .foods {
+    display: block;
+  }
+  .good-food, .bad-food {
+    width: auto;
+    margin: auto;
   }
 }

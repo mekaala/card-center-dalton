@@ -5,6 +5,7 @@ import StressTestSplash from './StressTestSplash';
 import FoodShow from './FoodShow';
 import ShapeTag from './ShapeTag';
 import { Link } from 'react-router-dom';
+import Dieting from './Dieting';
 // import home from '../images/placeholder.jpg'
 
 export default class SplashPage extends Component {
@@ -34,6 +35,7 @@ export default class SplashPage extends Component {
                     </div>
                     <h3>In our independently owned, state-of-the-art facility, our board-certified cardiologist and staff treat our patients like royalty. We take pride in the hands-on, compassionate care we offer to each and every patient, and we even offer bilingual interpretation.</h3>
                 </div>
+                <Dieting/>
                 <HealthKey/>
                 <ShapeTag/>
             </div>

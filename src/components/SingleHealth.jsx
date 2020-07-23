@@ -82,6 +82,7 @@ export default class SingleHealth extends Component {
                     { this.hideExercise()
                     ?
                         <div className="health-exercise">
+                            <p>Please discuss exercises with your physician before starting to avoid possible injury. They may give you advice on what activity is best for you, and what you can perform.</p>
                             <p>{ health.about }</p>
                             <h3>Exercise Examples</h3>
                             <div className="workout">
@@ -97,7 +98,7 @@ export default class SingleHealth extends Component {
                             </div>
                             <h3>Tips</h3>
                             <p>{ health.tips }</p>
-                            <p>Workout information provided by the <a href={ health.source } target='_blank'>{ health.sourceName }</a>.</p>
+                            <p>Exercise information provided by the <a href={ health.source } target='_blank'>{ health.sourceName }</a>.</p>
                         </div>
                     : null
                     }
