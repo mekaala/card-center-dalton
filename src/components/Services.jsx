@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import officeServiceData from '../officeServiceData'
-import hospitalServiceData from '../hospitalServiceData'
 import { Link } from 'react-router-dom'
 
 export default class Services extends Component {
@@ -8,40 +6,7 @@ export default class Services extends Component {
         return (
             <div className="services">
                 <h1>SERVICES</h1>
-                <div className="full-list">
-                    <div className="office-list">
-                        <h2>IN-OFFICE SERVICES</h2>
-                        <div className="office-service-list">
-                            {officeServiceData.map((service, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h3><Link 
-                                        to={{pathname: `services/${ service.serviceUrl }`,
-                                        state: service}}>
-                                            { service.name }
-                                        </Link></h3>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                    <div className="hospital-list">
-                        <div className="hospital-service-list">
-                            <h2>IN-HOSPITAL SERVICES</h2>
-                            {hospitalServiceData.map((service, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h3><Link 
-                                        to={{pathname: `services/${ service.serviceUrl }`,
-                                        state: service}}>
-                                            { service.name }
-                                        </Link></h3>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto labore iste soluta commodi, asperiores nisi dolore corrupti nihil, ad neque, voluptates quisquam ipsum ea dolorem eveniet! Nam, odit magni.</p>
             </div>
         )
     }

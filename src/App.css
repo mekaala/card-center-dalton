@@ -148,13 +148,24 @@ button:hover {
   padding-bottom: 1px;
 }
 
+/* SERVICES */
+.services {
+  background: white;
+  color: black;
+  padding: 5%;
+}
+
 /* DIETING */
+.dieting {
+  padding: 5%;
+}
 .dieting p {
   text-align: left;
   margin: 20px 50px;
 }
 .diet-nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 }
 .diet-box {
@@ -162,7 +173,6 @@ button:hover {
   background: #353535;
   display: block;
   align-items: center;
-  width: 24%;
   min-width: 250px;
   margin: 5px;
   padding-bottom: 2%;
@@ -199,14 +209,14 @@ button:hover {
 
 /* SHAPE TAG */
 .shape-tag {
-  background: white;
+  background: black;
   padding: 5%;
 }
 .shape-tag h1 {
-  color: black;
+  color: white;
 }
 .shape-tag p {
-  color: gray;
+  color: white;
 }
 .exercise-nav {
   display: grid;
@@ -254,6 +264,11 @@ button:hover {
 #ten-minute-workout {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+#ten-minute-workout img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 /* ACTIVITIES */
@@ -307,6 +322,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   background: white;
+  padding: 5%;
 }
 .health-key h1, .health-key h2 {
   color: black;
@@ -635,11 +651,14 @@ li h3 {
     display: none;
   }
   .navbar {
-    padding: 10px 5px;
+    padding: 10px 0;
     width: 100%;
   }
+  .navbar .logo {
+    margin: 0;
+  }
   .bar {
-    margin: auto 10px auto -10px;
+    margin: auto 0;
   }
   .bar a {
     margin: auto 8px;
@@ -652,6 +671,30 @@ li h3 {
   }
   .diet-box {
     margin: 10px auto;
+  }
+
+  /* SHAPE TAG */
+  .exercise-nav {
+    display: block;
+    margin: 10px;
+  }
+  .exercise-box {
+    margin: 10px auto;
+  }
+  #ten-minute-workout img {
+    width: 100%;
+    height: 100%;
+  }
+  /* HEALTH KEY */
+  .health-key {
+    display: block;
+  }
+  .left, .right {
+    width: auto;
+  }
+  .right ul {
+    padding: 0;
+    margin: 10px;
   }
 
   /* STAFF */

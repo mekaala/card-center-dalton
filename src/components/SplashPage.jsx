@@ -6,7 +6,7 @@ import FoodShow from './FoodShow';
 import ShapeTag from './ShapeTag';
 import { Link } from 'react-router-dom';
 import Dieting from './Dieting';
-// import home from '../images/placeholder.jpg'
+import Services from './Services';
 
 export default class SplashPage extends Component {
     render() {
@@ -20,7 +20,7 @@ export default class SplashPage extends Component {
                     </div>
                 </div>
                 <div className="about">
-                    <div className="link-page">
+                    {/* <div className="link-page">
                         <div className="hours">
                             <h1>HOURS</h1>
                             <h4>MONDAY - FRIDAY</h4>
@@ -32,9 +32,10 @@ export default class SplashPage extends Component {
                         <div className="pulse">
                             <Link to="/diagnostics"><h1>DIAGNOSTICS</h1></Link>
                         </div>
-                    </div>
+                    </div> */}
                     <h3>In our independently owned, state-of-the-art facility, our board-certified cardiologist and staff treat our patients like royalty. We take pride in the hands-on, compassionate care we offer to each and every patient, and we even offer bilingual interpretation.</h3>
                 </div>
+                <Services/>
                 <Dieting/>
                 <HealthKey/>
                 <ShapeTag/>

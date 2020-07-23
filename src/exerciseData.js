@@ -5,6 +5,7 @@ export default
         healthUrl: 'aerobics',
         offName: 'AEROBICS',
         image: require('./images/aerobics.jpg'),
+        info: 'Train your body with some cardio activity to improve heart health and lung health.',
         about: 'Aerobic exercises test endurance with activities that increase breathing and heart rate. Such activities include walking, jogging, swimming, biking, and jumping rope. Aerobics focuses on improving and maintaining the health of your heart, lungs, and circulatory system. Regularly participating in these exercises can reduce risk of diabetes, heart disease, and stroke.',
         workout:
         [
@@ -23,7 +24,8 @@ export default
         healthUrl: 'stretching',
         offName: 'STRETCHING',
         image: require('./images/stretching.jpg'),
-        about: 'Stretching promotes flexibility, and can allow you more freedom of movement for other exercisees and avoiding muscle discomfort such as cramps. Stretching is just one of the many ways to reduce risk of stroke improve cardiovascular fitness.',
+        info: 'A little stretching will help loosen your body, allowing you to partake in more physical activity.',
+        about: 'Stretching promotes flexibility, and can allow you more freedom of movement for other exercises and avoiding muscle discomfort such as cramps. Stretching is just one of the many ways to reduce risk of stroke improve cardiovascular fitness.',
         workout:
         [
             'Calf Stretch: Place both hands on a wall. Put one foot forward and bend the knee, and keep the other leg straight. Keep your stomach tight as you lean toward the wall. Hold for 20 to 30 seconds for each leg.',
@@ -40,6 +42,8 @@ export default
         name: 'Balance',
         healthUrl: 'balance',
         offName: 'BALANCE',
+        image: require('./images/balance.jpg'),
+        info: 'Adopt and maintain a good balance to gain more control over your body, and to push yourself to train even harder.',
         about: 'Good balance is essential for performing exercises such as stretching, aerobics, strength training. It can help older adults and stroke patients who may suffer from falling down, and can benefit patients suffering from obesity.',
         workout:
         [
@@ -58,6 +62,7 @@ export default
         healthUrl: 'strength-training',
         offName: 'STRENGTH TRAINING',
         image: require('./images/strength.jpg'),
+        info: 'Boost your muscles to gain more energy for a plethora of activities, and reduce risk of injury.',
         about: 'Strength training allows you to perform everyday activities with more ease, and makes your body less prone to injury. It can also improve your metabolism, meaning you can burn more calories while resting. Just training with small weights or machines is enough to improve the resistance and strength of your body.',
         workout:
         [
@@ -76,6 +81,8 @@ export default
         name: '10-Minute Workout',
         healthUrl: 'ten-minute-workout',
         offName: '10-MINUTE WORKOUT',
+        image: require('./images/ten-minute-workout.jpg'),
+        info: 'Too little time to exercise? This fast workout combines all four activities into a beneficial program. This workout also includes advanced steps if you feel comfortable with performing them.',
         about: 'Peform 10 exercises for 30 seconds each, and take a 30 second break in between!',
         workout:
         [
