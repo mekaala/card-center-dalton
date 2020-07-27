@@ -9,7 +9,6 @@ import heartBlockData from '../heartBlockData';
 export default class SingleCondition extends Component {
     state = {
         showDisease: false,
-        showCardiomyopathy: false,
         showArrhythmia: false,
         showHeartBlock: false,
         showSymptom: false,
@@ -19,12 +18,6 @@ export default class SingleCondition extends Component {
         const newShowDisease = !this.state.showDisease;
         this.setState({
             showDisease: newShowDisease,
-        });
-    };
-    toggleCardiomyopathy = () => {
-        const newShowCardiomyopathy = !this.state.showCardiomyopathy;
-        this.setState({
-            showCardiomyopathy: newShowCardiomyopathy,
         });
     };
     toggleArrhythmia = () => {
@@ -166,11 +159,11 @@ export default class SingleCondition extends Component {
                 : null
                 }
                 <div className="condition-right">
-                <h1><Link
-                    to={{pathname: `/conditions`,
-                    state: condition}}>
-                    CONDITIONS
-                </Link></h1>
+                    <h1><Link
+                        to={{pathname: `/conditions`,
+                        state: condition}}>
+                        CONDITIONS
+                    </Link></h1>
                     <div className="side-container">
                         <h2><button onClick={ this.toggleDisease }>
                                 { this.state.showDisease
@@ -181,6 +174,7 @@ export default class SingleCondition extends Component {
                         { this.state.showDisease
                             ?
                             <div>
+                                <h3><Link to="/conditions/diseases">All Diseases</Link></h3>
                                 {conditionData.map((condition, i) => {
                                     return (
                                         <div key={ i }>
@@ -197,31 +191,6 @@ export default class SingleCondition extends Component {
                         }
                     </div>
                     <div className="side-container">
-                        <h2><button onClick={ this.toggleCardiomyopathy }>
-                            { this.state.showCardiomyopathy
-                                ? 'COLLAPSE'
-                                : 'CARDIOMYOPATHY'
-                            }
-                        </button></h2>
-                        { this.state.showCardiomyopathy
-                            ?
-                            <div>
-                            {cardiomyopathyData.map((condition, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h3><Link
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            { condition.name }
-                                        </Link></h3>
-                                    </div>
-                                )
-                            })}
-                            </div>
-                            :null
-                        }
-                    </div>
-                    <div className="side-container">
                         <h2><button onClick={ this.toggleArrhythmia }>
                             { this.state.showArrhythmia
                                 ? 'COLLAPSE'
@@ -231,6 +200,7 @@ export default class SingleCondition extends Component {
                         { this.state.showArrhythmia
                             ?
                             <div>
+                            <h3><Link to="/conditions/arrythmias">All Arrhythmias</Link></h3>
                             {arrhythmiaData.map((condition, i) => {
                                 return (
                                     <div key={ i }>
@@ -256,6 +226,7 @@ export default class SingleCondition extends Component {
                         { this.state.showHeartBlock
                             ?
                             <div>
+                                <h3><Link to="/conditions/heart-block">All Heart Block</Link></h3>
                                 {heartBlockData.map((condition, i) => {
                                     return (
                                         <div key={ i }>
@@ -280,7 +251,8 @@ export default class SingleCondition extends Component {
                         </button></h2>
                         { this.state.showSymptom
                             ?
-                            <div>                            
+                            <div>
+                                <h3><Link to="/conditions/symptoms">All Symptoms</Link></h3>
                                 {symptomData.map((condition, i) => {
                                     return (
                                         <div key={ i }>
