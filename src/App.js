@@ -14,6 +14,10 @@ import SingleHealth from './components/SingleHealth'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Diseases from './components/Diseases';
+import Arrythmias from './components/Arrythmias';
+import HeartBlock from './components/HeartBlock';
+import Symptoms from './components/Symptoms';
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
             <Route exact path="/staff" component={ Staff }/>
             <Route path="/staff/:providerUrl" component={ SingleStaff }/>
             <Route exact path="/conditions" component={ Conditions }/>
+            <Route exact path="/conditions/diseases" component={ Diseases }/>
+            <Route exact path="/conditions/arrythmias" component={ Arrythmias }/>
+            <Route exact path="/conditions/heart-block" component={ HeartBlock }/>
+            <Route exact path="/conditions/symptoms" component={ Symptoms }/>
             <Route path="/conditions/:conditionUrl" component={ SingleCondition }/>
             <Route exact path="/diagnostics" component={ Diagnostics }/>
             <Route path="/diagnostics/:diagnosticUrl" component={ SingleDiagnostic }/>

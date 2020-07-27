@@ -30,10 +30,14 @@ img {
 .navbar .logo {
   margin: auto 10px;
 }
+.bar {
+  display: flex;
+}
 .bar a {
   text-decoration: none;
   color: white;
   margin: auto 20px;
+  font-size: larger;
 }
 .bar a:hover {
   color: #E8374D;
@@ -47,6 +51,32 @@ img {
 }
 .facebook img {
   width: 32px;
+}
+.conditions-menu {
+  transition: all .5s ease-in-out;
+  height: 0;
+}
+.conditions-menu:target {
+  transition: all .5s ease-in-out;
+  height: 120px;
+}
+
+.dropdown-conditions {
+  background: white;
+  display: grid;
+  overflow: hidden;
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+}
+.dropdown-conditions a {
+  color: gray;
+  text-align: left;
+  margin: 0px;
+}
+.dropdown-conditions:target {
+  margin-left: 10px;
+  padding: 10px;
 }
 
 /* SPLASHPAGE */
@@ -503,12 +533,12 @@ li h3 {
 
 /* CONDITIONS */
 
-.conditions a, .single-condition a {
+.conditions a, .single-condition a, .condition-subpage a {
   text-decoration: none;
   color: black;
   font-weight: 400;
 }
-.conditions a:hover, .single-condition a:hover {
+.conditions a:hover, .single-condition a:hover, .condition-subpage a:hover {
   color: #E8374D;
   transition-duration: 0.5s;
 }
@@ -521,7 +551,7 @@ li h3 {
   background: black;
   color: white;
 }
-.conditions button, .single-condition button {
+.conditions button, .single-condition button, .condition-subpage button {
   background-color: white;
   border: none;
   border-radius: 12px;
@@ -531,7 +561,7 @@ li h3 {
   font-weight: normal;
   text-shadow: none;
 }
-.conditions button:hover, .single-condition button:hover {
+.conditions button:hover, .single-condition button:hover, .condition-subpage button:hover {
   background-color: #E8374D;
   color: white;
   transition-duration: 0.5s;
@@ -571,6 +601,14 @@ li h3 {
   text-align: left;
   border-left: none;
   padding-left: 0px;
+}
+
+/* CONDITTION SUBPAGES */
+.condition-subpage {
+  display: flex;
+}
+.condition-subpage .condition-left h2, .condition-subpage .condition-left h3 {
+  text-align: left;
 }
 
 /* HEALTH */
