@@ -774,13 +774,14 @@ li h3 {
   transition-duration: 0.5s;
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 768px) {
   /* NAVBAR */
   .logo img {
     display: none;
   }
   .footer {
-    display: none;
+    display: block;
+    font-size: 50%;
   }
   .navbar {
     padding: 0;
