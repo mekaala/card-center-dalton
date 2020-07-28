@@ -49,7 +49,87 @@ export default class Conditions extends Component {
             <div className="conditions">
                 <h1>CONDITIONS TREATED</h1>
                 <div className="condition-container">
-                    <h1><button onClick={ this.toggleDisease }>
+                    <div>
+                        <h1>DISEASES</h1>
+                        {ConditionData.map((condition, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h2><Link
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        { condition.name }
+                                    </Link></h2>
+                                    <p>{ condition.info }</p>
+                                    <h3><Link className="read-more"
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        Read More
+                                    </Link></h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div>
+                        <h1>ARRYTHMIA</h1>
+                        {arrhythmiaData.map((condition, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h2><Link
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        { condition.name }
+                                    </Link></h2>
+                                    <p>{ condition.info }</p>
+                                    <h3><Link className="read-more"
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        Read More
+                                    </Link></h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div>
+                        <h1>HEART BLOCK</h1>
+                        {heartBlockData.map((condition, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h2><Link
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        { condition.name }
+                                    </Link></h2>
+                                    <p>{ condition.info }</p>
+                                    <h3><Link className="read-more"
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        Read More
+                                    </Link></h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div>
+                        <h1>SYMPTOMS</h1>
+                        {symptomData.map((condition, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h2><Link
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        { condition.name }
+                                    </Link></h2>
+                                    <p>{ condition.info }</p>
+                                    <h3><Link className="read-more"
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        Read More
+                                    </Link></h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    {/* <h1><button onClick={ this.toggleDisease }>
                             { this.state.showDisease
                                 ? 'COLLAPSE'
                                 : 'DISEASES'
@@ -79,32 +159,6 @@ export default class Conditions extends Component {
                         : null
                     }
                 </div>
-                {/* <div className="myopathy-container">
-                    <h1><button onClick={ this.toggleCardiomyopathy }>
-                        { this.state.showCardiomyopathy
-                            ? 'COLLAPSE'
-                            : 'CARDIOMYOPATHY'
-                        }
-                    </button></h1>
-                    { this.state.showCardiomyopathy
-                        ?
-                        <div>
-                        {cardiomyopathyData.map((condition, i) => {
-                            return (
-                                <div key={ i }>
-                                    <h2><Link
-                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                    state: condition}}>
-                                        { condition.name }
-                                    </Link></h2>
-                                    <p>{ condition.info }</p>
-                                </div>
-                            )
-                        })}
-                        </div>
-                        :null
-                    }
-                </div> */}
                 <div className="arrhythmia-container">
                     <h1><button onClick={ this.toggleArrhythmia }>
                         { this.state.showArrhythmia
@@ -196,7 +250,7 @@ export default class Conditions extends Component {
                             })}
                         </div>
                         :null
-                    }
+                    } */}
                 </div>
             </div>
         )
