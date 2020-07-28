@@ -32,19 +32,18 @@ img {
 }
 .bar {
   display: flex;
+  margin: 0 10px;
 }
 .bar a {
   text-decoration: none;
   color: white;
   margin: auto 20px;
   font-size: larger;
+  transition-duration: 0.5s;
 }
 .bar a:hover {
   color: #E8374D;
   transition-duration: 0.5s;
-}
-.bar {
-  margin: auto 10px;
 }
 .navbar .facebook {
   margin: auto 10px;
@@ -52,31 +51,38 @@ img {
 .facebook img {
   width: 32px;
 }
-.conditions-menu {
-  transition: all .5s ease-in-out;
-  height: 0;
+.condition-menu {
+  padding: 7% 0;
 }
-.conditions-menu:target {
-  transition: all .5s ease-in-out;
-  height: 120px;
-}
-
 .dropdown-conditions {
-  background: white;
+  background: rgba(199, 199, 199, 0.75);
   display: grid;
   overflow: hidden;
   position: absolute;
-  margin-left: 10px;
-  padding: 10px;
+  top: 0px;
+  box-shadow: gray 2px 2px;
+  transform: translate(5px, 97px);
+  transition: .4s;
 }
+.collapse-conditions {
+  position: absolute;
+  width: 107.42px;
+  top: 40px;
+  transform: translate(5px, 0px);
+  transition: 0.4s ease-in-out;
+}
+
 .dropdown-conditions a {
-  color: gray;
+  color: black;
+  font-size: smaller;
   text-align: left;
-  margin: 0px;
+  padding: 10px 20px 10px 10px;
+  margin: 0;
+  transition-duration: 0.5s ease-in-out;
 }
-.dropdown-conditions:target {
-  margin-left: 10px;
-  padding: 10px;
+.dropdown-conditions a:hover {
+  background: rgb(155, 155, 155);
+  transition-duration: 0.5s ease-in-out;
 }
 
 /* SPLASHPAGE */
@@ -96,6 +102,7 @@ button {
   padding: 10px;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
+  transition-duration: 1s;
 }
 button:hover {
   background: black;
@@ -168,6 +175,7 @@ button:hover {
 .education a, .pulse a {
   text-decoration: none;
   color: white;
+  transition-duration: 0.3s;
 }
 .education a:hover, .pulse a:hover {
   font-size: 1.5em;
@@ -215,6 +223,7 @@ button:hover {
 .diet-box a {
   text-decoration: none;
   color: white;
+  transition-duration: 0.5s;
 }
 .diet-box a:hover {
   color: #E8374D;
@@ -270,6 +279,7 @@ button:hover {
 .exercise-box a {
   text-decoration: none;
   color: white;
+  transition-duration: 0.5s;
 }
 .exercise-box a:hover {
   color: #E8374D;
@@ -456,6 +466,7 @@ li h3 {
   text-decoration: none;
   color: black;
   font-weight: 400;
+  transition-duration: 0.5s;
 }
 .staff a:hover, .single-staff a:hover {
   color: #E8374D;
@@ -484,6 +495,7 @@ li h3 {
   text-decoration: none;
   color: black;
   font-weight: 400;
+  transition-duration: 0.5s;
 }
 .diagnostics a:hover, .single-diagnostic a:hover {
   color: #E8374D;
@@ -524,6 +536,7 @@ li h3 {
   font-size: 100%;
   font-weight: normal;
   text-shadow: none;
+  transition-duration: 0.5s;
 }
 .single-diagnostic button:hover {
   background-color: #E8374D;
@@ -537,6 +550,7 @@ li h3 {
   text-decoration: none;
   color: black;
   font-weight: 400;
+  transition-duration: 0.5s;
 }
 .conditions a:hover, .single-condition a:hover, .condition-subpage a:hover {
   color: #E8374D;
@@ -560,6 +574,7 @@ li h3 {
   font-size: 100%;
   font-weight: normal;
   text-shadow: none;
+  transition-duration: 0.5s;
 }
 .conditions button:hover, .single-condition button:hover, .condition-subpage button:hover {
   background-color: #E8374D;
@@ -664,6 +679,7 @@ li h3 {
   font-size: 100%;
   font-weight: normal;
   text-shadow: none;
+  transition-duration: 0.5s;
 }
 .single-health button:hover {
   background-color: #E8374D;
@@ -674,6 +690,7 @@ li h3 {
   text-decoration: none;
   color: black;
   font-weight: 400;
+  transition-duration: 0.5s;
 }
 .health a:hover, .single-health a:hover {
   color: #E8374D;
@@ -777,7 +794,7 @@ li h3 {
   }
 
   /* CONDITIONS */
-  .single-condition {
+  .single-condition, .condition-subpage {
     display: block;
   }
   .condition-left {
