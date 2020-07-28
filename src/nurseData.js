@@ -2,7 +2,7 @@ export default
 [
     {
         name: 'Allison McBride, APRN, MSN, FNP-C',
-        url: 'allison-mcbride',
+        url: '/staff/allison-mcbride',
         photo: require('./Staff/allison-mcbride.jpg'),
         licensure: 
         [
@@ -18,7 +18,7 @@ export default
     },
     {
         name: 'Victoria Alexus Smith, RN, MSN',
-        url: 'victoria-alexus-smith',
+        url: '/staff/victoria-alexus-smith',
         photo: require('./Staff/victoria-alexus-smith.jpg'),
         licensure:
         [
@@ -32,7 +32,7 @@ export default
     },
     {
         name: 'Rachel Krumrie, CCRN',
-        url: 'rachel-krumrie',
+        url: '/staff/rachel-krumrie',
         photo: require('./Staff/rachel-krumrie.jpg'),
         licensure: 
         [

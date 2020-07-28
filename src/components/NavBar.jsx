@@ -2,12 +2,15 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../images/logo.png'
 import Facebook from '../images/facebook_logo.png'
+import providerData from '../providerData'
+import nurseData from '../nurseData'
 
 export default class NavBar extends Component {
     state = {
         showConditions: false,
         showDiagnostics: false,
         showHealth: false,
+        showStaff: false,
     }
     toggleConditions = () => {
         const newShowConditions = !this.state.showConditions;
@@ -25,6 +28,12 @@ export default class NavBar extends Component {
         const newShowHealth = !this.state.showHealth;
         this.setState({
             showHealth: newShowHealth,
+        });
+    }
+    toggleStaff = () => {
+        const newShowStaff = !this.state.showStaff;
+        this.setState({
+            showStaff: newShowStaff,
         });
     }
     componentDidMount() {
@@ -47,6 +56,41 @@ export default class NavBar extends Component {
                 <Link className="logo" to="/"><img src={ logo } alt="logo"/></Link>
                 <div className="bar">
                     <Link to="/">Home</Link>
+                    <div className="sub-menu" onMouseEnter={ this.toggleStaff } onMouseLeave={ this.toggleStaff }>
+                        <Link to="/staff">
+                            {this.state.showStaff
+                                ? 'Staff'
+                                : 'Staff'
+                            }
+                        </Link>
+                        { this.state.showStaff
+                        ?
+                        <div className="staff-menu">
+                            <div className="staff-link">
+                                <Link to="/staff">Directory</Link>
+                            </div>
+                            {providerData.map((provider, i) => {
+                                return (
+                                    <div key={ i } className="staff-link">
+                                        <Link to={{pathname: `${ provider.url }`, state: provider}}>
+                                            { provider.name }
+                                        </Link>
+                                    </div>
+                                )
+                            })}
+                            {nurseData.map((provider, i) => {
+                                return (
+                                    <div key={ i } className="staff-link">
+                                        <Link to={{pathname: `${ provider.url }`, state: provider}}>
+                                            { provider.name }
+                                        </Link>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        : <div className="collapse-menu"/>
+                        }
+                    </div>
                     <div className="sub-menu" onMouseEnter={ this.toggleConditions } onMouseLeave={ this.toggleConditions }>
                         <Link to="/conditions">
                             { this.state.showConditions
@@ -100,7 +144,6 @@ export default class NavBar extends Component {
                         : <div className="collapse-menu"/>
                         }
                     </div>
-                    <Link to="/staff">Staff</Link>
                 </div>
                 <a className="facebook" href="https://www.facebook.com/cardiologycenterofdalton" target="_blank"><img src={ Facebook } alt="facebook"/></a>
             </div>

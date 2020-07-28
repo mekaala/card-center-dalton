@@ -14,12 +14,12 @@ export default class Providers extends Component {
                     return (
                         <div key={ i }>
                             <Link 
-                            to={{pathname: `staff/${ provider.url }`,
+                            to={{pathname: `${ provider.url }`,
                             state: provider}}>
                                 <img src={ provider.photo } alt={ provider.name }/>
                             </Link>
                             <h3>
-                                <Link to={{pathname: `staff/${ provider.url }`, state: provider}}>
+                                <Link to={{pathname: `${ provider.url }`, state: provider}}>
                                     { provider.name }
                                 </Link>
                             </h3>
@@ -32,12 +32,12 @@ export default class Providers extends Component {
                     return (
                         <div key={ i }>
                             <Link 
-                            to={{pathname: `staff/${ nurse.url }`,
+                            to={{pathname: `${ nurse.url }`,
                             state: nurse}}>
                                 <img src={ nurse.photo } alt={ nurse.name }/>
                             </Link>
                             <h3>
-                                <Link to={{pathname: `staff/${ nurse.url }`, state: nurse}}>
+                                <Link to={{pathname: `${ nurse.url }`, state: nurse}}>
                                     { nurse.name }
                                 </Link>
                             </h3>
