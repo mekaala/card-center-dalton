@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 .App {
   text-align: center;
-  background: white;
+  background: black;
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -23,11 +23,21 @@ img {
 
 /* NAVIGATION */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.925);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  transform: translateY(0px);
+  transition: 0.25s;
 }
-.navbar .logo {
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  transition: 0.25s;
+}
+.navbar.logo {
   margin: auto 10px;
 }
 .bar {
@@ -51,11 +61,11 @@ img {
 .facebook img {
   width: 32px;
 }
-.condition-menu {
+.sub-menu {
   padding: 7% 0;
 }
-.dropdown-conditions {
-  background: rgba(199, 199, 199, 0.75);
+.dropdown-menu {
+  background: rgba(199, 199, 199, 0.85);
   display: grid;
   overflow: hidden;
   position: absolute;
@@ -64,7 +74,7 @@ img {
   transform: translate(5px, 97px);
   transition: .4s;
 }
-.collapse-conditions {
+.collapse-menu {
   position: absolute;
   width: 107.42px;
   top: 40px;
@@ -72,7 +82,7 @@ img {
   transition: 0.4s ease-in-out;
 }
 
-.dropdown-conditions a {
+.dropdown-menu a {
   color: black;
   font-size: smaller;
   text-align: left;
@@ -80,7 +90,7 @@ img {
   margin: 0;
   transition-duration: 0.5s ease-in-out;
 }
-.dropdown-conditions a:hover {
+.dropdown-menu a:hover {
   background: rgb(155, 155, 155);
   transition-duration: 0.5s ease-in-out;
 }
@@ -134,7 +144,8 @@ button:hover {
   margin-top: 0;
 }
 .about h3 {
-  margin: 10% 10%;
+  padding: 5% 10%;
+  margin: auto;
   line-height: 2em;
   font-weight: lighter;
   font-size: 24px;
@@ -243,7 +254,7 @@ button:hover {
 }
 .diet-box p {
   text-align: left;
-  margin: 5px;
+  margin: 10px 30px;
 }
 
 /* SHAPE TAG */
@@ -299,7 +310,7 @@ button:hover {
 }
 .exercise-box p {
   text-align: left;
-  margin: 5px;
+  margin: 10px 20px;
 }
 #ten-minute-workout {
   grid-column-start: 1;
@@ -398,6 +409,8 @@ li h3 {
 
 .contact {
   text-align: center;
+  background: white;
+  padding: 1%;
 }
 .contact-info {
   box-sizing: border-box;
@@ -418,7 +431,10 @@ li h3 {
 }
 
 /* PROVIDER/EMPLOYEE DIRECTORY */
-
+.staff, .single-staff {
+  background: white;
+  padding: 1%;
+}
 .provider-container {
   margin: auto;
 }
@@ -444,9 +460,7 @@ li h3 {
 .cma-container div img {
   width: 93%;
 }
-.single-staff {
-  margin: 10px;
-}
+
 .doctor-description {
   text-align: left;
 }
@@ -478,6 +492,13 @@ li h3 {
 
 
 /* DIAGNOSTICS */
+.diagnostics, .single-diagnostic {
+  background: white;
+  padding: 1%;
+}
+.diagnostic-data {
+  text-align: left;
+}
 .full-list {
   display: flex;
 }
@@ -521,9 +542,9 @@ li h3 {
   margin: 0 10px;
   width: 32%;
 }
-.diagnostic-side h2 {
+/* .diagnostic-side h2 {
   margin-left: 20px;
-}
+} */
 .diagnostic-map {
   text-align: left;
 }
@@ -545,7 +566,10 @@ li h3 {
 }
 
 /* CONDITIONS */
-
+.conditions, .single-condition, .condition-subpage {
+  background: white;
+  padding: 1%;
+}
 .conditions a, .single-condition a, .condition-subpage a {
   text-decoration: none;
   color: black;
@@ -627,6 +651,16 @@ li h3 {
 }
 
 /* HEALTH */
+.health, .single-health, .health-subpage {
+  background: white;
+  padding: 1%;
+}
+.health-subpage {
+  display: flex;;
+}
+.health-data {
+  text-align: left;
+}
 .health-container {
   display: flex;
   margin: 0 10px;
@@ -670,7 +704,7 @@ li h3 {
   text-align: left;
 }
 
-.single-health button {
+.single-health button, .health-subpage button {
   background-color: white;
   border: none;
   border-radius: 12px;
@@ -681,18 +715,18 @@ li h3 {
   text-shadow: none;
   transition-duration: 0.5s;
 }
-.single-health button:hover {
+.single-health button:hover, .health-subpage button:hover {
   background-color: #E8374D;
   color: white;
   transition-duration: 0.5s;
 }
-.health a, .single-health a {
+.health a, .single-health a, .health-subpage a {
   text-decoration: none;
   color: black;
   font-weight: 400;
   transition-duration: 0.5s;
 }
-.health a:hover, .single-health a:hover {
+.health a:hover, .single-health a:hover, .health-subpage a:hover {
   color: #E8374D;
   transition-duration: 0.5s;
 }

@@ -18,6 +18,10 @@ import Diseases from './components/Diseases';
 import Arrythmias from './components/Arrythmias';
 import HeartBlock from './components/HeartBlock';
 import Symptoms from './components/Symptoms';
+import OnSite from './components/OnSite';
+import OffSite from './components/OffSite';
+import Diets from './components/Diets';
+import Exercises from './components/Exercises';
 
 function App() {
   return (
@@ -36,8 +40,12 @@ function App() {
             <Route exact path="/conditions/symptoms" component={ Symptoms }/>
             <Route path="/conditions/:conditionUrl" component={ SingleCondition }/>
             <Route exact path="/diagnostics" component={ Diagnostics }/>
+            <Route exact path="/diagnostics/on-site" component={ OnSite }/>
+            <Route exact path="/diagnostics/off-site" component={ OffSite }/>
             <Route path="/diagnostics/:diagnosticUrl" component={ SingleDiagnostic }/>
             <Route exact path="/health" component={ Health }/>
+            <Route exact path="/health/diets" component={ Diets }/>
+            <Route exact path="/health/exercises" component={ Exercises }/>
             <Route path="/health/:healthUrl" component={ SingleHealth }/>
           </Switch>
           <Contact/>
