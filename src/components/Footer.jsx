@@ -6,11 +6,11 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <div className="list">
-                    <p>Get Up</p>
-                    <p>Happy Heart</p>
-                    <p>The Trails</p>
-                    <p>A Healthy You</p>
-                    <p>New Patient Form</p>
+                    <Link to="/health/diets">Diets</Link>
+                    <Link to="/health/exercise">Exercising</Link>
+                    <Link to="/diagnostics/on-site">Office Services</Link>
+                    <Link to="/diagnostics/off-site">Hospital Services</Link>
+                    <Link to="/">Patient Portal</Link>
                 </div>
             </div>
         )

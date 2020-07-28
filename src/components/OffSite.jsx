@@ -18,7 +18,7 @@ export default class OffSite extends Component {
         return (
             <div className="condition-subpage">
                 <div className="diagnostic-main">
-                    <h1>HOSPITAL DIAGNOSTICS</h1>
+                    <h1>HOSPITAL SERVICES</h1>
                     <div className="diagnostic-data">
                         {hospitalDiagnosticData.map((diagnostic, i) => {
                             return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../images/logo.png'
+import logo from '../images/logowhite.png'
 import Facebook from '../images/facebook_logo.png'
 import providerData from '../providerData'
 import nurseData from '../nurseData'
@@ -57,10 +57,10 @@ export default class NavBar extends Component {
                 <div className="bar">
                     <Link to="/">Home</Link>
                     <div className="sub-menu" onMouseEnter={ this.toggleStaff } onMouseLeave={ this.toggleStaff }>
-                        <Link to="/staff">
+                        <Link>
                             {this.state.showStaff
-                                ? 'Staff'
-                                : 'Staff'
+                                ? 'Our Team'
+                                : 'Our Team'
                             }
                         </Link>
                         { this.state.showStaff
@@ -92,7 +92,7 @@ export default class NavBar extends Component {
                         }
                     </div>
                     <div className="sub-menu" onMouseEnter={ this.toggleConditions } onMouseLeave={ this.toggleConditions }>
-                        <Link to="/conditions">
+                        <Link>
                             { this.state.showConditions
                                 ? 'Conditions'
                                 : 'Conditions'
@@ -111,7 +111,7 @@ export default class NavBar extends Component {
                         }
                     </div>
                     <div className="sub-menu" onMouseEnter={ this.toggleDiagnostics } onMouseLeave={ this.toggleDiagnostics}>
-                        <Link to="/diagnostics">
+                        <Link>
                             {this.state.showDiagnostics
                                 ? 'Diagnostics'
                                 : 'Diagnostics'
@@ -128,7 +128,7 @@ export default class NavBar extends Component {
                         }
                     </div>
                     <div className="sub-menu" onMouseEnter={ this.toggleHealth } onMouseLeave={ this.toggleHealth}>
-                        <Link to="/health">
+                        <Link>
                             {this.state.showHealth
                                 ? 'Health'
                                 : 'Health'

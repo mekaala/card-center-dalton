@@ -18,7 +18,7 @@ export default class OnSite extends Component {
         return (
             <div className="condition-subpage">
                 <div className="diagnostic-main">
-                    <h1>OFFICE DIAGNOSTICS</h1>
+                    <h1>IN-OFFICE SERVICES</h1>
                     <div className="diagnostic-data">
                         {diagnosticData.map((diagnostic, i) => {
                             return (
