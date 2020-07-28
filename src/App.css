@@ -47,6 +47,7 @@ img {
   justify-content: space-between;
 }
 .bar a {
+  display: block;
   text-decoration: none;
   color: white;
   margin: auto 20px;
@@ -793,11 +794,14 @@ li h3 {
     margin: auto 0;
   }
   .bar a {
-    margin: auto 8px;
-    font-size: 80%;
+    margin: auto 5px;
+    font-size: 12px;
   }
   .staff-menu, .dropdown-menu {
     transform: translate(5px, 75px);
+  }
+  .navbar .facebook {
+    margin: auto 5px;
   }
   /* DIETING */
   .diet-nav {
