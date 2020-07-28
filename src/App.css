@@ -63,6 +63,7 @@ img {
 }
 .sub-menu {
   padding: 7% 0;
+  margin: auto;
 }
 .dropdown-menu {
   background: rgba(199, 199, 199, 0.85);
@@ -823,9 +824,12 @@ li h3 {
   .doctor-about, .nurse-about {
     width: auto;
   }
+  .doctor-description {
+    margin: auto 10px;
+  }
   .doctor-image, .nurse-image {
     float: none;
-    margin: 10px;
+    margin: 16px;
   }
   .doctor-image img, .nurse-image img {
     width: 300px;
@@ -840,6 +844,10 @@ li h3 {
   }
   .offsite-side {
     float: none;
+  }
+  .condition-subpage .diagnostic-side {
+    width: 100%;
+    margin: auto;
   }
   .full-list {
     display: block;
@@ -881,6 +889,19 @@ li h3 {
   }
   .good-food, .bad-food {
     width: auto;
+    margin: auto;
+  }
+  .health-subpage {
+    display: block;
+  }
+  .health-info {
+    width: 100%;
+  }
+  .health-data {
+    margin: auto 10px;
+  }
+  .health-side {
+    width: 100%;
     margin: auto;
   }
 }

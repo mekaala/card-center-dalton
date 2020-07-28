@@ -53,7 +53,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <div className="navbar" id="navbar">
-                <Link className="logo" to="/"><img src={ logo } alt="logo"/></Link>
+                <Link className="logo" to="/"><img src={ logo } alt="logosharp"/></Link>
                 <div className="bar">
                     <Link to="/">Home</Link>
                     <div className="sub-menu" onMouseEnter={ this.toggleStaff } onMouseLeave={ this.toggleStaff }>
