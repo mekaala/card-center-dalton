@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import ConditionData from '../conditionData'
-import symptomData from '../symptomData';
 import arrhythmiaData from '../arrhythmiaData';
 import heartBlockData from '../heartBlockData';
-import cardiomyopathyData from '../cardiomyopathyData';
+import symptomData from '../symptomData';
 
 export default class Conditions extends Component {
     state = {
@@ -49,6 +48,11 @@ export default class Conditions extends Component {
             <div className="conditions">
                 <h1>CONDITIONS TREATED</h1>
                 <div className="condition-container">
+                    <p>
+                        The heart is an essential organ that is responsible for pumping blood to every region of your body.
+                        There are many conditions that can impair the heart's performance, and serious health issues can arise.
+                        We at the Cardiology Center of Dalton want to give our patients detailed information on these conditions to learn not only about their characteristics and symptoms, but also the recommended treatments for the disease.
+                    </p>
                     <div>
                         <h1>DISEASES</h1>
                         {ConditionData.map((condition, i) => {
@@ -129,128 +133,6 @@ export default class Conditions extends Component {
                             )
                         })}
                     </div>
-                    {/* <h1><button onClick={ this.toggleDisease }>
-                            { this.state.showDisease
-                                ? 'COLLAPSE'
-                                : 'DISEASES'
-                            }
-                        </button></h1>
-                    { this.state.showDisease
-                        ?
-                        <div>
-                            {ConditionData.map((condition, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h2><Link
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            { condition.name }
-                                        </Link></h2>
-                                        <p>{ condition.info }</p>
-                                        <h3><Link className="read-more"
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            Read More
-                                        </Link></h3>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        : null
-                    }
-                </div>
-                <div className="arrhythmia-container">
-                    <h1><button onClick={ this.toggleArrhythmia }>
-                        { this.state.showArrhythmia
-                            ? 'COLLAPSE'
-                            : 'ARRHYTHMIAS'
-                        }
-                    </button></h1>
-                    { this.state.showArrhythmia
-                        ?
-                        <div>
-                        {arrhythmiaData.map((condition, i) => {
-                            return (
-                                <div key={ i }>
-                                    <h2><Link
-                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                    state: condition}}>
-                                        { condition.name }
-                                    </Link></h2>
-                                    <p>{ condition.info }</p>
-                                    <h3><Link className="read-more"
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            Read More
-                                    </Link></h3>
-                                </div>
-                            )
-                        })}
-                        </div>
-                        : null
-                    }
-                    </div>
-                <div className="block-container">
-                    <h1><button onClick={ this.toggleHeartBlock }>
-                        { this.state.showHeartBlock
-                            ? 'COLLAPSE'
-                            : 'HEART BLOCK'
-                        }
-                    </button></h1>
-                    { this.state.showHeartBlock
-                        ?
-                        <div>
-                            {heartBlockData.map((condition, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h2><Link
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            { condition.name }
-                                        </Link></h2>
-                                        <p>{ condition.info }</p>
-                                        <h3><Link className="read-more"
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            Read More
-                                        </Link></h3>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        : null
-                    }
-                </div>
-                <div className="symptom-container">
-                    <h1><button onClick={ this.toggleSymptoms  }>
-                        { this.state.showSymptom
-                            ? 'COLLAPSE'
-                            : 'SYMPTOMS'
-                        }
-                    </button></h1>
-                    { this.state.showSymptom
-                        ?
-                        <div>                            
-                            {symptomData.map((condition, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h2><Link
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            { condition.name }
-                                        </Link></h2>
-                                        <p>{ condition.info }</p>
-                                        <h3><Link className="read-more"
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            Read More
-                                        </Link></h3>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        :null
-                    } */}
                 </div>
             </div>
         )

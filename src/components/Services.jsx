@@ -5,8 +5,9 @@ export default class Services extends Component {
     render() {
         return (
             <div className="services">
-                <h1>SERVICES</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto labore iste soluta commodi, asperiores nisi dolore corrupti nihil, ad neque, voluptates quisquam ipsum ea dolorem eveniet! Nam, odit magni.</p>
+                <h1>OUR SERVICES</h1>
+                <p>Our office provides an array of diagnostic services to understand the wellbeing of your heart. We at Cardiology Center of Dalton will take the upmost care of your heart, and give you the steps to building a strong and healthy heart.</p>
+                <p>Whether you need a stress test or a screening for disease, we have you covered.</p>
             </div>
         )
     }

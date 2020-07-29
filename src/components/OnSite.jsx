@@ -19,6 +19,11 @@ export default class OnSite extends Component {
             <div className="condition-subpage">
                 <div className="diagnostic-main">
                     <h1>IN-OFFICE SERVICES</h1>
+                    <p>
+                        At times, our providers may order tests or procedures to determine the cause of your illness.
+                        The state-of-the-art clinic at the Cardiology Center of Dalton offers a variety of diagnostic services in one convenient location in Dalton, Georgia.
+                        Diagnostic testing may rule out certain heart diseases or indicate the exact cause of your symptoms.
+                    </p>
                     <div className="diagnostic-data">
                         {diagnosticData.map((diagnostic, i) => {
                             return (
@@ -28,6 +33,7 @@ export default class OnSite extends Component {
                                             { diagnostic.name }
                                         </Link>
                                     </h3>
+                                    <p>{ diagnostic.info }</p>
                                 </div>
                             )
                         })}

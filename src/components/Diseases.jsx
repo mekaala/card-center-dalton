@@ -35,6 +35,11 @@ export default class Diseases extends Component {
             <div className="condition-subpage">
                 <div className="condition-left">
                     <h1>DISEASES</h1>
+                    <p>
+                        The heart is an essential organ that is responsible for pumping blood to every region of your body.
+                        There are many conditions that can impair the heart's performance, and serious health issues can arise.
+                        We at the Cardiology Center of Dalton want to give our patients detailed information on these conditions to learn not only about their characteristics and symptoms, but also the recommended treatments for the disease.
+                    </p>
                     {conditionData.map((condition, i) => {
                         return (
                             <div key={ i }>
