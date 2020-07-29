@@ -7,7 +7,7 @@ export default class Footer extends Component {
             <div className="footer">
                 <div className="list">
                     <Link to="/health/diets">Diets</Link>
-                    <Link to="/health/exercise">Exercising</Link>
+                    <Link to="/health/exercises">Exercising</Link>
                     <Link to="/diagnostics/on-site">Office Services</Link>
                     <Link to="/diagnostics/off-site">Hospital Services</Link>
                     <Link to="/">Patient Portal</Link>
