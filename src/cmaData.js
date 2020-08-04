@@ -5,10 +5,10 @@ export default
         url: 'denise-staton',
         photo: require('./Staff/denise-staton.jpg')
     },
-    {
-        name: 'Neil Canada, Registered Nuclear Medicine Technologist',
-        url: 'neil-canada',
-    },
+    // {
+    //     name: 'Neil Canada, Registered Nuclear Medicine Technologist',
+    //     url: 'neil-canada',
+    // },
     {
         name: 'Emily Beard, CMA',
         url: 'emily-beard',
@@ -17,6 +17,7 @@ export default
     {
         name: 'Salvador Hernandez, CMA',
         url: 'salvador-hernandez',
+        photo: require('./Staff/salvador-hernandez.JPG')
     },
     {
         name: 'Jessica Hobbs, CMA, Nuclear',
@@ -26,6 +27,7 @@ export default
     {
         name: 'Britany Hogg, CMA, Medical Records',
         url: 'britany-hogg',
+        photo: require('./Staff/britany-hogg.JPG')
     },
     {
         name: 'Nicole Accord, Echo',
@@ -35,6 +37,7 @@ export default
     {
         name: 'Dallas Rutledge, Echo',
         url: 'dallas-rutledge',
+        photo: require('./Staff/dallas-rutledge.JPG')
     },
     {
         name: 'Brenda Hernandez, Insurance Clerk',

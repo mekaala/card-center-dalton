@@ -153,8 +153,8 @@ button:hover {
 }
 
 .image-page {
-  background-image: url('./images/placeholder.jpg');
-  height: 100vh;
+  background-image: url('./images/office.JPG');
+  height: 62vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,6 +174,10 @@ button:hover {
   font-size: 500%;
   font-weight: bolder;
   margin-top: 0;
+}
+.about {
+  background-color: #335582;
+  padding-bottom: 1px;
 }
 .about h3 {
   padding: 5% 10%;
@@ -224,11 +228,24 @@ button:hover {
   font-size: 1.5em;
   transition-duration: 0.3s;
 }
-.about {
-  background-color: #335582;
-  padding-bottom: 1px;
-}
 
+/* COVID */
+.covid {
+  background: gray;
+  padding: 5%;
+}
+covid-19 {
+  font-size: larger;
+  text-align: left;
+}
+.covid a {
+  color: rgb(133, 203, 231);
+  text-decoration: none;
+}
+.covid a:hover {
+  color: rgb(235, 107, 122);
+  transition-duration: 0.5s;
+}
 /* SERVICES */
 .services {
   background: white;
@@ -515,10 +532,6 @@ li h3 {
 .doctor-about, .nurse-about {
   width: 80%;
 }
-.doctor-image, .nurse-image {
-  float: right;
-  margin: auto;
-}
 .staff a, .single-staff a {
   text-decoration: none;
   color: black;
@@ -774,7 +787,7 @@ li h3 {
   transition-duration: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   /* NAVBAR */
   .logo img {
     display: none;
@@ -795,8 +808,11 @@ li h3 {
     margin: auto 0;
   }
   .bar a {
-    margin: auto 5px;
-    font-size: 12px;
+    margin: auto 20px;
+    font-size: 24px;
+  }
+  .sub-menu {
+    padding: 0;
   }
   .staff-menu, .dropdown-menu {
     transform: translate(5px, 75px);
@@ -840,7 +856,7 @@ li h3 {
   /* STAFF */
   .doctor-info, .nurse-info {
     text-align: left;
-    display: block;
+    display: flex;
     margin: auto 10px;
   }
   .doctor-about, .nurse-about {
@@ -850,8 +866,7 @@ li h3 {
     margin: auto 10px;
   }
   .doctor-image, .nurse-image {
-    float: none;
-    margin: 16px;
+    margin: 16px auto;
   }
   .doctor-image img, .nurse-image img {
     width: 300px;
@@ -925,5 +940,58 @@ li h3 {
   .health-side {
     width: 100%;
     margin: auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .image-page {
+    height: 28vh;
+  }
+  .image-text {
+    height: 85%;
+  }
+  .image-text h2, .image-text h1 {
+    font-size: medium;
+  }
+  .image-text button {
+    font-size: 50%;
+  }
+  .image-text a {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  .about h3 {
+    font-size: 75%;
+  }
+  .covid h1 {
+    font-size: 150%;
+  }
+  covid-19 {
+    font-size: smaller;
+  }
+  .bar a {
+    margin: auto 5px;
+    font-size: 12px;
+  }
+  .provider-container img {
+    width: 90%;
+  }
+  .np-container {
+    display: block;
+  }
+  .cma-container {
+    display: block;
+  }
+  .doctor-info, .nurse-info {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    margin: auto 10px;
+  }
+  .doctor-image {
+    text-align: center;
+  }
+  .doctor-image img, .nurse-image img {
+    width: 200px;
   }
 }

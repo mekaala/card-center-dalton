@@ -51,8 +51,6 @@ export default
         offName: 'SURGICAL AORTIC VALVE REPLACEMENT',
         info: 'Operation that treats damaged valves by removing them completely, and replacing them with a new valve.',
         about: 'Surgical aortic valve replacement (SAVR) involves the removal of the narrowed valve and replacement with a new one. The new valve is made from metal or animal tissue. Damaged valves result in aortic stenosis, in which the aortic valve does not open fully, leading to regurgitation.',
-        procedure: '',
-        warning: '',
     },
     {
         name: 'Transcatheter Aortic Valve Replacement (TAVR)',
