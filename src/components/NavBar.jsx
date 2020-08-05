@@ -144,6 +144,7 @@ export default class NavBar extends Component {
                         : <div className="collapse-menu"/>
                         }
                     </div>
+                    <a href="https://www.myhealthrecord.com/Portal/SSO" target="_blank">Patient Portal</a>
                 </div>
                 <a className="facebook" href="https://www.facebook.com/cardiologycenterofdalton" target="_blank"><img src={ Facebook } alt="facebook"/></a>
             </div>

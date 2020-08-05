@@ -26,7 +26,7 @@ img {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.75);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   transform: translateY(0px);
   transition: 0.25s;
@@ -43,15 +43,16 @@ img {
 }
 .bar {
   display: flex;
-  margin: 0;
+  width: 55%;
   justify-content: space-between;
+  align-items: center;
 }
 .bar a {
   display: block;
   text-decoration: none;
   color: white;
-  margin: auto 20px;
-  font-size: larger;
+  margin: auto 10px;
+  font-size: 16px;
   transition-duration: 0.5s;
 }
 .bar a:hover {
@@ -251,6 +252,25 @@ covid-19 {
   background: white;
   color: black;
   padding: 5%;
+}
+.service-box {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.onsite-box, .offsite-box {
+  margin: auto 57px;
+}
+.service-box h3 {
+  text-align: left;
+}
+.service-box h3 a {
+  color: black;
+  text-decoration: none;
+}
+.service-box h3 a:hover {
+  color: #E8374D;
+  transition-duration: 0.5s;
 }
 
 /* DIETING */
@@ -805,10 +825,10 @@ li h3 {
     margin: 0;
   }
   .bar {
-    margin: auto 0;
+    width: auto;
   }
   .bar a {
-    margin: auto 20px;
+    margin: auto 10px;
     font-size: 24px;
   }
   .sub-menu {
@@ -971,7 +991,13 @@ li h3 {
   }
   .bar a {
     margin: auto 5px;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .navbar .facebook {
+    margin: auto;
+  }
+  .facebook img {
+    width: 14px;
   }
   .provider-container img {
     width: 90%;

@@ -37,9 +37,9 @@ export default class SplashPage extends Component {
                     <h3>In our independently owned, state-of-the-art facility, our board-certified cardiologist and staff treat our patients like royalty. We take pride in the hands-on, compassionate care we offer to each and every patient, and we even offer bilingual interpretation.</h3>
                 </div>
                 <Covid/>
-                <Services/>
+                {/* <Services/> */}
                 <Dieting/>
-                <HealthKey/>
+                {/* <HealthKey/> */}
                 <ShapeTag/>
             </div>
         )
