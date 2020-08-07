@@ -22,6 +22,7 @@ import SingleHealth from './components/SingleHealth';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import AppointmentRequest from './components/AppointmentRequest';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <Route path="/health/:healthUrl" component={ SingleHealth }/>
           </Switch>
           <Contact/>
+          <AppointmentRequest/>
           <Footer/>
       </Router>
     </div>
