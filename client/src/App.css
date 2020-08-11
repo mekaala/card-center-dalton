@@ -513,7 +513,7 @@ li h3 {
 /* APPOINTMENT REQUEST */
 .appointment-request {
   background: white;
-  /* position: fixed; */
+  position: fixed;
   top: 94%;
   left: 70%;
 }
