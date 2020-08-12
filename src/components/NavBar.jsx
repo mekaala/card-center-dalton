@@ -57,12 +57,12 @@ export default class NavBar extends Component {
                 <div className="bar">
                     <Link to="/">Home</Link>
                     <div className="sub-menu" onMouseEnter={ this.toggleStaff } onMouseLeave={ this.toggleStaff }>
-                        <Link>
+                        <a>
                             {this.state.showStaff
                                 ? 'Our Team'
                                 : 'Our Team'
                             }
-                        </Link>
+                        </a>
                         { this.state.showStaff
                         ?
                         <div className="staff-menu">
@@ -92,12 +92,12 @@ export default class NavBar extends Component {
                         }
                     </div>
                     <div className="sub-menu" onMouseEnter={ this.toggleConditions } onMouseLeave={ this.toggleConditions }>
-                        <Link>
+                        <a>
                             { this.state.showConditions
                                 ? 'Conditions'
                                 : 'Conditions'
                             }
-                        </Link>
+                        </a>
                         { this.state.showConditions
                         ?
                             <div className="dropdown-menu">
@@ -111,12 +111,12 @@ export default class NavBar extends Component {
                         }
                     </div>
                     <div className="sub-menu" onMouseEnter={ this.toggleDiagnostics } onMouseLeave={ this.toggleDiagnostics}>
-                        <Link>
+                        <a>
                             {this.state.showDiagnostics
                                 ? 'Diagnostics'
                                 : 'Diagnostics'
                             }
-                        </Link>
+                        </a>
                         { this.state.showDiagnostics
                         ?
                         <div className="dropdown-menu">
@@ -128,12 +128,12 @@ export default class NavBar extends Component {
                         }
                     </div>
                     <div className="sub-menu" onMouseEnter={ this.toggleHealth } onMouseLeave={ this.toggleHealth}>
-                        <Link>
+                        <a>
                             {this.state.showHealth
                                 ? 'Health'
                                 : 'Health'
                             }
-                        </Link>
+                        </a>
                         { this.state.showHealth
                         ?
                         <div className="dropdown-menu">

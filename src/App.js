@@ -23,6 +23,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import AppointmentRequest from './components/AppointmentRequest';
+import AppointmentForm from './components/AppointmentForm';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
             <Route exact path="/health/diets" component={ Diets }/>
             <Route exact path="/health/exercises" component={ Exercises }/>
             <Route path="/health/:healthUrl" component={ SingleHealth }/>
+            <Route exact path="/appointment-form" component={ AppointmentForm }/>
           </Switch>
           <Contact/>
           <AppointmentRequest/>

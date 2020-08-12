@@ -10,7 +10,7 @@ export default class Footer extends Component {
                     <Link to="/health/exercises">Exercising</Link>
                     <Link to="/diagnostics/on-site">Office Services</Link>
                     <Link to="/diagnostics/off-site">Hospital Services</Link>
-                    <a href="https://www.myhealthrecord.com/Portal/SSO" target="_blank">Patient Portal</a>
+                    <Link to="/appointment-form" id="appointment-form">Request Appointment</Link>
                 </div>
             </div>
         )
