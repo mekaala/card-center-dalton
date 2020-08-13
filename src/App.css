@@ -517,6 +517,9 @@ li h3 {
 }
 
 /* APPOINTMENT REQUEST */
+#booked {
+  display: none;
+}
 .appointment-request {
   z-index: 2;
   background: white;
