@@ -59,7 +59,7 @@ export default class AppointmentRequest extends Component {
         const form = document.getElementById('appointment-request-form');
         const booked = document.getElementById('booked');
         event.preventDefault();
-        Axios.post('http://localhost:3001/send', this.state.newAppointment)
+        Axios.post('/send', this.state.newAppointment)
         .then(() => {
             this.setState({
                 buttonText: 'Sent!',
