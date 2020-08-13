@@ -73,7 +73,7 @@ a:hover {
   margin: 0;
 }
 .dropdown-menu {
-  background: rgba(199, 199, 199, 0.85);
+  background: rgb(245, 245, 245);
   display: grid;
   overflow: hidden;
   position: absolute;
@@ -92,18 +92,17 @@ a:hover {
 
 .dropdown-menu a {
   color: black;
-  font-size: smaller;
   text-align: left;
   padding: 10px 20px 10px 10px;
   margin: 0;
   transition-duration: 0.5s ease-in-out;
 }
 .dropdown-menu a:hover {
-  background: rgb(155, 155, 155);
+  background: rgb(255, 255, 255);
   transition-duration: 0.5s ease-in-out;
 }
 .staff-menu {
-  background: rgba(199, 199, 199, 0.85);
+  background: rgb(245, 245, 245);
   display: grid;
   overflow: hidden;
   position: absolute;
@@ -115,7 +114,6 @@ a:hover {
 .staff-menu .staff-link a {
   display: block;
   color: black;
-  font-size: smaller;
   text-align: left;
   padding: 10px 20px 10px 10px;
   margin: 0;
@@ -127,7 +125,7 @@ a:hover {
 }
 .staff-menu .staff-link a:hover {
   color: #E8374D;
-  background: rgb(155, 155, 155);
+  background: rgb(255, 255, 255);
   transition: 0.5s ease-in-out;
 }
 
@@ -174,7 +172,7 @@ button:hover {
   font-size: 350%;
   font-weight: bolder;
   position: relative;
-  top: -180px;
+  top: 180px;
 }
 .about {
   background-color: #335582;
@@ -912,6 +910,11 @@ li h3 {
   .navbar .facebook {
     margin: auto 5px;
   }
+  /* SPLASHPAGE */
+  .image-text h1 {
+    font-size: 300%;
+    top: 250px;
+  }
   /* DIETING */
   .diet-nav {
     display: block;
@@ -1076,8 +1079,9 @@ li h3 {
   .image-text {
     height: 85%;
   }
-  .image-text h2, .image-text h1 {
+  .image-text h1 {
     font-size: medium;
+    top: 100px;
   }
   .image-text button {
     font-size: 50%;
