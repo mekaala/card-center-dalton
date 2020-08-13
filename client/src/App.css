@@ -626,11 +626,11 @@ li h3 {
   text-decoration: none;
   color: black;
   font-weight: 400;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
 }
 .staff a:hover, .single-staff a:hover {
   color: #E8374D;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
 }
 .single-staff a {
   display: flex;

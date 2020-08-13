@@ -1,44 +1,29 @@
 {
   "name": "card-center-dalton",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mekaala/card-center-dalton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mekaala/card-center-dalton/issues"
+  },
+  "homepage": "https://github.com/mekaala/card-center-dalton#readme",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "nexmo": "^2.8.0",
-    "nodemailer": "^6.4.11",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-recaptcha": "^2.3.10",
-    "react-recaptcha-google": "^1.1.1",
-    "react-recaptcha-v3": "^2.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "nodemailer": "^6.4.11"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
