@@ -1,9 +1,4 @@
 import React, { Component } from 'react'
-// import cardio from '../images/cardio.jpg'
-// import strength from '../images/strength.jpg'
-// import forward from '../images/forward.jpg'
-// import diet from '../images/diet.jpg'
-
 
 export default class Activities extends Component {
     render() {
