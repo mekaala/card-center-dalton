@@ -15,25 +15,10 @@ export default class SplashPage extends Component {
             <div className="splashpage">
                 <div className="image-page">
                     <div className="image-text">
-                        <h2>GENTLE SCREENING</h2>
-                        <h1>RELAXING</h1>
-                        <Link to="/conditions"><button>GET STARTED NOW</button></Link>
+                        <h1>CARDIOLOGY CENTER OF DALTON</h1>
                     </div>
                 </div>
                 <div className="about">
-                    {/* <div className="link-page">
-                        <div className="hours">
-                            <h1>HOURS</h1>
-                            <h4>MONDAY - FRIDAY</h4>
-                            <h4>9:00 AM - 5:00 PM</h4>
-                        </div>
-                        <div className="education">
-                            <Link to="/conditions"><h1>CONDITIONS</h1></Link>
-                        </div>
-                        <div className="pulse">
-                            <Link to="/diagnostics"><h1>DIAGNOSTICS</h1></Link>
-                        </div>
-                    </div> */}
                     <h3>In our independently owned, state-of-the-art facility, our board-certified cardiologist and staff treat our patients like royalty. We take pride in the hands-on, compassionate care we offer to each and every patient, and we even offer bilingual interpretation.</h3>
                 </div>
                 <Covid/>

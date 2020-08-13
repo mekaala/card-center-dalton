@@ -169,16 +169,12 @@ button:hover {
   text-shadow: 1px 1px black;
 }
 
-.image-text h2 {
-  font-size: xxx-large;
-  font-weight: 300;
-  color: #E8374D;
-  margin: 0;
-}
+
 .image-text h1 {
-  font-size: 500%;
+  font-size: 350%;
   font-weight: bolder;
-  margin-top: 0;
+  position: relative;
+  top: -180px;
 }
 .about {
   background-color: #335582;
