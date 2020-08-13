@@ -19,6 +19,11 @@ export default class AppointmentForm extends Component {
             description: '',
         }
     }
+
+    onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
+
     changeInput = (event) => {
         const updatedNewAppointment = { ...this.state.newAppointment };
         updatedNewAppointment[event.target.name] = event.target.value;
@@ -75,8 +80,7 @@ export default class AppointmentForm extends Component {
                         <div className="patient-information">
                             <div><label>What can we help you with? Please state if you are feeling chest pain, experiencing symptoms of heart disease, or if you want a check up. *</label><br/><textarea required type="text" name="description" onChange={ this.changeInput } value = { newAppointment.description }/></div>
                         </div>
-                        {/* <Recaptcha sitekey="6LcvBb4ZAAAAAKKDKPrhw4IKYPtyACO8ekgMLfHr" render="explicit"/> */}
-                        <div><input className="submit" type="submit" value={ this.state.buttonText }/></div>
+                        <div className="submit-button"><input type="submit" value={ this.state.buttonText } disabled= {this.state.disableSubmit } class="g-recaptcha" data-sitekey="6LcvBb4ZAAAAAKKDKPrhw4IKYPtyACO8ekgMLfHr" data-callback='onSubmit' data-action='submit'/></div>
                     </div>
                     <div id='booked'>
                         <h3>Thank you!</h3>

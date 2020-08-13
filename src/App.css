@@ -521,7 +521,7 @@ li h3 {
   display: none;
 }
 .appointment-request {
-  z-index: 2;
+  z-index: 0;
   background: white;
   position: fixed;
   display: inline-block;
@@ -534,12 +534,12 @@ li h3 {
 }
 .index-form form {
   background: white;
-  padding: 10px;
+  padding: 0 10px;
   border: solid 1px black;
   position: absolute;
   width: 400px;
-  bottom: 45px;
-  left: -75px;
+  bottom: 46px;
+  left: -109px;
   text-align: left;
 }
 .names, .selection, .patient-contact, .patient-information {
@@ -550,30 +550,31 @@ li h3 {
   width: 20px;
 }
 .index-form form div {
-  margin: 10px 5px;
+  margin: 5px;
 }
 .index-form textarea {
   resize: none;
   margin: 5px 0;
-  width: 370px;
+  width: 90%;
   height: 50px;
 }
 .submit-button {
   text-align: center;
 }
-.submit {
+.g-recaptcha {
   background: #E8374D;
   border: 1px solid rgba(0, 0, 0, 0.507);
   box-shadow: 1px solid black;
-  font-size: 150%;
+  font-size: 100%;
   font-weight: bolder;
   text-shadow: 1px 1px black;
+  border-radius: 8px;
   padding: 10px;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   transition-duration: 1s;
 }
-.submit:hover {
+.g-recaptcha:hover {
   background: black;
   transition-duration: 1s;
   cursor: pointer;
