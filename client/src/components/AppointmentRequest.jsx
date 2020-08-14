@@ -128,7 +128,6 @@ export default class AppointmentRequest extends Component {
                                     <div id='booked'>
                                         <h3>Thank you!</h3>
                                         <p>Your request has been sent to the office. You will receive a confirmation email at the address provided. We will contact you within two business days.</p>
-                                        <button onClick={ this.toggleCreateForm }>Close</button>
                                     </div>
                                 </form>
                                 : null
