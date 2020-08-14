@@ -16,7 +16,7 @@ app.post('/send', (req, res) => {
     try {
       const mailOptions = {
         from: req.body.email,
-        cc: "ccdplaceholder@yahoo.com",
+        cc: process.env.forward,
         to: process.env.email,
         subject: `Appointment Request from ${ req.body.lastName }, ${ req.body.firstName } ${ req.body.middleInitial }. - ${ req.body.patient } `,
         text: `${ req.body.firstName } ${ req.body.middleInitial }. ${ req.body.lastName } has requested an appointment as a ${ req.body.patient } via the Cardiology Center of Dalton website. Patient is ${ req.body.gender }, was born on ${ req.body.birthdate }, and requested an appointment for the following reasons: ${ req.body.description }.
