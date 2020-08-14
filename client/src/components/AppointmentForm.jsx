@@ -10,11 +10,10 @@ export default class AppointmentForm extends Component {
             firstName: '',
             middleInitial: '',
             lastName: '',
-            birthdate: '',
             phoneNumber: '',
             email: '',
+            birthdate: '',
             gender: '',
-            pronoun: '',
             patient: '',
             description: '',
         }

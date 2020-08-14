@@ -15,12 +15,13 @@ export default class AppointmentRequest extends Component {
             firstName: '',
             middleInitial: '',
             lastName: '',
-            birthdate: '',
             phoneNumber: '',
             email: '',
+            birthdate: '',
             gender: '',
-            pronoun: '',
             patient: '',
+            // time: '',
+            // days: '',
             description: '',
         }
     }
@@ -59,7 +60,7 @@ export default class AppointmentRequest extends Component {
         const form = document.getElementById('appointment-request-form');
         const booked = document.getElementById('booked');
         event.preventDefault();
-        Axios.post('/send', this.state.newAppointment)
+        Axios.post('http://localhost:3001/send', this.state.newAppointment)
         .then(() => {
             this.setState({
                 buttonText: 'Sent!',
@@ -100,21 +101,27 @@ export default class AppointmentRequest extends Component {
                                         <div className="selection">
                                             <div><label>Date of Birth *</label><br/><input required type="date" name="birthdate" onChange={ this.changeInput } value={ newAppointment.birthdate }/></div>
                                             <div><label>Gender *</label><br/><select required onChange={ this.changeInput } name="gender" value={ newAppointment.gender }>
-                                                <option defaultValue>Select</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                                 <option value="Other">Other</option>
                                             </select></div>
                                             <div><label>Patient Type *</label><br/><select required className="appointment-type" onChange={ this.changeInput } name="patient" value={ newAppointment.patient }>
-                                                <option defaultValue>Select</option>
                                                 <option value="New Patient">New Patient</option>
                                                 <option value="Returning Patient">Returning Patient</option>
                                             </select></div>
                                         </div>
+                                        {/* <div className="selection">
+                                            <div><label>Preferred Time *</label><br/><select required onChange={ this.changeInput } name="time" value={ newAppointment.time }>
+                                                <option value="Morning">Morning</option>
+                                                <option value="Afternoon">Afternoon</option>
+                                                <option value="Any Time">Any Time</option>
+                                            </select></div>
+                                            <div><label>Preferred days to visit *</label><br/><textarea className="days" required type="text" name="days" onChange={ this.changeInput } value = { newAppointment.days }/></div>
+                                        </div> */}
                                         <div className="patient-information">
-                                            <div><label>What can we help you with? Please state if you are feeling chest pain, experiencing symptoms of heart disease, or if you want a check up. *</label><br/><textarea required type="text" name="description" onChange={ this.changeInput } value = { newAppointment.description }/></div>
+                                            <div><label>What can we help you with? Please state if you are feeling chest pain, experiencing symptoms of heart disease, or if you want a check up. *</label><br/><textarea required type="text" className="description" name="description" onChange={ this.changeInput } value = { newAppointment.description }/></div>
                                         </div>
-                                        <div className="submit-button"><input type="submit" value={ this.state.buttonText } disabled= {this.state.disableSubmit } class="g-recaptcha" data-sitekey="6LcvBb4ZAAAAAKKDKPrhw4IKYPtyACO8ekgMLfHr" data-callback='onSubmit' data-action='submit'/></div>
+                                        <div className="submit-button"><input type="submit" value={ this.state.buttonText } disabled= {this.state.disableSubmit } className="g-recaptcha" data-sitekey="6LcvBb4ZAAAAAKKDKPrhw4IKYPtyACO8ekgMLfHr" data-callback='onSubmit' data-action='submit'/></div>
                                     </div>
                                     <div id='booked'>
                                         <h3>Thank you!</h3>

@@ -546,11 +546,17 @@ li h3 {
 .index-form form div {
   margin: 5px;
 }
-.index-form textarea {
+.description {
   resize: none;
   margin: 5px 0;
   width: 90%;
-  height: 50px;
+  height: 36px;
+}
+.days {
+  resize: none;
+  margin: 5px 0;
+  width: 240px;
+  height: 14px;
 }
 .submit-button {
   text-align: center;
