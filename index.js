@@ -16,6 +16,7 @@ app.post('/send', (req, res) => {
     try {
       const mailOptions = {
         from: req.body.email,
+        cc: "ccdplaceholder@yahoo.com",
         to: process.env.email,
         subject: `Appointment Request from ${ req.body.lastName }, ${ req.body.firstName } ${ req.body.middleInitial }. - ${ req.body.patient } `,
         text: `${ req.body.firstName } ${ req.body.middleInitial }. ${ req.body.lastName } has requested an appointment as a ${ req.body.patient } via the Cardiology Center of Dalton website. Patient is ${ req.body.gender }, was born on ${ req.body.birthdate }, and requested an appointment for the following reasons: ${ req.body.description }.
@@ -43,8 +44,8 @@ app.post('/send', (req, res) => {
       });
     }
     transporter.sendMail({
-    	from: "<your email address>",
-    	to: req.body.email,
+      from: "<your email address>",
+      to: req.body.email,
     	subject: `Appointment Request at Cardiology Center of Dalton - ${ req.body.lastName }, ${ req.body.firstName }  ${ req.body.middleInitial }.`,
         text: `Dear ${ req.body.firstName } ${ req.body.middleInitial }. ${ req.body.lastName },
         \nThank you for requesting an appointment at the Cardiology Center of Dalton. This is your confirmation email to inform you that your request has been received. Our office will contact you within two business days.

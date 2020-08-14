@@ -101,11 +101,13 @@ export default class AppointmentRequest extends Component {
                                         <div className="selection">
                                             <div><label>Date of Birth *</label><br/><input required type="date" name="birthdate" onChange={ this.changeInput } value={ newAppointment.birthdate }/></div>
                                             <div><label>Gender *</label><br/><select required onChange={ this.changeInput } name="gender" value={ newAppointment.gender }>
+                                                <option defaultValue>Select</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                                 <option value="Other">Other</option>
                                             </select></div>
                                             <div><label>Patient Type *</label><br/><select required className="appointment-type" onChange={ this.changeInput } name="patient" value={ newAppointment.patient }>
+                                                <option defaultValue>Select</option>
                                                 <option value="New Patient">New Patient</option>
                                                 <option value="Returning Patient">Returning Patient</option>
                                             </select></div>
