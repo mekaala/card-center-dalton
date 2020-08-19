@@ -42,29 +42,32 @@ export default class Exercises extends Component {
                 </div>
                 <div className="health-side">
                     <h1><Link to={{pathname: `/health`,state: health}}>HEALTH</Link></h1>
-                    <h2><button onClick={ this.toggleDiet }>
+                    <div onMouseEnter={ this.toggleDiet } onMouseLeave={ this.toggleDiet }>
+                        <h2><button>
                             { this.state.showExercise
                                 ? 'COLLAPSE'
                                 : 'DIETS'
                             }
                         </button></h2>
-                        { this.state.showDiet
-                            ?
-                                <div className="diet-map">
-                                    {dietData.map((health, i) => {
-                                        return (
-                                            <div key={ i }>
-                                                <h3>
-                                                    <Link to={{pathname: `${ health.healthUrl }`, state: health}}>
-                                                        { health.name }
-                                                    </Link>
-                                                </h3>
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                            : null
-                        }
+                            { this.state.showDiet
+                                ?
+                                    <div className="diet-map">
+                                        <h3><Link to="/health/diets">All Diets</Link></h3>
+                                        {dietData.map((health, i) => {
+                                            return (
+                                                <div key={ i }>
+                                                    <h3>
+                                                        <Link to={{pathname: `${ health.healthUrl }`, state: health}}>
+                                                            { health.name }
+                                                        </Link>
+                                                    </h3>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                : null
+                            }
+                    </div>
                 </div>
             </div>
         )

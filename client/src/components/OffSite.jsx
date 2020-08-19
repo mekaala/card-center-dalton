@@ -45,29 +45,32 @@ export default class OffSite extends Component {
                         state: diagnostic}}>
                         DIAGNOSTICS
                     </Link></h1>
-                    <h2><button onClick={ this.toggleOnSite }>
-                        { this.state.showOffSite
-                            ? 'COLLAPSE'
-                            : 'OFFICE DIAGNOSTICS'
+                    <div onMouseEnter={ this.toggleOnSite } onMouseLeave={ this.toggleOnSite }>
+                        <h2><button>
+                            { this.state.showOffSite
+                                ? 'OFFICE DIAGNOSTICS'
+                                : 'OFFICE DIAGNOSTICS'
+                            }
+                        </button></h2>
+                        { this.state.showOnSite
+                            ? 
+                                <div className="diagnostic-map">
+                                    <h3><Link to="/diagnostics/on-site">All Office Diagnostics</Link></h3>
+                                    {diagnosticData.map((diagnostic, i) => {
+                                        return (
+                                            <div key={ i }>
+                                                <h3>
+                                                    <Link to={{pathname: `${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
+                                                        { diagnostic.name }
+                                                    </Link>
+                                                </h3>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            : null
                         }
-                    </button></h2>
-                    { this.state.showOnSite
-                        ? 
-                            <div className="diagnostic-map">
-                                {diagnosticData.map((diagnostic, i) => {
-                                    return (
-                                        <div key={ i }>
-                                            <h3>
-                                                <Link to={{pathname: `${ diagnostic.diagnosticUrl }`, state: diagnostic}}>
-                                                    { diagnostic.name }
-                                                </Link>
-                                            </h3>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                        : null
-                    }
+                    </div>
                 </div>
             </div>
         )

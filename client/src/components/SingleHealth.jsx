@@ -105,52 +105,58 @@ export default class SingleHealth extends Component {
                 </div>
                 <div className="health-side">
                     <h1><Link to={{pathname: `/health`,state: health}}>HEALTH</Link></h1>
-                    <h2><button onClick={ this.toggleDiet }>
+                    <div onMouseEnter={ this.toggleDiet } onMouseLeave={ this.toggleDiet }>
+                        <h2><button>
+                            { this.state.showDiet
+                                ? 'DIETS'
+                                : 'DIETS'
+                            }
+                        </button></h2>
                         { this.state.showDiet
-                            ? 'COLLAPSE'
-                            : 'DIETS'
+                            ?
+                                <div className="diet-map">
+                                    <h3><Link to="/health/diets">All Diets</Link></h3>
+                                    {dietData.map((health, i) => {
+                                        return (
+                                            <div key={ i }>
+                                                <h3>
+                                                    <Link to={{pathname: `${ health.healthUrl }`, state: health}}>
+                                                        { health.name }
+                                                    </Link>
+                                                </h3>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            : null
                         }
-                    </button></h2>
-                    { this.state.showDiet
-                        ?
-                            <div className="diet-map">
-                                {dietData.map((health, i) => {
-                                    return (
-                                        <div key={ i }>
-                                            <h3>
-                                                <Link to={{pathname: `${ health.healthUrl }`, state: health}}>
-                                                    { health.name }
-                                                </Link>
-                                            </h3>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                        : null
-                    }
-                    <h2><button onClick={ this.toggleExercise }>
+                    </div>
+                    <div  onMouseEnter={ this.toggleExercise } onMouseLeave={ this.toggleExercise }>
+                        <h2><button>
+                            { this.state.showExercise
+                                ? 'EXERCISES'
+                                : 'EXERCISES'
+                            }
+                        </button></h2>
                         { this.state.showExercise
-                            ? 'COLLAPSE'
-                            : 'EXERCISES'
+                            ?
+                                <div className="exercise-map">
+                                    <h3><Link to="/health/exercises">All Exercises</Link></h3>
+                                    {exerciseData.map((health, i) => {
+                                        return (
+                                            <div key={ i }>
+                                                <h3>
+                                                    <Link to={{pathname: `${ health.healthUrl }`, state: health}}>
+                                                        { health.name }
+                                                    </Link>
+                                                </h3>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            : null
                         }
-                    </button></h2>
-                    { this.state.showExercise
-                        ?
-                            <div className="exercise-map">
-                                {exerciseData.map((health, i) => {
-                                    return (
-                                        <div key={ i }>
-                                            <h3>
-                                                <Link to={{pathname: `${ health.healthUrl }`, state: health}}>
-                                                    { health.name }
-                                                </Link>
-                                            </h3>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                        : null
-                    }
+                    </div>
                 </div>
             </div>
         )

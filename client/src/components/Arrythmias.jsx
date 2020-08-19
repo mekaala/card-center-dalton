@@ -64,10 +64,10 @@ export default class Arrythmias extends Component {
                         state: condition}}>
                         CONDITIONS
                     </Link></h1>
-                    <div className="side-container">
-                        <h2><button onClick={ this.toggleDisease }>
+                    <div className="side-container" onMouseEnter={ this.toggleDisease } onMouseLeave={ this.toggleDisease }>
+                        <h2><button>
                             { this.state.showDisease
-                                ? 'COLLAPSE'
+                                ? 'DISEASES'
                                 : 'DISEASES'
                             }
                         </button></h2>
@@ -90,8 +90,8 @@ export default class Arrythmias extends Component {
                             : null
                         }
                     </div>
-                    <div className="side-container">
-                        <h2><button onClick={ this.toggleHeartBlock }>
+                    <div className="side-container" onMouseEnter={ this.toggleHeartBlock } onMouseLeave={ this.toggleHeartBlock }>
+                        <h2><button>
                             { this.state.showHeartBlock
                                 ? 'COLLAPSE'
                                 : 'HEART BLOCK'
@@ -116,10 +116,10 @@ export default class Arrythmias extends Component {
                             : null
                         }
                     </div>
-                    <div className="side-container">
-                        <h2><button onClick={ this.toggleSymptoms  }>
+                    <div className="side-container" onMouseEnter={ this.toggleSymptoms } onMouseLeave={ this.toggleSymptoms }>
+                        <h2><button>
                             { this.state.showSymptom
-                                ? 'COLLAPSE'
+                                ? 'SYMPTOMS'
                                 : 'SYMPTOMS'
                             }
                         </button></h2>

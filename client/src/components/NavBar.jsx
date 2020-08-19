@@ -94,8 +94,8 @@ export default class NavBar extends Component {
                     <div className="sub-menu" onMouseEnter={ this.toggleConditions } onMouseLeave={ this.toggleConditions }>
                         <a>
                             { this.state.showConditions
-                                ? 'Conditions'
-                                : 'Conditions'
+                                ? 'Education'
+                                : 'Education'
                             }
                         </a>
                         { this.state.showConditions
