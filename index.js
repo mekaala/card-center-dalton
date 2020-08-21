@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.static(`${__dirname}/client/build`))
 
 app.get('/*', (req, res) => {
-  res.sendFile(`${__dirname}/client/build`)
+  res.sendFile(`${__dirname}/client/build/index.html`)
 })
 
 app.post(`/send`, (req, res) => {
