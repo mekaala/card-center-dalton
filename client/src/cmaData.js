@@ -19,16 +19,16 @@ export default
         url: 'salvador-hernandez',
         photo: require('./Staff/salvador-hernandez.JPG')
     },
-    {
-        name: 'Jessica Hobbs, CMA, Nuclear',
-        url: 'jessica-hobbs',
-        photo: require('./Staff/jessica-hobbs.jpg')
-    },
-    {
-        name: 'Britany Hogg, CMA, Medical Records',
-        url: 'britany-hogg',
-        photo: require('./Staff/britany-hogg.JPG')
-    },
+    // {
+    //     name: 'Jessica Hobbs, CMA, Nuclear',
+    //     url: 'jessica-hobbs',
+    //     photo: require('./Staff/jessica-hobbs.jpg')
+    // },
+    // {
+    //     name: 'Britany Hogg, CMA, Medical Records',
+    //     url: 'britany-hogg',
+    //     photo: require('./Staff/britany-hogg.JPG')
+    // },
     {
         name: 'Nicole Accord, Echo',
         url: 'nicole-accord',

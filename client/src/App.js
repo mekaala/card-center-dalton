@@ -24,6 +24,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import AppointmentRequest from './components/AppointmentRequest';
 import AppointmentForm from './components/AppointmentForm';
+import MobNavBar from './components/MobNavBar';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <div className="App">
       <Router>
         <ScrollToTop/>
+          <MobNavBar/>
           <NavBar/>
           <Switch>
             <Route exact path="/" component={ SplashPage }/>
