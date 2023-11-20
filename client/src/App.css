@@ -27,7 +27,7 @@ a:hover {
 /* NAVIGATION */
 .navbar {
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -36,7 +36,7 @@ a:hover {
   height: 120px;
 }
 .scrolled {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0);
   position: sticky;
   top: 0;
   transition: 0.25s;

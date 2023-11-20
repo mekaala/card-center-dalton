@@ -42,7 +42,7 @@ export default class Exercises extends Component {
                 </div>
                 <div className="health-side">
                     <h1><Link to={{pathname: `/health`,state: health}}>HEALTH</Link></h1>
-                    <div onMouseEnter={ this.toggleDiet } onMouseLeave={ this.toggleDiet }>
+                    <div onClick={ this.toggleDiet }>
                         <h2><button>
                             { this.state.showExercise
                                 ? 'COLLAPSE'

@@ -5,8 +5,7 @@ export default class Contact extends Component {
         return (
             <div className="contact">
                 <div className="contact-info">
-                    <h1>Contact Us!</h1>
-                    <h2>Cardiology Center of Dalton</h2>
+                    <h1>Cardiology Center of Dalton</h1>
                     <h4>
                         Monday - Friday<br/>
                         9:00 am to 5:00 pm

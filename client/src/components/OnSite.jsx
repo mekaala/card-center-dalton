@@ -45,7 +45,7 @@ export default class OnSite extends Component {
                         state: diagnostic}}>
                         DIAGNOSTICS
                     </Link></h1>
-                    <div onMouseEnter={ this.toggleOffSite } onMouseLeave={ this.toggleOffSite }>
+                    <div onClick={ this.toggleOffSite }>
                         <h2><button>
                             { this.state.showOffSite
                                 ? 'HOSPITAL DIAGNOSTICS'

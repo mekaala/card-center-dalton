@@ -64,17 +64,12 @@ export default class Conditions extends Component {
                                         { condition.name }
                                     </Link></h2>
                                     <p>{ condition.info }</p>
-                                    <h3><Link className="read-more"
-                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                    state: condition}}>
-                                        Read More
-                                    </Link></h3>
                                 </div>
                             )
                         })}
                     </div>
                     <div>
-                        <h1>ARRYTHMIA</h1>
+                        <h1>ARRYTHMIAS</h1>
                         {arrhythmiaData.map((condition, i) => {
                             return (
                                 <div key={ i }>
@@ -84,17 +79,12 @@ export default class Conditions extends Component {
                                         { condition.name }
                                     </Link></h2>
                                     <p>{ condition.info }</p>
-                                    <h3><Link className="read-more"
-                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                    state: condition}}>
-                                        Read More
-                                    </Link></h3>
                                 </div>
                             )
                         })}
                     </div>
                     <div>
-                        <h1>HEART BLOCK</h1>
+                        <h1>HEART BLOCKS</h1>
                         {heartBlockData.map((condition, i) => {
                             return (
                                 <div key={ i }>
@@ -104,11 +94,6 @@ export default class Conditions extends Component {
                                         { condition.name }
                                     </Link></h2>
                                     <p>{ condition.info }</p>
-                                    <h3><Link className="read-more"
-                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                    state: condition}}>
-                                        Read More
-                                    </Link></h3>
                                 </div>
                             )
                         })}
@@ -124,11 +109,6 @@ export default class Conditions extends Component {
                                         { condition.name }
                                     </Link></h2>
                                     <p>{ condition.info }</p>
-                                    <h3><Link className="read-more"
-                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                    state: condition}}>
-                                        Read More
-                                    </Link></h3>
                                 </div>
                             )
                         })}

@@ -82,8 +82,8 @@ export default class NavBar extends Component {
                     <div className="sub-menu" onMouseEnter={ this.toggleStaff } onMouseLeave={ this.toggleStaff }>
                         <a>
                             {this.state.showStaff
-                                ? 'Our Team'
-                                : 'Our Team'
+                                ? <Link to="/staff">Our Team</Link>
+                                : <Link to="/staff">Our Team</Link>
                             }
                         </a>
                         { this.state.showStaff
@@ -117,8 +117,8 @@ export default class NavBar extends Component {
                     <div className="sub-menu" onMouseEnter={ this.toggleConditions } onMouseLeave={ this.toggleConditions }>
                         <a>
                             { this.state.showConditions
-                                ? 'Education'
-                                : 'Education'
+                                ? <Link to="/conditions">Education</Link>
+                                : <Link to="/conditions">Education</Link>
                             }
                         </a>
                         { this.state.showConditions
@@ -136,8 +136,8 @@ export default class NavBar extends Component {
                     <div className="sub-menu" onMouseEnter={ this.toggleDiagnostics } onMouseLeave={ this.toggleDiagnostics}>
                         <a>
                             {this.state.showDiagnostics
-                                ? 'Diagnostics'
-                                : 'Diagnostics'
+                                ? <Link to="/diagnostics">Diagnostics</Link>
+                                : <Link to="/diagnostics">Diagnostics</Link>
                             }
                         </a>
                         { this.state.showDiagnostics
@@ -153,8 +153,8 @@ export default class NavBar extends Component {
                     <div className="sub-menu" onMouseEnter={ this.toggleHealth } onMouseLeave={ this.toggleHealth}>
                         <a>
                             {this.state.showHealth
-                                ? 'Health'
-                                : 'Health'
+                                ? <Link to="/health">Health</Link>
+                                : <Link to="/health">Health</Link>
                             }
                         </a>
                         { this.state.showHealth

@@ -73,7 +73,7 @@ export default class SingleDiagnostic extends Component {
                         state: diagnostic}}>
                         DIAGNOSTICS
                     </Link></h1>
-                    <div onMouseEnter={ this.toggleOnSite } onMouseLeave={ this.toggleOnSite }>
+                    <div onClick={ this.toggleOnSite }>
                         <h2><button>
                                         { this.state.showOnSite
                                             ? 'OFFICE DIAGNOSTICS'
@@ -99,7 +99,7 @@ export default class SingleDiagnostic extends Component {
                             : null
                         }
                     </div>
-                    <div onMouseEnter={ this.toggleOffSite } onMouseLeave={ this.toggleOffSite }>
+                    <div onClick={ this.toggleOffSite }>
                         <h2><button>
                             { this.state.showOffSite
                                 ? 'HOSPITAL DIAGNOSTICS'

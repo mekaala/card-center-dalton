@@ -64,7 +64,7 @@ export default class Diseases extends Component {
                         state: condition}}>
                         CONDITIONS
                     </Link></h1>
-                    <div className="side-container" onMouseEnter={ this.toggleArrhythmia } onMouseLea={ this.toggleArrhythmia }>
+                    <div className="side-container" onClick={ this.toggleArrhythmia }>
                         <h2><button>
                             { this.state.showArrhythmia
                                 ? 'ARRHYTHMIAS'
@@ -90,7 +90,7 @@ export default class Diseases extends Component {
                             : null
                         }
                         </div>
-                    <div className="side-container" onMouseEnter={ this.toggleHeartBlock } onMouseLeave={ this.toggleHeartBlock }>
+                    <div className="side-container" onClick={ this.toggleHeartBlock }>
                         <h2><button>
                             { this.state.showHeartBlock
                                 ? 'HEART BLOCK'
@@ -116,7 +116,7 @@ export default class Diseases extends Component {
                             : null
                         }
                     </div>
-                    <div className="side-container" onMouseEnter={ this.toggleSymptoms } onMouseLeave={ this.toggleSymptoms }>
+                    <div className="side-container" onClick={ this.toggleSymptoms }>
                         <h2><button>
                             { this.state.showSymptom
                                 ? 'SYMPTOMS'

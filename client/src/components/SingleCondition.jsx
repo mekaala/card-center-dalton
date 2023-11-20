@@ -164,7 +164,7 @@ export default class SingleCondition extends Component {
                         state: condition}}>
                         CONDITIONS
                     </Link></h1>
-                    <div className="side-container" onMouseEnter={ this.toggleDisease } onMouseLeave={ this.toggleDisease }>
+                    <div className="side-container" onClick={ this.toggleDisease }>
                         <h2><button>
                             { this.state.showDisease
                                 ? 'DISEASES'
@@ -190,7 +190,7 @@ export default class SingleCondition extends Component {
                             : null
                         }
                     </div>
-                    <div className="side-container" onMouseEnter={ this.toggleArrhythmia } onMouseLeave={ this.toggleArrhythmia }>
+                    <div className="side-container" onClick={ this.toggleArrhythmia }>
                         <h2><button >
                             { this.state.showArrhythmia
                                 ? 'ARRHYTHMIAS'
@@ -216,7 +216,7 @@ export default class SingleCondition extends Component {
                             : null
                         }
                         </div>
-                    <div className="side-container" onMouseEnter={ this.toggleHeartBlock } onMouseLeave={ this.toggleHeartBlock }>
+                    <div className="side-container" onClick={ this.toggleHeartBlock }>
                         <h2><button>
                             { this.state.showHeartBlock
                                 ? 'HEART BLOCK'
@@ -242,7 +242,7 @@ export default class SingleCondition extends Component {
                             : null
                         }
                     </div>
-                    <div className="side-container" onMouseEnter={ this.toggleSymptoms  } onMouseLeave={ this.toggleSymptoms }>
+                    <div className="side-container" onClick={ this.toggleSymptoms  }>
                         <h2><button>
                             { this.state.showSymptom
                                 ? 'SYMPTOMS'

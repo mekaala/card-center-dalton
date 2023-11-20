@@ -105,7 +105,7 @@ export default class SingleHealth extends Component {
                 </div>
                 <div className="health-side">
                     <h1><Link to={{pathname: `/health`,state: health}}>HEALTH</Link></h1>
-                    <div onMouseEnter={ this.toggleDiet } onMouseLeave={ this.toggleDiet }>
+                    <div onClick={ this.toggleDiet }>
                         <h2><button>
                             { this.state.showDiet
                                 ? 'DIETS'
@@ -131,7 +131,7 @@ export default class SingleHealth extends Component {
                             : null
                         }
                     </div>
-                    <div  onMouseEnter={ this.toggleExercise } onMouseLeave={ this.toggleExercise }>
+                    <div  onClick={ this.toggleExercise }>
                         <h2><button>
                             { this.state.showExercise
                                 ? 'EXERCISES'
