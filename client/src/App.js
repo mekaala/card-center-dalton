@@ -52,10 +52,10 @@ function App() {
             <Route exact path="/health/diets" component={ Diets }/>
             <Route exact path="/health/exercises" component={ Exercises }/>
             <Route path="/health/:healthUrl" component={ SingleHealth }/>
-            <Route exact path="/appointment-form" component={ AppointmentForm }/>
+            {/* <Route exact path="/appointment-form" component={ AppointmentForm }/> */}
           </Switch>
           <Contact/>
-          <AppointmentRequest/>
+          {/* <AppointmentRequest/> */}
           <Footer/>
       </Router>
     </div>

@@ -9,11 +9,11 @@ export default
     //     name: 'Neil Canada, Registered Nuclear Medicine Technologist',
     //     url: 'neil-canada',
     // },
-    {
-        name: 'Emily Beard, CMA',
-        url: 'emily-beard',
-        photo: require('./Staff/emily-beard.jpg')
-    },
+    // {
+    //     name: 'Emily Beard, CMA',
+    //     url: 'emily-beard',
+    //     photo: require('./Staff/emily-beard.jpg')
+    // },
     {
         name: 'Salvador Hernandez, CMA',
         url: 'salvador-hernandez',
@@ -39,11 +39,11 @@ export default
         url: 'dallas-rutledge',
         photo: require('./Staff/dallas-rutledge.JPG')
     },
-    {
-        name: 'Brenda Hernandez, Insurance Clerk',
-        url: 'brenda-hernandez',
-        photo: require('./Staff/brenda-hernandez.jpg')
-    },
+    // {
+    //     name: 'Brenda Hernandez, Insurance Clerk',
+    //     url: 'brenda-hernandez',
+    //     photo: require('./Staff/brenda-hernandez.jpg')
+    // },
     {
         name: 'Vickie Painter, Front Desk',
         url: 'vickie-painter',
