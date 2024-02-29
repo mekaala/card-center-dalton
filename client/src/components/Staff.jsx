@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import providerData from '../providerData'
 import { Link } from 'react-router-dom';
 import nurseData from '../nurseData';
-import cmaData from '../cmaData';
+import staffPhoto from '../Staff/staff-photo.jpg'
 
 export default class Providers extends Component {
     render() {
@@ -34,7 +34,7 @@ export default class Providers extends Component {
                             <Link 
                             to={{pathname: `${ nurse.url }`,
                             state: nurse}}>
-                                <img src={ nurse.photo } alt={ nurse.name }/>
+                                {/* <img src={ nurse.photo } alt={ nurse.name }/> */}
                             </Link>
                             <h3>
                                 <Link to={{pathname: `${ nurse.url }`, state: nurse}}>
@@ -45,15 +45,8 @@ export default class Providers extends Component {
                     )
                 })}
                 </div>
-                <div className="cma-container">
-                {cmaData.map((cma, i) => {
-                    return (
-                        <div key={ i }>
-                            <img src={ cma.photo } alt={ cma.name }/>
-                            <h3>{ cma.name }</h3>
-                        </div>
-                    )
-                })}
+                <div>
+                    <img src={ staffPhoto } alt='staff photo'/>
                 </div>
             </div>
         )
