@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 .App {
   text-align: center;
-  background: black;
+  background: white;
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,11 +15,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-img {
-  width: 400px;
-}
+/* img {
+  width: 250px;
+  margin: auto;
+} */
+
 a:hover {
   cursor: pointer;
 }
@@ -27,14 +29,21 @@ a:hover {
 /* NAVIGATION */
 .navbar {
   z-index: 2;
-  background-color: rgba(0, 0, 0);
-  display: flex;
-  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   transform: translateY(0px);
   transition: 0.25s;
-  height: 120px;
+  height: 80px;
 }
+
+.logo img {
+  width: 250px;
+  margin-left: 20px;
+  float: left;
+}
+
 .scrolled {
   background-color: rgba(0, 0, 0);
   position: sticky;
@@ -42,15 +51,14 @@ a:hover {
   transition: 0.25s;
 }
 .navbar.logo {
-  margin: auto 10px;
+  float: left;  
 }
 .mobile-bar {
   display: none;
 }
 .bar {
-  display: flex;
-  width: 55%;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
 }
 .bar a {
@@ -135,8 +143,8 @@ a:hover {
 /* SPLASHPAGE */
 
 .splashpage {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 button {
@@ -172,17 +180,15 @@ button:hover {
 
 
 .image-text h1 {
+  color: white;
   font-size: 350%;
   font-weight: bolder;
   position: relative;
   top: 180px;
 }
-.about {
-  background-color: #335582;
-  padding-bottom: 1px;
-}
+
 .about h3 {
-  padding: 5% 10%;
+  padding: 3%;
   margin: auto;
   line-height: 2em;
   font-weight: lighter;
@@ -196,8 +202,8 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   text-shadow: 1px 1px black;
 }
-.hours {
-  background: black;
+/* .hours {
+  background: white;
   align-items: center;
   text-align: left;
   padding: 5%;
@@ -208,7 +214,7 @@ button:hover {
   font-size: 125%;
   font-weight: bolder;
   line-height: 1em;
-}
+} */
 .education {
   background-image: url('./images/education.jpg');
   display: flex;
@@ -223,7 +229,6 @@ button:hover {
 }
 .education a, .pulse a {
   text-decoration: none;
-  color: white;
   transition-duration: 0.3s;
 }
 .education a:hover, .pulse a:hover {
@@ -231,23 +236,6 @@ button:hover {
   transition-duration: 0.3s;
 }
 
-/* COVID */
-.covid {
-  background: gray;
-  padding: 5%;
-}
-covid-19 {
-  font-size: larger;
-  text-align: left;
-}
-.covid a {
-  color: rgb(133, 203, 231);
-  text-decoration: none;
-}
-.covid a:hover {
-  color: rgb(235, 107, 122);
-  transition-duration: 0.5s;
-}
 /* SERVICES */
 .services {
   background: white;
@@ -271,12 +259,11 @@ covid-19 {
 }
 .service-box h3 a:hover {
   color: #E8374D;
-  transition-duration: 0.5s;
 }
 
 /* DIETING */
 .dieting {
-  padding: 5%;
+  padding: 3%;
 }
 .dieting p {
   text-align: left;
@@ -289,13 +276,14 @@ covid-19 {
 }
 .diet-box {
   box-sizing: border-box;
-  background: #353535;
+  background: #cbcbcb;
   display: block;
   align-items: center;
   min-width: 250px;
   margin: 5px;
   padding-bottom: 2%;
   overflow: hidden;
+  color: black;
 }
 .diet-box hr {
   height: auto;
@@ -303,11 +291,11 @@ covid-19 {
 }
 .diet-box a {
   text-decoration: none;
-  color: white;
+  color: black;
   transition-duration: 0.5s;
 }
 .diet-box a:hover {
-  color: #E8374D;
+  color: red;
   transition-duration: 0.5s;
 }
 .diet-image {
@@ -315,12 +303,12 @@ covid-19 {
 }
 .diet-box img {
   width: 100%;
-  transform: rotate(0deg) scale(1);
-  transition: all 0.5s ease-out 0s;
+  /* transform: rotate(0deg) scale(1);
+  transition: all 0.5s ease-out 0s; */
 }
 .diet-box img:hover {
-  transform: rotate(10deg) scale(1.5);
-  transition: all 0.5s ease-out 0s;
+  /* transform: rotate(10deg) scale(1.5);
+  transition: all 0.5s ease-out 0s; */
 }
 .diet-box p {
   text-align: left;
@@ -329,15 +317,15 @@ covid-19 {
 
 /* SHAPE TAG */
 .shape-tag {
-  background: black;
+  background: white;
   padding: 5%;
 }
-.shape-tag h1 {
-  color: white;
+/* .shape-tag h1 {
+  color: black;
 }
 .shape-tag p {
   color: white;
-}
+} */
 .exercise-nav {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -345,7 +333,7 @@ covid-19 {
 }
 .exercise-box {
   box-sizing: border-box;
-  background: #353535;
+  background: #cbcbcb;
   display: block;
   align-items: center;
   min-width: 250px;
@@ -359,7 +347,7 @@ covid-19 {
 }
 .exercise-box a {
   text-decoration: none;
-  color: white;
+  color: black;
   transition-duration: 0.5s;
 }
 .exercise-box a:hover {
@@ -371,13 +359,13 @@ covid-19 {
 }
 .exercise-box img {
   width: 100%;
-  transform: rotate(0deg) scale(1);
-  transition: all 0.5s ease-out 0s;
+  /* transform: rotate(0deg) scale(1);
+  transition: all 0.5s ease-out 0s; */
 }
-.exercise-box img:hover {
+/* .exercise-box img:hover {
   transform: rotate(10deg) scale(1.5);
   transition: all 0.5s ease-out 0s;
-}
+} */
 .exercise-box p {
   text-align: left;
   margin: 10px 20px;
@@ -482,18 +470,22 @@ li h3 {
   background: white;
   padding: 1%;
 }
+.contact h1 {
+  text-align: left;
+}
 .contact-info {
+  display: grid;
+  grid-template-columns: 3fr;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.925);
-  color: white;
+  color: black;
   margin: 1%;
   padding: 1%;
 }
 
 /* FOOTER */
 .footer {
-  background: #E8374D;
-  padding: 5% 3%;
+  background: black;
+  padding: 3%;
 }
 .list {
   display: flex;
