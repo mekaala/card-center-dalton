@@ -90,7 +90,6 @@ export default class MobNavBar extends Component {
                                 <Link to="/conditions"><h4>Education</h4></Link>
                                 <Link to="/diagnostics"><h4>Diagnostics</h4></Link>
                                 <Link to="/Health"><h4>Health</h4></Link>
-                                <a href="https://www.myhealthrecord.com/Portal/SSO" target="_blank"><h4>Patient Portal</h4></a>
                                 <a className="facebook" href="https://www.facebook.com/cardiologycenterofdalton" target="_blank"><img src={ Facebook } alt="facebook"/></a>
                             </div>
                         :

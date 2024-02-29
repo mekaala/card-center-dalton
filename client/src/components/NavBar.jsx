@@ -82,8 +82,8 @@ export default class NavBar extends Component {
                     <div className="sub-menu" onMouseEnter={ this.toggleStaff } onMouseLeave={ this.toggleStaff }>
                         <a>
                             {this.state.showStaff
-                                ? <Link to="/staff">Our Team</Link>
-                                : <Link to="/staff">Our Team</Link>
+                                ? <Link to="/staff">Team</Link>
+                                : <Link to="/staff">Team</Link>
                             }
                         </a>
                         { this.state.showStaff
@@ -167,7 +167,6 @@ export default class NavBar extends Component {
                         : <div className="collapse-menu"/>
                         }
                     </div>
-                    <a href="https://www.myhealthrecord.com/Portal/SSO" target="_blank">Patient Portal</a>
                     <a className="facebook" href="https://www.facebook.com/cardiologycenterofdalton" target="_blank"><img src={ Facebook } alt="facebook"/></a>
                 </div>
             </div>
