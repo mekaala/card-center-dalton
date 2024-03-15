@@ -1,0 +1,147 @@
+#navbar {
+    z-index: 2;
+    background-color: rgb(53, 53, 53);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    height: 75px;
+    padding: 0 3%;
+}
+
+.navbar {
+  position: relative;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+.logo img {
+  height: 65px;
+  margin: 5px;
+  float: left;
+}
+
+.mobile-bar {
+  display: none;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  align-content: center;
+  float: right;
+}
+
+.bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+
+.bar a:hover {
+  color: #E8374D;
+  transition-duration: 0.5s;
+}
+
+.sub-menu {
+    height: 75px;
+}
+
+/* .navbar .facebook {
+  margin-right: 20px;
+} */
+
+.facebook img {
+  width: 32px;
+}
+
+#navbar button {
+  background-color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 6px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  transition-duration: 0.2s;
+  padding: 10px;
+}
+
+#navbar button:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+    transition-duration: 0.2s;
+    text-shadow: none;
+}
+
+.dropdown-menu {
+  background: rgb(245, 245, 245);
+  display: grid;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  transform: translate(5px, 75px);
+  transition: .4s;
+}
+
+/* .collapse-menu {
+  position: absolute;
+  width: 107.42px;
+  top: 40px;
+  transform: translate(5px, 0px);
+  transition: 3s ease-in-out;
+} */
+
+.dropdown-menu a {
+  color: black;
+  text-align: left;
+  padding: 10px 20px 10px 10px;
+  margin: 0;
+  transition-duration: 0.5s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+  background: rgb(255, 255, 255);
+  transition-duration: 0.5s ease-in-out;
+}
+
+.staff-menu {
+  background: rgb(245, 245, 245);
+  display: grid;
+  overflow: hidden;
+  position: absolute;
+  top: -45px;
+  transform: translate(5px, 120px);
+  transition: .4s;
+}
+
+.staff-menu .staff-link a {
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 10px 20px 10px 10px;
+  margin: 0;
+  transition-duration: 0.5s ease-in-out;
+}
+
+.staff-link {
+  display: block;
+  text-align: left;
+}
+
+.staff-menu .staff-link a:hover {
+  color: #E8374D;
+  background: rgb(255, 255, 255);
+  transition: 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: 900px) {
+    /* NAVBAR */
+    .bar {
+      display: none;
+    }
+}
