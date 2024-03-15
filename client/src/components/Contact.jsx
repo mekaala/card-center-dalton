@@ -7,13 +7,16 @@ function Contact() {
         <div className="contact-info">
             <div className="hours">
                 <h2>Hours of Operation</h2>
-                <h4>
-                    Monday - Thursday<br/>
-                    9:00 am to 5:00 pm
-                    <br/>
-                    Friday<br/>
-                    9:00 am to 12:00 pm
-                </h4>
+                <div className="operation">
+                    <h4>
+                        Monday - Thursday<br/>
+                        9:00 am to 5:00 pm
+                    </h4>
+                    <h4>
+                        Friday<br/>
+                        9:00 am to 12:00 pm
+                    </h4>
+                </div>
             </div>
             <div className="address">
                 <h2>Address</h2>

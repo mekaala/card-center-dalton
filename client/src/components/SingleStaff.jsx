@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
-
 export default class SingleProvider extends Component {
     hideDoctor() {
         const doctor = document.getElementsByClassName("doctor-info");
@@ -80,6 +79,9 @@ export default class SingleProvider extends Component {
                         </div>
                         : null
                     }
+                    <div className="doctor-description">
+                        <p>{ nurse.bio }</p>
+                    </div>
                     { this.hideNurse()
                     ?
                         <div className='nurse-info'>

@@ -56,7 +56,7 @@ function App() {
           </Switch>
           <Contact/>
           {/* <AppointmentRequest/> */}
-          <Footer/>
+          {/* <Footer/> */}
       </Router>
     </div>
   );
