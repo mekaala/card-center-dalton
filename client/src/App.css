@@ -46,11 +46,6 @@ button {
   font-family: 'Source Sans Pro', sans-serif;
   transition-duration: 1s;
 }
-button:hover {
-  background: black;
-  transition-duration: 1s;
-  cursor: pointer;
-}
 
 .image-page {
   background-image: url('./images/office.JPG');
