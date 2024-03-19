@@ -1,0 +1,77 @@
+.splashpage {
+    background: white;
+    color: black;
+  }
+  
+  button {
+    background: #E8374D;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    box-shadow: 1px solid black;
+    border-radius: 8px;
+    font-size: 150%;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    padding: 10px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition-duration: 1s;
+  }
+  
+  .image-page {
+    background-image: url('../images/office.JPG');
+    height: 62vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px black;
+  }
+  
+  
+  .image-text h1 {
+    color: white;
+    font-size: 350%;
+    font-weight: bolder;
+    position: relative;
+    top: 180px;
+  }
+  
+  .about h3 {
+    padding: 5%;
+    margin: auto;
+    line-height: 2em;
+    font-weight: lighter;
+    font-size: 24px;
+  }
+  .link-page {
+    margin: auto;
+    width: 90%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-shadow: 1px 1px black;
+  }
+  
+  .education {
+    background-image: url('./images/education.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pulse {
+    background-image: url('./images//pulse.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .education a, .pulse a {
+    text-decoration: none;
+    transition-duration: 0.3s;
+  }
+  .education a:hover, .pulse a:hover {
+    font-size: 1.5em;
+    transition-duration: 0.3s;
+  }
+  
