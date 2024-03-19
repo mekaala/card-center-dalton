@@ -12,10 +12,18 @@ function ProviderBar() {
     const toggleStaff = () => {
         setStaff(!staff);
     }
+    useEffect(() => {
+        window.addEventListener("mousenter", () => {
+            setStaff(true);
+        });
+        window.addEventListener("mouseleave", () => {
+            setStaff(false);
+        })
+    })
     
     return (
         <div className="sub-menu" onMouseEnter={ toggleStaff } onMouseLeave={ toggleStaff }>
-            <button>Team</button>
+            <button className={`${ staff ? "hovered" : "navbutton"}`}>Team</button>
             { staff && (
             <div className="staff-menu">
                 <div className="staff-link">
@@ -47,12 +55,23 @@ function ProviderBar() {
 
 function ConditionBar() {
     const [conditions, setConditions] = useState(false);
+    
     const toggleConditions = () => {
         setConditions(!conditions);
     }
+
+    useEffect(() => {
+        window.addEventListener("mousenter", () => {
+            setConditions(true)
+        });
+        window.addEventListener("mouseleave", () => {
+            setConditions(false)
+        })
+    })
+
     return (
         <div className="sub-menu" onMouseEnter={ toggleConditions } onMouseLeave={ toggleConditions }>
-            <button>Education</button>
+            <button className={`${ conditions ? "hovered" : "navbutton"}`}>Education</button>
             { conditions && (
                 <div className="dropdown-menu">
                     <Link to="/conditions">All Conditions</Link>
@@ -71,9 +90,19 @@ function DiagnosticBar() {
     const toggleDiagnostics = () => {
         setDiagnostics(!diagnostics);
     }
+
+    useEffect(() => {
+        window.addEventListener("mousenter", () => {
+            setDiagnostics(true)
+        });
+        window.addEventListener("mouseleave", () => {
+            setDiagnostics(false)
+        })
+    })
+
     return (
         <div className="sub-menu" onMouseEnter={ toggleDiagnostics } onMouseLeave={ toggleDiagnostics }>
-            <button>Diagnostics</button>
+            <button className={`${ diagnostics ? "hovered" : "navbutton"}`}>Diagnostics</button>
             { diagnostics && (
                 <div className="dropdown-menu">
                     <Link to="/diagnostics">All Diagnostics</Link>
@@ -90,9 +119,18 @@ function HealthBar() {
     const toggleHealth = () => {
         setHealth(!health);
     }
+
+    useEffect(() => {
+        window.addEventListener("mousenter", () => {
+            setHealth(true)
+        });
+        window.addEventListener("mouseleave", () => {
+            setHealth(false)
+        })
+    })
     return (
         <div className="sub-menu" onMouseEnter={ toggleHealth } onMouseLeave={ toggleHealth }>
-            <button>Health</button>
+            <button className={`${ health ? "hovered" : "navbutton"}`}>Health</button>
             { health && (
                 <div className="dropdown-menu">
                     <Link to="/health">Overview</Link>
@@ -104,7 +142,7 @@ function HealthBar() {
     )
 }
 
-function NavBar() {
+function DesktopBar() {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -127,174 +165,44 @@ function NavBar() {
     )
 }
 
+function MobileBar() {
+    const [hamburger, setHamburger] = useState(false);
+    const [scroll, setScroll] = useState(false);
+
+    function toggleBurger() {
+        setHamburger(!hamburger);
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScroll(window.scrollY > 0)
+        })
+    })
+
+    return (
+        <div className={`${ scroll ? "sticky" : "mobile-bar"}`} id="mobile-bar">
+            <div className="full-bar">
+                <Link to="/"><h2>Cardiology Center of Dalton</h2></Link>
+                <button className={hamburger ? 'open-hamburger' : 'hamburger'} onClick={() => {setHamburger(!hamburger)}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div className={ hamburger ? 'expanded' : 'invisible'}>
+                    <Link to="/staff" onClick={ toggleBurger }><h4>Our Team</h4></Link>
+                    <Link to="/conditions" onClick={ toggleBurger }><h4>Education</h4></Link>
+                    <Link to="/diagnostics" onClick={ toggleBurger }><h4>Diagnostics</h4></Link>
+                    <Link to="/Health" onClick={ toggleBurger }><h4>Health</h4></Link>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function NavBar() {
+  return window.innerWidth > 900
+  ? <DesktopBar/>
+  : <MobileBar/>
+}
+
 export default NavBar
-// export default class NavBar extends Component {
-//     container = React.createRef();
-//     state = {
-//         showMenu: false,
-//         showConditions: false,
-//         showDiagnostics: false,
-//         showHealth: false,
-//         showStaff: false,
-//     }
-//     toggleMenu = () => {
-//         const newShowMenu = !this.state.showMenu;
-//         this.setState({
-//             showMenu: newShowMenu,
-//         });
-//     }
-//     toggleConditions = () => {
-//         const newShowConditions = !this.state.showConditions;
-//         this.setState({
-//             showConditions: newShowConditions,
-//         });
-//     }
-//     toggleDiagnostics = () => {
-//         const newShowDiagnostics = !this.state.showDiagnostics;
-//         this.setState({
-//             showDiagnostics: newShowDiagnostics,
-//         });
-//     }
-//     toggleHealth = () => {
-//         const newShowHealth = !this.state.showHealth;
-//         this.setState({
-//             showHealth: newShowHealth,
-//         });
-//     }
-//     toggleStaff = () => {
-//         const newShowStaff = !this.state.showStaff;
-//         this.setState({
-//             showStaff: newShowStaff,
-//         });
-//     }
-//     componentDidMount() {
-//         window.addEventListener('scroll', () => {
-//             const isTop = window.scrollY > 0;
-//             const navbar = document.getElementById("navbar");
-//             document.addEventListener("mousedown", this.handleClickOutside);
-//             if (isTop) {
-//                 navbar.classList.add('scrolled');
-//             } else {
-//                 navbar.classList.remove('scrolled');
-//             }
-//         })
-//     }
-
-//     componentWillUnmount() {
-//         document.removeEventListener("mousedown", this.handleClickOutside);
-//         window.removeEventListener('scroll');
-//     }
-
-//     handleClickOutside = event => {
-//         if (this.container.current && !this.container.current.contains(event.target)) {
-//             this.setState({
-//                 showConditions: false,
-//                 showDiagnostics: false,
-//                 showStaff: false,
-//                 showHealth: false,
-//             })
-//         }
-//     }
-
-//     render() {
-//         return (
-//             <div className="navbar" id="navbar">
-//                 <Link className="logo" to="/"><img src={ logo } alt="logosharp"/></Link>
-//                 <div className="bar">
-//                     <button>
-//                         <Link to="/">Home</Link>
-//                     </button>
-//                     <div className="sub-menu" onMouseEnter={ this.toggleStaff } onMouseLeave={ this.toggleStaff }>
-//                         <button>
-//                             {this.state.showStaff
-//                                 ? <Link to="/staff">Team</Link>
-//                                 : <Link to="/staff">Team</Link>
-//                             }
-//                         </button>
-//                         { this.state.showStaff
-//                         ?
-//                         <div className="staff-menu">
-//                             <div className="staff-link">
-//                                 <Link to="/staff">Directory</Link>
-//                             </div>
-//                             {providerData.map((provider, i) => {
-//                                 return (
-//                                     <div key={ i } className="staff-link">
-//                                         <Link to={{pathname: `${ provider.url }`, state: provider}}>
-//                                             { provider.name }
-//                                         </Link>
-//                                     </div>
-//                                 )
-//                             })}
-//                             {nurseData.map((provider, i) => {
-//                                 return (
-//                                     <div key={ i } className="staff-link">
-//                                         <Link to={{pathname: `${ provider.url }`, state: provider}}>
-//                                             { provider.name }
-//                                         </Link>
-//                                     </div>
-//                                 )
-//                             })}
-//                         </div>
-//                         : <div className="collapse-menu"/>
-//                         }
-//                     </div>
-//                     <div className="sub-menu" onMouseEnter={ this.toggleConditions } onMouseLeave={ this.toggleConditions }>
-//                         <button>
-//                             { this.state.showConditions
-//                                 ? <Link to="/conditions">Education</Link>
-//                                 : <Link to="/conditions">Education</Link>
-//                             }
-//                         </button>
-//                         { this.state.showConditions
-//                         ?
-//                             <div className="dropdown-menu">
-//                                 <Link to="/conditions">All Conditions</Link>
-//                                 <Link to="/conditions/diseases">Diseases</Link>
-//                                 <Link to="/conditions/arrythmias">Arrythmias</Link>
-//                                 <Link to="/conditions/heart-block">Heart Block</Link>
-//                                 <Link to="/conditions/symptoms">Symptoms</Link>
-//                             </div>
-//                         : <div className="collapse-menu"/>
-//                         }
-//                     </div>
-//                     <div className="sub-menu" onMouseEnter={ this.toggleDiagnostics } onMouseLeave={ this.toggleDiagnostics}>
-//                         <button>
-//                             {this.state.showDiagnostics
-//                                 ? <Link to="/diagnostics">Diagnostics</Link>
-//                                 : <Link to="/diagnostics">Diagnostics</Link>
-//                             }
-//                         </button>
-//                         { this.state.showDiagnostics
-//                         ?
-//                         <div className="dropdown-menu">
-//                             <Link to="/diagnostics">All Diagnostics</Link>
-//                             <Link to="/diagnostics/on-site">Office Diagnostics</Link>
-//                             <Link to="/diagnostics/off-site">Hospital Diagnostics</Link>
-//                         </div>
-//                         : <div className="collapse-menu"/>
-//                         }
-//                     </div>
-//                     <div className="sub-menu" onMouseEnter={ this.toggleHealth } onMouseLeave={ this.toggleHealth}>
-//                         <button>
-//                             {this.state.showHealth
-//                                 ? <Link to="/health">Health</Link>
-//                                 : <Link to="/health">Health</Link>
-//                             }
-//                         </button>
-//                         { this.state.showHealth
-//                         ?
-//                         <div className="dropdown-menu">
-//                             <Link to="/health">Overview</Link>
-//                             <Link to="/health/diets">Diets</Link>
-//                             <Link to="/health/exercises">Exercises</Link>
-//                         </div>
-//                         : <div className="collapse-menu"/>
-//                         }
-//                     </div>
-//                     <a className="facebook" href="https://www.facebook.com/cardiologycenterofdalton" target="_blank"><img src={ Facebook } alt="facebook"/></a>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
