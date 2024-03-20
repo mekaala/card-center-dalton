@@ -7,7 +7,7 @@ import Staff from './components/Staff';
 import SingleStaff from './components/SingleStaff';
 import Conditions from './components/Conditions';
 import Diseases from './components/Diseases';
-import Arrythmias from './components/Arrythmias';
+import Arrhythmias from './components/Arrhythmias';
 import HeartBlock from './components/HeartBlock';
 import Symptoms from './components/Symptoms';
 import SingleCondition from './components/SingleCondition';
@@ -38,7 +38,7 @@ function App() {
             <Route path="/staff/:providerUrl" component={ SingleStaff }/>
             <Route exact path="/conditions" component={ Conditions }/>
             <Route exact path="/conditions/diseases" component={ Diseases }/>
-            <Route exact path="/conditions/arrythmias" component={ Arrythmias }/>
+            <Route exact path="/conditions/arrhythmias" component={ Arrhythmias }/>
             <Route exact path="/conditions/heart-block" component={ HeartBlock }/>
             <Route exact path="/conditions/symptoms" component={ Symptoms }/>
             <Route path="/conditions/:conditionUrl" component={ SingleCondition }/>
