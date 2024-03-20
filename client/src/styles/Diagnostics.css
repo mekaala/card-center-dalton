@@ -1,0 +1,109 @@
+.diagnostics, .single-diagnostic {
+    background: white;
+    padding: 3%;
+  }
+  .diagnostic-data {
+    text-align: left;
+  }
+  .full-list {
+    display: flex;
+  }
+  .onsite-side {
+    width: 50%;
+  }
+  .offsite-side {
+    float: right;
+  }
+  .diagnostics-info {
+    text-align: left;
+    margin: auto 20px;
+  }
+  .diagnostics a, .single-diagnostic a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    transition-duration: 0.5s;
+  }
+  .diagnostics a:hover, .single-diagnostic a:hover {
+    color: #E8374D;
+    transition-duration: 0.5s;
+  }
+  .single-diagnostic h2 a {
+    font-weight: 600;
+  }
+  .single-diagnostic {
+    display: flex;
+    height: 600px;
+  }
+  .diagnostic-main {
+    width: 68%;
+    margin: 0 5px 0 30px;
+  }
+
+  #present {
+    display: block;
+  }
+  #absent {
+    display: none;
+  }
+  .onsite-list h3 {
+    font-weight: 400;
+  }
+  .diagnostic-body {
+    text-align: left;
+  }
+  .diagnostic-side {
+    margin: 0 10px;
+    width: 32%;
+  }
+  /* .diagnostic-side h2 {
+    margin-left: 20px;
+  } */
+  .diagnostic-map {
+    text-align: left;
+  }
+  .single-diagnostic button {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    box-shadow: none;
+    font-size: 100%;
+    font-weight: normal;
+    text-shadow: none;
+    transition-duration: 0.5s;
+  }
+  .single-diagnostic button:hover {
+    background-color: #E8374D;
+    color: white;
+    transition-duration: 0.5s;
+  }
+
+  @media screen and (max-width: 900px) {
+    .full-list {
+        display: block;
+      }
+      .onsite-side {
+        width: 100%;
+      }
+      .offsite-side {
+        float: none;
+      }
+      .condition-subpage .diagnostic-side {
+        width: 100%;
+        margin: auto;
+      }
+      .full-list {
+        display: block;
+      }
+      .single-diagnostic {
+        display: block;
+      }
+      .diagnostic-main {
+        width: auto;
+        margin: auto 20px;
+      }
+      .diagnostic-side h2 {
+        margin-left: 0px;
+      }    
+  }

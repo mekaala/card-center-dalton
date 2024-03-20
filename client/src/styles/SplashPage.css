@@ -29,7 +29,6 @@
     text-shadow: 1px 1px black;
   }
   
-  
   .image-text h1 {
     color: white;
     font-size: 350%;
@@ -45,6 +44,7 @@
     font-weight: lighter;
     font-size: 24px;
   }
+
   .link-page {
     margin: auto;
     width: 90%;
@@ -55,23 +55,251 @@
   }
   
   .education {
-    background-image: url('./images/education.jpg');
+    background-image: url('../images/education.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .pulse {
-    background-image: url('./images//pulse.jpg');
+    background-image: url('../images//pulse.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .education a, .pulse a {
     text-decoration: none;
     transition-duration: 0.3s;
   }
+
   .education a:hover, .pulse a:hover {
     font-size: 1.5em;
     transition-duration: 0.3s;
   }
+
+  /* SERVICES */
+.services {
+  background: white;
+  color: black;
+  padding: 5%;
+}
+.service-box {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.onsite-box, .offsite-box {
+  margin: auto 57px;
+}
+.service-box h3 {
+  text-align: left;
+}
+.service-box h3 a {
+  color: black;
+  text-decoration: none;
+}
+.service-box h3 a:hover {
+  color: #E8374D;
+}
+
+/* DIETING */
+.dieting {
+  padding: 5%;
+}
+.dieting p {
+  text-align: left;
+  margin: 20px 50px;
+}
+.diet-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.diet-box {
+  box-sizing: border-box;
+  background: #cbcbcb;
+  display: block;
+  align-items: center;
+  min-width: 250px;
+  margin: 5px;
+  padding-bottom: 2%;
+  overflow: hidden;
+  color: black;
+  border-radius: 6px;
+}
+.diet-box hr {
+  height: auto;
+  width: 90%;
+}
+.diet-box a {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.5s;
+}
+.diet-box a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+.diet-image {
+  overflow: hidden;
+}
+.diet-box img {
+  width: 100%;
+}
+
+.diet-box p {
+  text-align: left;
+  margin: 10px 30px;
+}
+
+/* SHAPE TAG */
+.shape-tag {
+  background: white;
+  padding: 5%;
+}
+
+.exercise-nav {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+}
+
+.exercise-box {
+  box-sizing: border-box;
+  background: #cbcbcb;
+  display: block;
+  align-items: center;
+  min-width: 250px;
+  margin: 5px;
+  padding-bottom: 2%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.exercise-box hr {
+  height: auto;
+  width: 90%;
+}
+
+.exercise-box a {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.exercise-box a:hover {
+  color: #E8374D;
+  transition-duration: 0.5s;
+}
+
+.exercise-image {
+  overflow: hidden;
+}
+
+.exercise-box img {
+  width: 100%;
+}
+
+.exercise-box p {
+  text-align: left;
+  margin: 10px 20px;
+}
+
+#ten-minute-workout {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#ten-minute-workout img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+  @media screen and (max-width: 900px) {
+    /* SPLASHPAGE */
+    .image-text h1 {
+      font-size: 300%;
+      top: 250px;
+    }
+    .image-page {
+      height: 28vh;
+    }
+    .image-text {
+      height: 85%;
+    }
+    .image-text h1 {
+      font-size: medium;
+      top: 100px;
+    }
+    .image-text button {
+      font-size: 50%;
+    }
+    .image-text a {
+      position: absolute;
+      top: 35%;
+      left: 35%;
+    }
+    .about h3 {
+      font-size: 75%;
+    }
+
+    /* DIETING */
+    .diet-nav {
+      display: block;
+      margin: 10px;
+    }
+    .diet-box {
+      margin: 10px auto;
+    }
   
+    /* SHAPE TAG */
+    .exercise-nav {
+      display: block;
+      margin: 10px;
+    }
+    .exercise-box {
+      margin: 10px auto;
+    }
+    #ten-minute-workout img {
+      width: 100%;
+      height: 100%;
+    }
+    /* HEALTH KEY */
+    .health-key {
+      display: block;
+    }
+    .left, .right {
+      width: auto;
+    }
+    .right ul {
+      padding: 0;
+      margin: 10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+  .image-page {
+    height: 28vh;
+  }
+  .image-text {
+    height: 85%;
+  }
+  .image-text h1 {
+    font-size: medium;
+    top: 100px;
+  }
+  .image-text button {
+    font-size: 50%;
+  }
+  .image-text a {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  .about h3 {
+    font-size: 75%;
+  }
+}

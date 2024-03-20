@@ -1,0 +1,95 @@
+.doctor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+}
+
+.staff, .single-staff {
+  background: white;
+  padding: 3%;
+}
+
+.np-container div {
+  margin: 5px;
+}
+
+.staff img {
+  width: 50%;
+}
+
+.staff-photo img {
+  width: 50%;
+}
+
+.doctor-image img, .nurse-image img {
+  width: 80%;
+}
+
+.doctor-description {
+  text-align: left;
+}
+.doctor-info, .nurse-info {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.doctor-about, .nurse-about {
+  width: 75%;
+}
+.staff a, .single-staff a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  transition-duration: 0.4s;
+}
+.staff a:hover, .single-staff a:hover {
+  color: #E8374D;
+  transition-duration: 0.4s;
+}
+.single-staff a {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .doctor-info, .nurse-info {
+    text-align: left;
+    display: flex;
+    margin: auto 10px;
+  }
+  .doctor-about, .nurse-about {
+    width: auto;
+  }
+  .doctor-description {
+    margin: auto 10px;
+  }
+  .doctor-image, .nurse-image {
+    margin: 16px auto;
+  }
+  .doctor-image img, .nurse-image img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .provider-container img {
+    width: 90%;
+  }
+  .np-container {
+    display: block;
+  }
+  .cma-container {
+    display: block;
+  }
+  .doctor-info, .nurse-info {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    margin: auto 10px;
+  }
+  .doctor-image {
+    text-align: center;
+  }
+  .doctor-image img, .nurse-image img {
+    width: 200px;
+  }
+}

@@ -1,0 +1,29 @@
+.contact {
+    text-align: center;
+    background: rgb(255, 205, 205);
+    padding: 2%;
+  }
+  .contact h1 {
+    text-align: left;
+  }
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    color: black;
+    margin: 1%;
+    padding: 1%;
+  }
+  
+  .contact-info h4 {
+    margin: auto;
+  }
+  
+  .operation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 900px) {
+    
+}

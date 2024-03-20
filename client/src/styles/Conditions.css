@@ -1,0 +1,128 @@
+.conditions, .single-condition, .condition-subpage {
+  background: white;
+  padding: 3%;
+}
+
+.conditions a, .single-condition a, .condition-subpage a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  transition-duration: 0.5s;
+}
+
+.conditions a:hover, .single-condition a:hover, .condition-subpage a:hover {
+  color: #E8374D;
+  transition-duration: 0.5s;
+}
+
+.entries {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.entries div {
+  text-align: left;
+  margin: auto 10px;
+
+}
+
+.read-more {
+  padding: 10px;
+  border-radius: 12px;
+  color: black;
+}
+
+.read-more:hover {
+  background: black;
+  color: white;
+}
+
+.conditions button, .single-condition button, .condition-subpage button {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  box-shadow: none;
+  font-size: 100%;
+  font-weight: normal;
+  text-shadow: none;
+  transition-duration: 0.5s;
+}
+
+.conditions button:hover, .single-condition button:hover, .condition-subpage button:hover {
+  background-color: #E8374D;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.single-condition {
+  display: flex;
+}
+
+.condition-container, .symptom-container, .arrhythmia-container, .block-container, .myopathy-container {
+  text-align: left;
+  margin: 0 20px;
+}
+
+.arrhythmia-container h1, .block-container h1, .condition-container h1, .myopathy-container h1, .symptom-container h1 {
+  text-align: center;
+}
+
+.condition-left, .arrhythmia-left, .heartblock-left, .symptom-left {
+  width: 70%;
+  margin: 0 30px;
+}
+
+.condition-left p, .arrhythmia-left p, .heartblock-left p, .symptom-left p {
+  text-align: left;
+}
+
+.condition-right {
+  margin: 0 10px;
+  width: 27%;
+}
+
+.condition-right h2 {
+  text-align: center;
+}
+
+.condition-description h3 {
+  text-align: left;
+}
+
+.side-container div {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.side-container div div {
+  text-align: left;
+  border-left: none;
+  padding-left: 0px;
+}
+
+/* CONDITTION SUBPAGES */
+.condition-subpage {
+  display: flex;
+}
+
+.condition-subpage .condition-left h2, .condition-subpage .condition-left h3 {
+  text-align: left;
+}
+  
+@media screen and (max-width: 900px) {
+  .single-condition, .condition-subpage {
+    display: block;
+  }
+  .condition-left {
+    width: auto;
+    margin: auto 20px;
+  }
+  .condition-right {
+    width: auto;
+  }
+  .entries {
+    display: block;
+  }
+}
+

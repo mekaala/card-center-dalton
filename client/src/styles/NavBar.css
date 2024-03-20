@@ -34,13 +34,13 @@
   text-decoration: none;
   color: white;
   font-size: 18px;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
-/* .bar a:hover {
+.bar a:hover {
   color: #E8374D;
-  transition-duration: 0.5s;
-} */
+  transition-duration: 0.2s;
+}
 
 .sub-menu {
     height: 75px;
@@ -106,12 +106,12 @@
   text-align: left;
   padding: 10px 20px 10px 10px;
   margin: 0;
-  transition-duration: 0.5s ease-in-out;
+  transition-duration: 0.2s ease-in-out;
 }
 
 .dropdown-menu a:hover {
   background: rgb(255, 255, 255);
-  transition-duration: 0.5s ease-in-out;
+  transition-duration: 0.2s ease-in-out;
 }
 
 .staff-menu {
@@ -130,7 +130,7 @@
   text-align: left;
   padding: 10px 20px 10px 10px;
   margin: 0;
-  transition-duration: 0.5s ease-in-out;
+  transition-duration: 0.2s ease-in-out;
 }
 
 .staff-link {
@@ -141,7 +141,7 @@
 .staff-menu .staff-link a:hover {
   color: #E8374D;
   background: rgb(255, 255, 255);
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 
@@ -255,4 +255,13 @@
       display: block;
       padding: 3px;
     }
+}
+
+@media screen and (max-width: 760px) {
+  .navbar .facebook {
+    margin: auto;
+  }
+  .facebook img {
+    width: 14px;
+  }
 }

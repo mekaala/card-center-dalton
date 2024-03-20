@@ -1,0 +1,128 @@
+.health, .single-health, .health-subpage {
+    background: white;
+    padding: 1%;
+}
+
+.health-subpage {
+    display: flex;;
+}
+
+.health-data {
+    text-align: left;
+}
+
+.health-container {
+    display: flex;
+    margin: 0 10px;
+}
+
+.diet-list, .exercise-list {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.diet-list div {
+    text-align: left;
+}
+
+.exercise-list div {
+    text-align: left;
+}
+
+.single-health {
+    display: flex;
+}
+
+.health-info {
+    width: 100%;
+}
+
+.health-diet, .health-exercise {
+    text-align: left;
+    margin: 0 10px;
+}
+
+.health-side {
+    margin: 0 10px;
+    width: 20%;
+}
+
+.foods {
+    display: flex;
+}
+
+.good-food {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.bad-food {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.diet-map h3, .exercise-map h3 {
+    text-align: left;
+}
+
+.single-health button, .health-subpage button {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    box-shadow: none;
+    font-size: 100%;
+    font-weight: normal;
+    text-shadow: none;
+    transition-duration: 0.5s;
+}
+
+.single-health button:hover, .health-subpage button:hover {
+    background-color: #E8374D;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.health a, .single-health a, .health-subpage a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    transition-duration: 0.5s;
+}
+
+.health a:hover, .single-health a:hover, .health-subpage a:hover {
+    color: #E8374D;
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+    .health-container {
+        display: block;
+    }
+    .diet-list, .exercise-list {
+        width: auto;
+    }
+    .single-health {
+        display: block;
+    }
+    .foods {
+        display: block;
+    }
+    .good-food, .bad-food {
+        width: auto;
+        margin: auto;
+    }
+    .health-subpage {
+        display: block;
+    }
+    .health-info {
+        width: 100%;
+    }
+    .health-data {
+        margin: auto 10px;
+    }
+    .health-side {
+        width: 100%;
+        margin: auto;
+    }
+}
