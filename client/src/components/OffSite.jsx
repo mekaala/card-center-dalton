@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import hospitalDiagnosticData from '../hospitalDiagnosticData';
 import { Link } from 'react-router-dom';
 import diagnosticData from '../diagnosticData';
+import '../styles/Diagnostics.css'
 
 function OffSiteList() {
     return (

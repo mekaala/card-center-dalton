@@ -1,7 +1,8 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import exerciseData from '../exerciseData';
 import dietData from '../dietData';
 import { Link } from 'react-router-dom';
+import '../styles/Health.css'
 
 function ExerciseList() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import ShapeTag from './ShapeTag';
 import Dieting from './Dieting';
-// import "../styles/SplashPage.css"
+import "../styles/SplashPage.css"
 
 function SplashPage() {
     return (

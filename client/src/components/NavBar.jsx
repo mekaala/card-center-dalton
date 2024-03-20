@@ -76,7 +76,7 @@ function ConditionBar() {
                 <div className="dropdown-menu">
                     <Link to="/conditions">All Conditions</Link>
                     <Link to="/conditions/diseases">Diseases</Link>
-                    <Link to="/conditions/arrythmias">Arrythmias</Link>
+                    <Link to="/conditions/arrhythmias">Arrhythmias</Link>
                     <Link to="/conditions/heart-block">Heart Block</Link>
                     <Link to="/conditions/symptoms">Symptoms</Link>
                 </div>

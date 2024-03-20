@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import SingleProvider from './SingleProvider'
 import providerData from '../providerData'
 import { Link } from 'react-router-dom';
 import nurseData from '../nurseData';

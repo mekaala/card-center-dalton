@@ -2,11 +2,14 @@ import React from 'react'
 import dietData from '../dietData'
 import { Link } from 'react-router-dom';
 import exerciseData from '../exerciseData';
+import '../styles/Health.css'
 
 function DietList() {
     return (
         <div className="diet-list">
-            <h1>DIETS</h1>
+            <Link to="/health/diets">
+                <h1>DIETS</h1>
+            </Link>
             {dietData.map((health, i) => {
                 return (
                     <div key={ i }>
@@ -26,7 +29,9 @@ function DietList() {
 function ExerciseList() {
     return (
         <div className="exercise-list">
-            <h1>EXERCISES</h1>
+            <Link to="/health/exercises">
+                <h1>EXERCISES</h1>
+            </Link>
             {exerciseData.map((health, i) => {
                 return (
                     <div key={ i }>

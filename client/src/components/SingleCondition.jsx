@@ -1,275 +1,257 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import conditionData from '../conditionData';
 import { Link } from 'react-router-dom';
 import symptomData from '../symptomData';
-import cardiomyopathyData from '../cardiomyopathyData';
 import arrhythmiaData from '../arrhythmiaData';
 import heartBlockData from '../heartBlockData';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import '../styles/Conditions.css'
 
-export default class SingleCondition extends Component {
-    state = {
-        showDisease: false,
-        showArrhythmia: false,
-        showHeartBlock: false,
-        showSymptom: false,
+function SingleDisease() {
+    const { state } = useLocation();
+    return (
+        <div className="condition-left">
+            <div className="condition-name">
+                <h1>{ state.offName }</h1>
+            </div>
+            <div className="condition-description">
+                <p>{ state.intro }</p>
+                <h3>Causes</h3>
+                <p>{ state.causes }</p>
+                <h3>Symptoms</h3>
+                <p>{ state.symptoms }</p>
+                <h3>Diagnosis</h3>
+                <p>{ state.diagnosis }</p>
+                <h3>Treatment</h3>
+                <p>{ state.treatment }</p>
+            </div>
+        </div>
+    )
+}
+
+function SingleArrhythmia() {
+    const { state } = useLocation();
+    return (
+        <div className="arrhythmia-left">
+            <div className="condition-name">
+                <h1>{ state.offName }</h1>
+            </div>
+            <div className="condition-description">
+                <p>{ state.arrhythmia }</p>
+                <h3>About { state.name }</h3>
+                <p>{ state.about }</p>
+                <h3>Causes</h3>
+                <p>{ state.causes }</p>
+                <h3>Symptoms</h3>
+                <p>{ state.symptoms }</p>
+                <h3>Diagnosis</h3>
+                <p>{ state.diagnosis }</p>
+                <h3>Treatment</h3>
+                <p>{ state.treatment }</p>
+            </div>
+        </div>
+    )
+}
+
+function SingleHeartBlock() {
+    const { state } = useLocation();
+    return (
+        <div className="heartblock-left">
+            <div className="condition-name">
+                <h1>{ state.offName }</h1>
+            </div>
+            <div className="condition-description">
+                <p>{ state.heartBlock }</p>
+                <h3>Causes</h3>
+                <p>{ state.causes }</p>
+                <h3>Symptoms</h3>
+                <p>{ state.symptoms }</p>
+                <h3>Diagnosis</h3>
+                <p>{ state.diagnosis }</p>
+                <h3>Treatment</h3>
+                <p>{ state.treatment }</p>
+            </div>
+        </div>
+
+    )
+}
+
+function SingleSymptom() {
+    const { state } = useLocation();
+    return (
+        <div className="symptom-left">
+        <h1>{ state.offName }</h1>
+        <div className="symptom-description">
+            <p>{ state.intro }</p>
+            <p>{ state.pOne }</p>
+            <p>{ state.pTwo }</p>
+            <h2>{ state.opOne }</h2>
+            <p>{ state.pThree }</p>
+            <p>{ state.pFour }</p>
+            <p>{ state.pFive }</p>
+            <p>{ state.pSix }</p>
+            <p>{ state.pSeven }</p>
+            <p>{ state.pEight }</p>
+            <p>{ state.pNine }</p>
+            <p>{ state.pTen }</p>
+            <p>{ state.pEleven }</p>
+        </div>
+    </div>
+    )
+}
+
+function ConditionSide() {
+    const [diseases, setDiseases] = useState(false);
+    const [arrhythmias, setArrhythmias] = useState(false);
+    const [heartBlock, setHeartBlock] = useState(false);
+    const [symptoms, setSymptoms] = useState(false);
+
+    const toggleDiseases = () => {
+        setDiseases(!diseases);
+        setArrhythmias(false);
+        setHeartBlock(false);
+        setSymptoms(false);
+    }
+
+    const toggleArrhythmias = () => {
+        setDiseases(false);
+        setArrhythmias(!arrhythmias);
+        setHeartBlock(false);
+        setSymptoms(false);
+    }
+
+    const toggleHeartBlock = () => {
+        setDiseases(false);
+        setArrhythmias(false);
+        setHeartBlock(!heartBlock);
+        setSymptoms(false);
+    }
+
+    const toggleSymptoms = () => {
+        setDiseases(false);
+        setArrhythmias(false);
+        setHeartBlock(false);
+        setSymptoms(!symptoms);
     }
     
-    toggleDisease = () => {
-        const newShowDisease = !this.state.showDisease;
-        this.setState({
-            showDisease: newShowDisease,
-        });
-    };
-    toggleArrhythmia = () => {
-        const newShowArrhythmia = !this.state.showArrhythmia;
-        this.setState({
-            showArrhythmia: newShowArrhythmia,
-        });
-    };
-    toggleHeartBlock = () => {
-        const newShowHeartBlock = !this.state.showHeartBlock;
-        this.setState({
-            showHeartBlock: newShowHeartBlock,
-        });
-    };
-    toggleSymptoms = () => {
-        const newShowSymptom = !this.state.showSymptom;
-        this.setState({
-            showSymptom: newShowSymptom,
-        });
-    };
-    hideCondition() {
-        const condition = document.getElementsByClassName("condition-left");
-        if (this.props.location.state.intro != null) {
-            return condition;
-        } else if (this.props.location.state.intro = null) {
-            return condition.style.display ='none';
-        }
-    }
-    hideArrhythmia() {
-        const arrhythmia = document.getElementsByClassName("arrhythmia-left");
-        if (this.props.location.state.arrhythmia != null) {
-            return arrhythmia;
-        } else if (this.props.location.state.arrhythmia = null) {
-            return arrhythmia.style.display ='none';
-        }
-    }
-    hideHeartBlock() {
-        const heartBlock = document.getElementsByClassName("heartblock-left");
-        if (this.props.location.state.heartBlock != null) {
-            return heartBlock;
-        } else if (this.props.location.state.heartBlock = null) {
-            return heartBlock.style.display ='none';
-        }
-    }
-    hideSymptom() {
-        const symptom = document.getElementsByClassName("symptom-left");
-        if (this.props.location.state.pOne != null) {
-            return symptom;
-        } else if (this.props.location.state.pOne = null) {
-            return symptom.style.display ='none';
-        }
-    }
-    render() {
-        const condition = this.props.location.state;
-        return (
-            <div className="single-condition">
-                { this.hideCondition()
-                ?
-                <div className="condition-left">
-                    <div className="condition-name">
-                        <h1>{ condition.offName }</h1>
-                    </div>
-                    <div className="condition-description">
-                        <p>{ condition.intro }</p>
-                        <h3>Causes</h3>
-                        <p>{ condition.causes }</p>
-                        <h3>Symptoms</h3>
-                        <p>{ condition.symptoms }</p>
-                        <h3>Diagnosis</h3>
-                        <p>{ condition.diagnosis }</p>
-                        <h3>Treatment</h3>
-                        <p>{ condition.treatment }</p>
-                    </div>
-                </div>
-                : null
-                }
-                { this.hideArrhythmia()
-                ?
-                <div className="arrhythmia-left">
-                    <div className="condition-name">
-                        <h1>{ condition.offName }</h1>
-                    </div>
-                    <div className="condition-description">
-                        <p>{ condition.arrhythmia }</p>
-                        <h3>About { condition.name }</h3>
-                        <p>{ condition.about }</p>
-                        <h3>Causes</h3>
-                        <p>{ condition.causes }</p>
-                        <h3>Symptoms</h3>
-                        <p>{ condition.symptoms }</p>
-                        <h3>Diagnosis</h3>
-                        <p>{ condition.diagnosis }</p>
-                        <h3>Treatment</h3>
-                        <p>{ condition.treatment }</p>
-                    </div>
-                </div>
-                : null
-                }
-                { this.hideHeartBlock()
-                ?
-                <div className="heartblock-left">
-                    <div className="condition-name">
-                        <h1>{ condition.offName }</h1>
-                    </div>
-                    <div className="condition-description">
-                        <p>{ condition.heartBlock }</p>
-                        <h3>Causes</h3>
-                        <p>{ condition.causes }</p>
-                        <h3>Symptoms</h3>
-                        <p>{ condition.symptoms }</p>
-                        <h3>Diagnosis</h3>
-                        <p>{ condition.diagnosis }</p>
-                        <h3>Treatment</h3>
-                        <p>{ condition.treatment }</p>
-                    </div>
-                </div>
-                : null
-                }
-                { this.hideSymptom()
-                ?
-                <div className="symptom-left">
-                    <h1>{ condition.offName }</h1>
-                    <div className="symptom-description">
-                        <p>{ condition.intro }</p>
-                        <p>{ condition.pOne }</p>
-                        <p>{ condition.pTwo }</p>
-                        <h2>{ condition.opOne }</h2>
-                        <p>{ condition.pThree }</p>
-                        <p>{ condition.pFour }</p>
-                        <p>{ condition.pFive }</p>
-                        <p>{ condition.pSix }</p>
-                        <p>{ condition.pSeven }</p>
-                        <p>{ condition.pEight }</p>
-                        <p>{ condition.pNine }</p>
-                        <p>{ condition.pTen }</p>
-                        <p>{ condition.pEleven }</p>
-                    </div>
-                </div>
-                : null
-                }
-                <div className="condition-right">
-                    <h1><Link
-                        to={{pathname: `/conditions`,
-                        state: condition}}>
-                        CONDITIONS
-                    </Link></h1>
-                    <div className="side-container" onClick={ this.toggleDisease }>
-                        <h2><button>
-                            { this.state.showDisease
-                                ? 'DISEASES'
-                                : 'DISEASES'
-                            }
-                            </button></h2>
-                        { this.state.showDisease
-                            ?
-                            <div>
-                                <h3><Link to="/conditions/diseases">All Diseases</Link></h3>
-                                {conditionData.map((condition, i) => {
-                                    return (
-                                        <div key={ i }>
-                                            <h3><Link
-                                            to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                            state: condition}}>
-                                                { condition.name }
-                                            </Link></h3>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                            : null
-                        }
-                    </div>
-                    <div className="side-container" onClick={ this.toggleArrhythmia }>
-                        <h2><button >
-                            { this.state.showArrhythmia
-                                ? 'ARRHYTHMIAS'
-                                : 'ARRHYTHMIAS'
-                            }
-                        </button></h2>
-                        { this.state.showArrhythmia
-                            ?
-                            <div>
-                            <h3><Link to="/conditions/arrythmias">All Arrhythmias</Link></h3>
-                            {arrhythmiaData.map((condition, i) => {
-                                return (
-                                    <div key={ i }>
-                                        <h3><Link
-                                        to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                        state: condition}}>
-                                            { condition.name }
-                                        </Link></h3>
-                                    </div>
-                                )
-                            })}
-                            </div>
-                            : null
-                        }
-                        </div>
-                    <div className="side-container" onClick={ this.toggleHeartBlock }>
-                        <h2><button>
-                            { this.state.showHeartBlock
-                                ? 'HEART BLOCK'
-                                : 'HEART BLOCK'
-                            }
-                        </button></h2>
-                        { this.state.showHeartBlock
-                            ?
-                            <div>
-                                <h3><Link to="/conditions/heart-block">All Heart Block</Link></h3>
-                                {heartBlockData.map((condition, i) => {
-                                    return (
-                                        <div key={ i }>
-                                            <h3><Link
-                                            to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                            state: condition}}>
-                                                { condition.name }
-                                            </Link></h3>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                            : null
-                        }
-                    </div>
-                    <div className="side-container" onClick={ this.toggleSymptoms  }>
-                        <h2><button>
-                            { this.state.showSymptom
-                                ? 'SYMPTOMS'
-                                : 'SYMPTOMS'
-                            }
-                        </button></h2>
-                        { this.state.showSymptom
-                            ?
-                            <div>
-                                <h3><Link to="/conditions/symptoms">All Symptoms</Link></h3>
-                                {symptomData.map((condition, i) => {
-                                    return (
-                                        <div key={ i }>
-                                            <h3><Link
-                                            to={{pathname: `/conditions/${ condition.conditionUrl }`,
-                                            state: condition}}>
-                                                { condition.name }
-                                            </Link></h3>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                            :null
-                        }
-                    </div>
-                </div>
+    return (
+        <div className='condition-side'>
+            <h1><Link to={{pathname: `/conditions`}}>CONDITIONS</Link></h1>
+            <div onClick={ toggleDiseases }>
+                <button>
+                    DISEASES
+                </button>
             </div>
-        )
-    }
+            <div onClick={ toggleArrhythmias }>
+                <button>
+                    ARRHYTHMIAS
+                </button>    
+            </div>
+            <div onClick={ toggleHeartBlock }>
+                <button>
+                    HEART BLOCK
+                </button>
+            </div>
+            <div onClick={ toggleSymptoms }>
+                <button>
+                    SYMPTOMS
+                </button>    
+            </div>
+            <div className='side-container'>
+                { diseases && (
+                    <div>
+                        <h3><Link to="/conditions/diseases">All Diseases</Link></h3>
+                        {conditionData.map((condition, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h3><Link
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        { condition.name }
+                                    </Link></h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                )}
+            </div>
+            <div className="side-container">
+                { arrhythmias && (
+                    <div>
+                    <h3><Link to="/conditions/arrhythmias">All Arrhythmias</Link></h3>
+                    {arrhythmiaData.map((condition, i) => {
+                        return (
+                            <div key={ i }>
+                                <h3><Link
+                                to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                state: condition}}>
+                                    { condition.name }
+                                </Link></h3>
+                            </div>
+                        )
+                    })}
+                    </div>
+                )}
+            </div>
+            <div className="side-container">
+                { heartBlock && (
+                    <div>
+                        <h3><Link to="/conditions/heart-block">All Heart Block</Link></h3>
+                        {heartBlockData.map((condition, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h3><Link
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        { condition.name }
+                                    </Link></h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                )}
+            </div>
+            <div className="side-container">
+                { symptoms && (
+                    <div>
+                        <h3><Link to="/conditions/symptoms">All Symptoms</Link></h3>
+                        {symptomData.map((condition, i) => {
+                            return (
+                                <div key={ i }>
+                                    <h3><Link
+                                    to={{pathname: `/conditions/${ condition.conditionUrl }`,
+                                    state: condition}}>
+                                        { condition.name }
+                                    </Link></h3>
+                                </div>
+                            )
+                        })}
+                    </div>
+                )}
+            </div>
+        </div>
+    )
 }
+
+function SingleCondition() {
+    const { state } = useLocation();
+    const renderCurrentSelection = () => {
+        if (state.arrhythmia) {
+            return <SingleArrhythmia/>
+        } else if (state.heartBlock) {
+            return <SingleHeartBlock/>
+        } else if (state.definition) {
+            return <SingleSymptom/>
+        } else {
+            return <SingleDisease/>
+        }
+    }
+  return (
+    <div className='single-condition'>
+        {renderCurrentSelection()}
+        <ConditionSide/>
+    </div>
+  )
+}
+
+export default SingleCondition

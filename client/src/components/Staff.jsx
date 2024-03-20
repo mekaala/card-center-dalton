@@ -3,6 +3,7 @@ import providerData from '../providerData'
 import { Link } from 'react-router-dom';
 import nurseData from '../nurseData';
 import staffPhoto from '../Staff/staff-photo.jpg'
+import '../styles/Staff.css'
 
 function DrAhmad() {
     return (
