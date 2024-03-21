@@ -18,15 +18,11 @@
   }
   
   .image-page {
-    background-image: url('../images/office.JPG');
     height: 62vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 1px 1px black;
   }
   
   .image-text h1 {
@@ -109,7 +105,6 @@
 }
 .dieting p {
   text-align: left;
-  margin: 20px 50px;
 }
 .diet-nav {
   display: grid;
@@ -157,6 +152,10 @@
 .shape-tag {
   background: white;
   padding: 5%;
+}
+
+.shape-tag p {
+  text-align: left;
 }
 
 .exercise-nav {
@@ -242,10 +241,10 @@
       top: 35%;
       left: 35%;
     }
-    .about h3 {
-      font-size: 75%;
-    }
 
+    p {
+      font-size: 20px;
+    }
     /* DIETING */
     .diet-nav {
       display: block;
@@ -254,7 +253,9 @@
     .diet-box {
       margin: 10px auto;
     }
-  
+    .diet-box p {
+      font-size: 20px;
+    }
     /* SHAPE TAG */
     .exercise-nav {
       display: block;
@@ -262,6 +263,9 @@
     }
     .exercise-box {
       margin: 10px auto;
+    }
+    .exercise-box p {
+      font-size: 20px;
     }
     #ten-minute-workout img {
       width: 100%;
@@ -298,8 +302,5 @@
     position: absolute;
     top: 35%;
     left: 35%;
-  }
-  .about h3 {
-    font-size: 75%;
   }
 }
