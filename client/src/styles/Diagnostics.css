@@ -98,10 +98,14 @@
       }
       .single-diagnostic {
         display: block;
+        height: 100%;
       }
       .diagnostic-main {
         width: auto;
         margin: auto 20px;
+      }
+      .diagnostic-side {
+        width: 100%;
       }
       .diagnostic-side h2 {
         margin-left: 0px;

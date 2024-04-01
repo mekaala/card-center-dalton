@@ -1,16 +1,17 @@
 .contact {
     text-align: center;
-    background: rgb(255, 205, 205);
-    padding: 2%;
+    background: rgb(191, 67, 67);
+    padding: 2% 5%;
+    color: white;
   }
   .contact h1 {
     text-align: left;
   }
   .contact-info {
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     box-sizing: border-box;
-    color: black;
     margin: 1%;
     padding: 1%;
   }
@@ -25,5 +26,13 @@
 }
 
 @media screen and (max-width: 900px) {
-    
+  .contact h1 {
+    text-align: center;
+  }
+    .contact-info {
+      display: block;
+    }
+    .operation {
+      display: block;
+    }
 }
