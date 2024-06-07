@@ -114,10 +114,11 @@
   .single-condition, .condition-subpage {
     display: block;
   }
-  .condition-left {
-    width: auto;
-    margin: auto 20px;
+  .condition-left, .arrhythmia-left, .heartblock-left, .symptom-left {
+    width: 100%;
+    margin: 0 20px;
   }
+
   .condition-right {
     width: auto;
   }
